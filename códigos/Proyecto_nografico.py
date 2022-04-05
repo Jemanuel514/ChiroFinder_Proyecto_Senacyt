@@ -1,27 +1,28 @@
 def inicio():
     bienvenida()
-    seleccion_animal()
+    seleccion_modo()
 
 def bienvenida():
     print("¡Bienvenido a Taxonomía Programada!")
 
-def seleccion_animal():
-    print("Seleccione el animal a estudiar:")
-    print("1. Murciélagos.")
-    print("2. Mariposas.")
-    print("3. Felinos.")
+def seleccion_modo():
+    print("Seleccione una opción:")
+    print("1. Inicio.")
+    print("2. Créditos.")
     respuesta = input()
     if respuesta == "1":
         preg_murc_1()
     elif respuesta == "2":
-        print("Esta sección aún está en desarrollo.")
-        reinicio()
-    elif respuesta == "3":
-        print("Esta sección aún está en desarrollo.")
-        reinicio()
+        print("Créditos:")
+        print("José Huertas-Desarrollador del proyecto")
+        print("José Fung-Mentor")
+        print("Katia Chérigo-Coordinadora del proyecto")
+        print("Iris Gómez-Coordinadora del Programa de Conservación de Murciélagos del CRU Coclé")
+        print("Pablo Gutierrez & Fernando Guardia-Especialistas del Programa de Conservación de Murciélagos del CRU Coclé")
+        seleccion_modo()
     else:
         print("La respuesta no es válida.")
-        seleccion_animal()
+        seleccion_modo()
 
 def preg_murc_1():
     print ("Estructura en forma de hoja encima de la nariz (apéndice nasal foliar libre):")
@@ -34,7 +35,7 @@ def preg_murc_1():
     elif respuesta == "2":
         preg_murc_52()
     elif respuesta == "3":
-        seleccion_animal()
+        seleccion_modo()
     else:
         print("La respuesta no es válida.")
         preg_murc_1()
@@ -56,7 +57,7 @@ def preg_murc_2():
         preg_murc_2()
     
 def preg_murc_3():
-    print("¿La cola se extiende hasta el margen de la membrana interfemoral?")
+    print("¿La cola se extiende hasta el margen de la membrana interfemoral(MI)?")
     print("1. Sí.")
     print("2. No.")
     print("3. Volver.")
@@ -91,8 +92,8 @@ def preg_murc_4():
 
 def preg_murc_5():
     print("Calcar(o calcáneo):")
-    print("1. obviamente más alargado que el pie.")
-    print("2. igual o más corto que el pie.")
+    print("1. Obviamente más alargado que el pie.")
+    print("2. Igual o más corto que el pie.")
     print("3. Volver.")
     respuesta = input()
     if respuesta == "1":

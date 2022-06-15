@@ -981,7 +981,7 @@ def preg_murc_56():
 
 def preg_murc_57():
     print("Seleccione la opción más acertada:")
-    print("1. Rabo llega gasta el margen de la membrana interfemoral (MI) o se extiende solamente una o dos vértebras más allá.")
+    print("1. Rabo llega hasta el margen de la membrana interfemoral (MI) o se extiende solamente una o dos vértebras más allá.")
     print("2. Rabo se extiende mucho más allá del margen de la membrana interfemoral (MI).")
     print("3. Volver.")
     respuesta = input()
@@ -1083,7 +1083,7 @@ def preg_murc_62():
 def preg_murc_63():
     print("El primer diente post-canino alto en la parte superior está:")
     print("1. Adyacente al canino.")
-    print("2. Separado del canino por dientes pqueños y bajos.")
+    print("2. Separado del canino por dientes pequeños y bajos.")
     print("3. Volver.")
     respuesta = input()
     if respuesta == "1":

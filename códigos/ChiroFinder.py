@@ -38,7 +38,7 @@ class CF(tk.Tk):
         self.resizable(0, 0)
         self.iconbitmap("C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/ico.ico")
         self.canva = None
-        self.switch(preg_murc_39)
+        self.switch(preg_murc_81)
 
     def switch(self, canva):
         new_canva = canva(self)
@@ -99,7 +99,7 @@ class preg_murc_1 (Canvas):
         volver.configure(width=10, height=1)
         self.create_image(0,0, anchor="nw", image=fondo)
         self.create_image(500, 20, anchor="n", image=logo)
-        self.create_text(500, 180, text="Estructura en forma de hoja encima de la nariz (apéndice nasal foliar libre):", font=font_1, justify=tk.CENTER, width=600)
+        self.create_text(500, 180, text="Estructura en forma de hoja encima de la nariz (apéndice nasal foliar libre):", font=font_1, justify=tk.CENTER, width=900)
         self.create_window(250, 215, anchor="n", window=op_1)
         self.create_window(750, 215, anchor="n", window=op_2)
         self.create_window(10, 10, window=volver, anchor="nw")
@@ -118,7 +118,7 @@ class preg_murc_2 (Canvas):
         volver.configure(width=10, height=1)
         self.create_image(0,0, anchor="nw", image=fondo)
         self.create_image(500, 20, anchor="n", image=logo)
-        self.create_text(500, 180, text="Cola:", font=font_1, justify=tk.CENTER, width=600)
+        self.create_text(500, 180, text="Cola:", font=font_1, justify=tk.CENTER, width=900)
         self.create_window(250, 215, anchor="n", window=op_1)
         self.create_window(750, 215, anchor="n", window=op_2)
         self.create_window(10, 10, window=volver, anchor="nw")
@@ -137,7 +137,7 @@ class preg_murc_3 (Canvas):
         volver.configure(width=10, height=1)
         self.create_image(0,0, anchor="nw", image=fondo)
         self.create_image(500, 20, anchor="n", image=logo)
-        self.create_text(500, 180, text="¿La cola se extiende hasta el margen de la membrana interfemoral(MI)?", font=font_1, justify=tk.CENTER, width=600)
+        self.create_text(500, 180, text="¿La cola se extiende hasta el margen de la membrana interfemoral(MI)?", font=font_1, justify=tk.CENTER, width=900)
         self.create_window(250, 215, anchor="n", window=op_1)
         self.create_window(750, 215, anchor="n", window=op_2)
         self.create_window(10, 10, window=volver, anchor="nw")
@@ -156,7 +156,7 @@ class preg_murc_4 (Canvas):
         volver.configure(width=10, height=1)
         self.create_image(0,0, anchor="nw", image=fondo)
         self.create_image(500, 20, anchor="n", image=logo)
-        self.create_text(500, 180, text="Seleccione la opción más acertada:", font=font_1, justify=tk.CENTER, width=600)
+        self.create_text(500, 180, text="Seleccione la opción más acertada:", font=font_1, justify=tk.CENTER, width=900)
         self.create_window(250, 215, anchor="n", window=op_1)
         self.create_window(750, 215, anchor="n", window=op_2)
         self.create_window(10, 10, window=volver, anchor="nw")
@@ -175,7 +175,7 @@ class preg_murc_5 (Canvas):
         volver.configure(width=10, height=1)
         self.create_image(0,0, anchor="nw", image=fondo)
         self.create_image(500, 20, anchor="n", image=logo)
-        self.create_text(500, 180, text="Calcar(o calcáneo):", font=font_1, justify=tk.CENTER, width=600)
+        self.create_text(500, 180, text="Calcar(o calcáneo):", font=font_1, justify=tk.CENTER, width=900)
         self.create_window(250, 215, anchor="n", window=op_1)
         self.create_window(750, 215, anchor="n", window=op_2)
         self.create_window(10, 10, window=volver, anchor="nw")
@@ -194,7 +194,7 @@ class preg_murc_6 (Canvas):
         volver.configure(width=10, height=1)
         self.create_image(0,0, anchor="nw", image=fondo)
         self.create_image(500, 20, anchor="n", image=logo)
-        self.create_text(500, 180, text="Seleccione la opción más acertada:", font=font_1, justify=tk.CENTER, width=600)
+        self.create_text(500, 180, text="Seleccione la opción más acertada:", font=font_1, justify=tk.CENTER, width=900)
         self.create_window(250, 215, anchor="n", window=op_1)
         self.create_window(750, 215, anchor="n", window=op_2)
         self.create_window(10, 10, window=volver, anchor="nw")
@@ -213,7 +213,7 @@ class preg_murc_7 (Canvas):
         volver.configure(width=10, height=1)
         self.create_image(0,0, anchor="nw", image=fondo)
         self.create_image(500, 20, anchor="n", image=logo)
-        self.create_text(500, 180, text="Antebrazo de:", font=font_1, justify=tk.CENTER, width=600)
+        self.create_text(500, 180, text="Antebrazo de:", font=font_1, justify=tk.CENTER, width=900)
         self.create_window(250, 215, anchor="n", window=op_1)
         self.create_window(750, 215, anchor="n", window=op_2)
         self.create_window(10, 10, window=volver, anchor="nw")
@@ -232,7 +232,7 @@ class preg_murc_8 (Canvas):
         volver.configure(width=10, height=1)
         self.create_image(0,0, anchor="nw", image=fondo)
         self.create_image(500, 20, anchor="n", image=logo)
-        self.create_text(500, 180, text="Seleccione la opción más acertada:", font=font_1, justify=tk.CENTER, width=600)
+        self.create_text(500, 180, text="Seleccione la opción más acertada:", font=font_1, justify=tk.CENTER, width=900)
         self.create_window(250, 215, anchor="n", window=op_1)
         self.create_window(750, 215, anchor="n", window=op_2)
         self.create_window(10, 10, window=volver, anchor="nw")
@@ -251,7 +251,7 @@ class preg_murc_9 (Canvas):
         volver.configure(width=10, height=1)
         self.create_image(0,0, anchor="nw", image=fondo)
         self.create_image(500, 20, anchor="n", image=logo)
-        self.create_text(500, 180, text="Seleccione la opción más acertada:", font=font_1, justify=tk.CENTER, width=600)
+        self.create_text(500, 180, text="Seleccione la opción más acertada:", font=font_1, justify=tk.CENTER, width=900)
         self.create_window(250, 215, anchor="n", window=op_1)
         self.create_window(750, 215, anchor="n", window=op_2)
         self.create_window(10, 10, window=volver, anchor="nw")
@@ -276,7 +276,7 @@ class preg_murc_10 (Canvas):
         volver.configure(width=10, height=1)
         self.create_image(0,0, anchor="nw", image=fondo)
         self.create_image(500, 20, anchor="n", image=logo)
-        self.create_text(500, 180, text="Seleccione la opción más acertada:", font=font_1, justify=tk.CENTER, width=600)
+        self.create_text(500, 180, text="Seleccione la opción más acertada:", font=font_1, justify=tk.CENTER, width=900)
         self.create_window(175, 215, anchor="n", window=op_1)
         self.create_window(500, 215, anchor="n", window=op_2)
         self.create_window(825, 215, anchor="n", window=op_3)
@@ -296,7 +296,7 @@ class preg_murc_11 (Canvas):
         volver.configure(width=10, height=1)
         self.create_image(0,0, anchor="nw", image=fondo)
         self.create_image(500, 20, anchor="n", image=logo)
-        self.create_text(500, 180, text="Seleccione la opción más acertada:", font=font_1, justify=tk.CENTER, width=600)
+        self.create_text(500, 180, text="Seleccione la opción más acertada:", font=font_1, justify=tk.CENTER, width=900)
         self.create_window(250, 215, anchor="n", window=op_1)
         self.create_window(750, 215, anchor="n", window=op_2)
         self.create_window(10, 10, window=volver, anchor="nw")
@@ -315,7 +315,7 @@ class preg_murc_12 (Canvas):
         volver.configure(width=10, height=1)
         self.create_image(0,0, anchor="nw", image=fondo)
         self.create_image(500, 20, anchor="n", image=logo)
-        self.create_text(500, 180, text="Seleccione la opción más acertada:", font=font_1, justify=tk.CENTER, width=600)
+        self.create_text(500, 180, text="Seleccione la opción más acertada:", font=font_1, justify=tk.CENTER, width=900)
         self.create_window(250, 215, anchor="n", window=op_1)
         self.create_window(750, 215, anchor="n", window=op_2)
         self.create_window(10, 10, window=volver, anchor="nw")
@@ -334,7 +334,7 @@ class preg_murc_13 (Canvas):
         volver.configure(width=10, height=1)
         self.create_image(0,0, anchor="nw", image=fondo)
         self.create_image(500, 20, anchor="n", image=logo)
-        self.create_text(500, 180, text="Seleccione la opción más acertada:", font=font_1, justify=tk.CENTER, width=600)
+        self.create_text(500, 180, text="Seleccione la opción más acertada:", font=font_1, justify=tk.CENTER, width=900)
         self.create_window(250, 215, anchor="n", window=op_1)
         self.create_window(750, 215, anchor="n", window=op_2)
         self.create_window(10, 10, window=volver, anchor="nw")
@@ -353,7 +353,7 @@ class preg_murc_14 (Canvas):
         volver.configure(width=10, height=1)
         self.create_image(0,0, anchor="nw", image=fondo)
         self.create_image(500, 20, anchor="n", image=logo)
-        self.create_text(500, 180, text="Seleccione la opción más acertada:", font=font_1, justify=tk.CENTER, width=600)
+        self.create_text(500, 180, text="Seleccione la opción más acertada:", font=font_1, justify=tk.CENTER, width=900)
         self.create_window(250, 215, anchor="n", window=op_1)
         self.create_window(750, 215, anchor="n", window=op_2)
         self.create_window(10, 10, window=volver, anchor="nw")
@@ -372,7 +372,7 @@ class preg_murc_15 (Canvas):
         volver.configure(width=10, height=1)
         self.create_image(0,0, anchor="nw", image=fondo)
         self.create_image(500, 20, anchor="n", image=logo)
-        self.create_text(500, 180, text="Antebrazo de:", font=font_1, justify=tk.CENTER, width=600)
+        self.create_text(500, 180, text="Antebrazo de:", font=font_1, justify=tk.CENTER, width=900)
         self.create_window(250, 215, anchor="n", window=op_1)
         self.create_window(750, 215, anchor="n", window=op_2)
         self.create_window(10, 10, window=volver, anchor="nw")
@@ -391,7 +391,7 @@ class preg_murc_16 (Canvas):
         volver.configure(width=10, height=1)
         self.create_image(0,0, anchor="nw", image=fondo)
         self.create_image(500, 20, anchor="n", image=logo)
-        self.create_text(500, 180, text="Seleccione la opción más acertada:", font=font_1, justify=tk.CENTER, width=600)
+        self.create_text(500, 180, text="Seleccione la opción más acertada:", font=font_1, justify=tk.CENTER, width=900)
         self.create_window(250, 215, anchor="n", window=op_1)
         self.create_window(750, 215, anchor="n", window=op_2)
         self.create_window(10, 10, window=volver, anchor="nw")
@@ -410,7 +410,7 @@ class preg_murc_17 (Canvas):
         volver.configure(width=10, height=1)
         self.create_image(0,0, anchor="nw", image=fondo)
         self.create_image(500, 20, anchor="n", image=logo)
-        self.create_text(500, 180, text="Seleccione la opción más acertada:", font=font_1, justify=tk.CENTER, width=600)
+        self.create_text(500, 180, text="Seleccione la opción más acertada:", font=font_1, justify=tk.CENTER, width=900)
         self.create_window(250, 215, anchor="n", window=op_1)
         self.create_window(750, 215, anchor="n", window=op_2)
         self.create_window(10, 10, window=volver, anchor="nw")
@@ -429,7 +429,7 @@ class preg_murc_18 (Canvas):
         volver.configure(width=10, height=1)
         self.create_image(0,0, anchor="nw", image=fondo)
         self.create_image(500, 20, anchor="n", image=logo)
-        self.create_text(500, 180, text="Seleccione la opción más acertada:", font=font_1, justify=tk.CENTER, width=600)
+        self.create_text(500, 180, text="Seleccione la opción más acertada:", font=font_1, justify=tk.CENTER, width=900)
         self.create_window(250, 215, anchor="n", window=op_1)
         self.create_window(750, 215, anchor="n", window=op_2)
         self.create_window(10, 10, window=volver, anchor="nw")
@@ -448,7 +448,7 @@ class preg_murc_19 (Canvas):
         volver.configure(width=10, height=1)
         self.create_image(0,0, anchor="nw", image=fondo)
         self.create_image(500, 20, anchor="n", image=logo)
-        self.create_text(500, 180, text="Pelos dorsales:", font=font_1, justify=tk.CENTER, width=600)
+        self.create_text(500, 180, text="Pelos dorsales:", font=font_1, justify=tk.CENTER, width=900)
         self.create_window(250, 215, anchor="n", window=op_1)
         self.create_window(750, 215, anchor="n", window=op_2)
         self.create_window(10, 10, window=volver, anchor="nw")
@@ -467,7 +467,7 @@ class preg_murc_20 (Canvas):
         volver.configure(width=10, height=1)
         self.create_image(0,0, anchor="nw", image=fondo)
         self.create_image(500, 20, anchor="n", image=logo)
-        self.create_text(500, 180, text="Ornamento de barbilla:", font=font_1, justify=tk.CENTER, width=600)
+        self.create_text(500, 180, text="Ornamento de barbilla:", font=font_1, justify=tk.CENTER, width=900)
         self.create_window(250, 215, anchor="n", window=op_1)
         self.create_window(750, 215, anchor="n", window=op_2)
         self.create_window(10, 10, window=volver, anchor="nw")
@@ -486,7 +486,7 @@ class preg_murc_21 (Canvas):
         volver.configure(width=10, height=1)
         self.create_image(0,0, anchor="nw", image=fondo)
         self.create_image(500, 20, anchor="n", image=logo)
-        self.create_text(500, 180, text="Seleccione la opción más acertada:", font=font_1, justify=tk.CENTER, width=600)
+        self.create_text(500, 180, text="Seleccione la opción más acertada:", font=font_1, justify=tk.CENTER, width=900)
         self.create_window(250, 215, anchor="n", window=op_1)
         self.create_window(750, 215, anchor="n", window=op_2)
         self.create_window(10, 10, window=volver, anchor="nw")
@@ -505,7 +505,7 @@ class preg_murc_22 (Canvas):
         volver.configure(width=10, height=1)
         self.create_image(0,0, anchor="nw", image=fondo)
         self.create_image(500, 20, anchor="n", image=logo)
-        self.create_text(500, 180, text="Seleccione la opción más acertada:", font=font_1, justify=tk.CENTER, width=600)
+        self.create_text(500, 180, text="Seleccione la opción más acertada:", font=font_1, justify=tk.CENTER, width=900)
         self.create_window(250, 215, anchor="n", window=op_1)
         self.create_window(750, 215, anchor="n", window=op_2)
         self.create_window(10, 10, window=volver, anchor="nw")
@@ -524,7 +524,7 @@ class preg_murc_23 (Canvas):
         volver.configure(width=10, height=1)
         self.create_image(0,0, anchor="nw", image=fondo)
         self.create_image(500, 20, anchor="n", image=logo)
-        self.create_text(500, 180, text="Seleccione la opción más acertada:", font=font_1, justify=tk.CENTER, width=600)
+        self.create_text(500, 180, text="Seleccione la opción más acertada:", font=font_1, justify=tk.CENTER, width=900)
         self.create_window(250, 215, anchor="n", window=op_1)
         self.create_window(750, 215, anchor="n", window=op_2)
         self.create_window(10, 10, window=volver, anchor="nw")
@@ -543,7 +543,7 @@ class preg_murc_24 (Canvas):
         volver.configure(width=10, height=1)
         self.create_image(0,0, anchor="nw", image=fondo)
         self.create_image(500, 20, anchor="n", image=logo)
-        self.create_text(500, 180, text="Seleccione la opción más acertada:", font=font_1, justify=tk.CENTER, width=600)
+        self.create_text(500, 180, text="Seleccione la opción más acertada:", font=font_1, justify=tk.CENTER, width=900)
         self.create_window(250, 215, anchor="n", window=op_1)
         self.create_window(750, 215, anchor="n", window=op_2)
         self.create_window(10, 10, window=volver, anchor="nw")
@@ -562,7 +562,7 @@ class preg_murc_25 (Canvas):
         volver.configure(width=10, height=1)
         self.create_image(0,0, anchor="nw", image=fondo)
         self.create_image(500, 20, anchor="n", image=logo)
-        self.create_text(500, 180, text="Seleccione la opción más acertada:", font=font_1, justify=tk.CENTER, width=600)
+        self.create_text(500, 180, text="Seleccione la opción más acertada:", font=font_1, justify=tk.CENTER, width=900)
         self.create_window(250, 215, anchor="n", window=op_1)
         self.create_window(750, 215, anchor="n", window=op_2)
         self.create_window(10, 10, window=volver, anchor="nw")
@@ -581,7 +581,7 @@ class preg_murc_26 (Canvas):
         volver.configure(width=10, height=1)
         self.create_image(0,0, anchor="nw", image=fondo)
         self.create_image(500, 20, anchor="n", image=logo)
-        self.create_text(500, 180, text="Seleccione la opción más acertada:", font=font_1, justify=tk.CENTER, width=600)
+        self.create_text(500, 180, text="Seleccione la opción más acertada:", font=font_1, justify=tk.CENTER, width=900)
         self.create_window(250, 215, anchor="n", window=op_1)
         self.create_window(750, 215, anchor="n", window=op_2)
         self.create_window(10, 10, window=volver, anchor="nw")
@@ -600,7 +600,7 @@ class preg_murc_27 (Canvas):
         volver.configure(width=10, height=1)
         self.create_image(0,0, anchor="nw", image=fondo)
         self.create_image(500, 20, anchor="n", image=logo)
-        self.create_text(500, 180, text="Seleccione la opción más acertada:", font=font_1, justify=tk.CENTER, width=600)
+        self.create_text(500, 180, text="Seleccione la opción más acertada:", font=font_1, justify=tk.CENTER, width=900)
         self.create_window(250, 215, anchor="n", window=op_1)
         self.create_window(750, 215, anchor="n", window=op_2)
         self.create_window(10, 10, window=volver, anchor="nw")
@@ -619,7 +619,7 @@ class preg_murc_28 (Canvas):
         volver.configure(width=10, height=1)
         self.create_image(0,0, anchor="nw", image=fondo)
         self.create_image(500, 20, anchor="n", image=logo)
-        self.create_text(500, 180, text="Seleccione la opción más acertada:", font=font_1, justify=tk.CENTER, width=600)
+        self.create_text(500, 180, text="Seleccione la opción más acertada:", font=font_1, justify=tk.CENTER, width=900)
         self.create_window(250, 215, anchor="n", window=op_1)
         self.create_window(750, 215, anchor="n", window=op_2)
         self.create_window(10, 10, window=volver, anchor="nw")
@@ -638,7 +638,7 @@ class preg_murc_29 (Canvas):
         volver.configure(width=10, height=1)
         self.create_image(0,0, anchor="nw", image=fondo)
         self.create_image(500, 20, anchor="n", image=logo)
-        self.create_text(500, 180, text="Incisivos interiores superiores:", font=font_1, justify=tk.CENTER, width=600)
+        self.create_text(500, 180, text="Incisivos interiores superiores:", font=font_1, justify=tk.CENTER, width=900)
         self.create_window(250, 215, anchor="n", window=op_1)
         self.create_window(750, 215, anchor="n", window=op_2)
         self.create_window(10, 10, window=volver, anchor="nw")
@@ -657,7 +657,7 @@ class preg_murc_30 (Canvas):
         volver.configure(width=10, height=1)
         self.create_image(0,0, anchor="nw", image=fondo)
         self.create_image(500, 20, anchor="n", image=logo)
-        self.create_text(500, 180, text="Seleccione la opción más acertada:", font=font_1, justify=tk.CENTER, width=600)
+        self.create_text(500, 180, text="Seleccione la opción más acertada:", font=font_1, justify=tk.CENTER, width=900)
         self.create_window(250, 215, anchor="n", window=op_1)
         self.create_window(750, 215, anchor="n", window=op_2)
         self.create_window(10, 10, window=volver, anchor="nw")
@@ -676,7 +676,7 @@ class preg_murc_31 (Canvas):
         volver.configure(width=10, height=1)
         self.create_image(0,0, anchor="nw", image=fondo)
         self.create_image(500, 20, anchor="n", image=logo)
-        self.create_text(500, 180, text="Seleccione la opción más acertada:", font=font_1, justify=tk.CENTER, width=600)
+        self.create_text(500, 180, text="Seleccione la opción más acertada:", font=font_1, justify=tk.CENTER, width=900)
         self.create_window(250, 215, anchor="n", window=op_1)
         self.create_window(750, 215, anchor="n", window=op_2)
         self.create_window(10, 10, window=volver, anchor="nw")
@@ -695,7 +695,7 @@ class preg_murc_32 (Canvas):
         volver.configure(width=10, height=1)
         self.create_image(0,0, anchor="nw", image=fondo)
         self.create_image(500, 20, anchor="n", image=logo)
-        self.create_text(500, 180, text="Seleccione la opción más acertada:", font=font_1, justify=tk.CENTER, width=600)
+        self.create_text(500, 180, text="Seleccione la opción más acertada:", font=font_1, justify=tk.CENTER, width=900)
         self.create_window(250, 215, anchor="n", window=op_1)
         self.create_window(750, 215, anchor="n", window=op_2)
         self.create_window(10, 10, window=volver, anchor="nw")
@@ -714,7 +714,7 @@ class preg_murc_33 (Canvas):
         volver.configure(width=10, height=1)
         self.create_image(0,0, anchor="nw", image=fondo)
         self.create_image(500, 20, anchor="n", image=logo)
-        self.create_text(500, 180, text="Selecciona la opción más acertada:", font=font_1, justify=tk.CENTER, width=600)
+        self.create_text(500, 180, text="Selecciona la opción más acertada:", font=font_1, justify=tk.CENTER, width=900)
         self.create_window(250, 215, anchor="n", window=op_1)
         self.create_window(750, 215, anchor="n", window=op_2)
         self.create_window(10, 10, window=volver, anchor="nw")
@@ -733,7 +733,7 @@ class preg_murc_34 (Canvas):
         volver.configure(width=10, height=1)
         self.create_image(0,0, anchor="nw", image=fondo)
         self.create_image(500, 20, anchor="n", image=logo)
-        self.create_text(500, 180, text="Dorso:", font=font_1, justify=tk.CENTER, width=600)
+        self.create_text(500, 180, text="Dorso:", font=font_1, justify=tk.CENTER, width=900)
         self.create_window(250, 215, anchor="n", window=op_1)
         self.create_window(750, 215, anchor="n", window=op_2)
         self.create_window(10, 10, window=volver, anchor="nw")
@@ -752,7 +752,7 @@ class preg_murc_35 (Canvas):
         volver.configure(width=10, height=1)
         self.create_image(0,0, anchor="nw", image=fondo)
         self.create_image(500, 20, anchor="n", image=logo)
-        self.create_text(500, 180, text="Extensión de la línea dorsal:", font=font_1, justify=tk.CENTER, width=600)
+        self.create_text(500, 180, text="Extensión de la línea dorsal:", font=font_1, justify=tk.CENTER, width=900)
         self.create_window(250, 215, anchor="n", window=op_1)
         self.create_window(750, 215, anchor="n", window=op_2)
         self.create_window(10, 10, window=volver, anchor="nw")
@@ -771,7 +771,7 @@ class preg_murc_36 (Canvas):
         volver.configure(width=10, height=1)
         self.create_image(0,0, anchor="nw", image=fondo)
         self.create_image(500, 20, anchor="n", image=logo)
-        self.create_text(500, 180, text="Seleccione la opción más acertada:", font=font_1, justify=tk.CENTER, width=600)
+        self.create_text(500, 180, text="Seleccione la opción más acertada:", font=font_1, justify=tk.CENTER, width=900)
         self.create_window(250, 215, anchor="n", window=op_1)
         self.create_window(750, 215, anchor="n", window=op_2)
         self.create_window(10, 10, window=volver, anchor="nw")
@@ -790,7 +790,7 @@ class preg_murc_37 (Canvas):
         volver.configure(width=10, height=1)
         self.create_image(0,0, anchor="nw", image=fondo)
         self.create_image(500, 20, anchor="n", image=logo)
-        self.create_text(500, 180, text="Selecciona la opción más acertada:", font=font_1, justify=tk.CENTER, width=600)
+        self.create_text(500, 180, text="Selecciona la opción más acertada:", font=font_1, justify=tk.CENTER, width=900)
         self.create_window(250, 215, anchor="n", window=op_1)
         self.create_window(750, 215, anchor="n", window=op_2)
         self.create_window(10, 10, window=volver, anchor="nw")
@@ -809,7 +809,7 @@ class preg_murc_38 (Canvas):
         volver.configure(width=10, height=1)
         self.create_image(0,0, anchor="nw", image=fondo)
         self.create_image(500, 20, anchor="n", image=logo)
-        self.create_text(500, 180, text="Seleccione la opción más acertada:", font=font_1, justify=tk.CENTER, width=600)
+        self.create_text(500, 180, text="Seleccione la opción más acertada:", font=font_1, justify=tk.CENTER, width=900)
         self.create_window(250, 215, anchor="n", window=op_1)
         self.create_window(750, 215, anchor="n", window=op_2)
         self.create_window(10, 10, window=volver, anchor="nw")
@@ -829,7 +829,7 @@ class preg_murc_39 (Canvas):
         volver.configure(width=10, height=1)
         self.create_image(0,0, anchor="nw", image=fondo)
         self.create_image(500, 20, anchor="n", image=logo)
-        self.create_text(500, 180, text="Seleccione la opción más acertada:", font=font_1, justify=tk.CENTER, width=600)
+        self.create_text(500, 180, text="Seleccione la opción más acertada:", font=font_1, justify=tk.CENTER, width=900)
         self.create_window(250, 215, anchor="n", window=op_1)
         self.create_window(750, 215, anchor="n", window=op_2)
         self.create_window(10, 10, window=volver, anchor="nw")
@@ -848,7 +848,7 @@ class preg_murc_40 (Canvas):
         volver.configure(width=10, height=1)
         self.create_image(0,0, anchor="nw", image=fondo)
         self.create_image(500, 20, anchor="n", image=logo)
-        self.create_text(500, 180, text="Seleccione la opción más acertada:", font=font_1, justify=tk.CENTER, width=600)
+        self.create_text(500, 180, text="Seleccione la opción más acertada:", font=font_1, justify=tk.CENTER, width=900)
         self.create_window(250, 215, anchor="n", window=op_1)
         self.create_window(750, 215, anchor="n", window=op_2)
         self.create_window(10, 10, window=volver, anchor="nw")
@@ -867,7 +867,7 @@ class preg_murc_41 (Canvas):
         volver.configure(width=10, height=1)
         self.create_image(0,0, anchor="nw", image=fondo)
         self.create_image(500, 20, anchor="n", image=logo)
-        self.create_text(500, 180, text="Antebrazo:", font=font_1, justify=tk.CENTER, width=600)
+        self.create_text(500, 180, text="Antebrazo:", font=font_1, justify=tk.CENTER, width=900)
         self.create_window(250, 215, anchor="n", window=op_1)
         self.create_window(750, 215, anchor="n", window=op_2)
         self.create_window(10, 10, window=volver, anchor="nw")
@@ -886,7 +886,7 @@ class preg_murc_42 (Canvas):
         volver.configure(width=10, height=1)
         self.create_image(0,0, anchor="nw", image=fondo)
         self.create_image(500, 20, anchor="n", image=logo)
-        self.create_text(500, 180, text="Selecciona la opción más acertada:", font=font_1, justify=tk.CENTER, width=600)
+        self.create_text(500, 180, text="Selecciona la opción más acertada:", font=font_1, justify=tk.CENTER, width=900)
         self.create_window(250, 215, anchor="n", window=op_1)
         self.create_window(750, 215, anchor="n", window=op_2)
         self.create_window(10, 10, window=volver, anchor="nw")
@@ -905,7 +905,748 @@ class preg_murc_43 (Canvas):
         volver.configure(width=10, height=1)
         self.create_image(0,0, anchor="nw", image=fondo)
         self.create_image(500, 20, anchor="n", image=logo)
-        self.create_text(500, 180, text="Seleccione la opción más acertada:", font=font_1, justify=tk.CENTER, width=600)
+        self.create_text(500, 180, text="Seleccione la opción más acertada:", font=font_1, justify=tk.CENTER, width=900)
+        self.create_window(250, 215, anchor="n", window=op_1)
+        self.create_window(750, 215, anchor="n", window=op_2)
+        self.create_window(10, 10, window=volver, anchor="nw")
+        self.fondo_ref=fondo
+        self.logo_ref=logo
+
+class preg_murc_44 (Canvas):
+    def __init__(self, comand):
+        Canvas.__init__(self)
+        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        fondo=PhotoImage(file="C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/Fondo.png")
+        logo=PhotoImage(file="C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/logo.png")
+        op_1=btn_cambio("Membrana interfemoral (MI) ausente, hombros de color naranja o amarillo, piernas peludas, incisivos inferiores trilobados", comand, preg_murc_45)
+        op_2=btn_cambio("Membrana interfemoral (MI) presente, hombros del mismo color que el resto del dorso", comand, preg_murc_46)
+        volver=btn_cambio("Volver", comand, preg_murc_41)
+        volver.configure(width=10, height=1)
+        self.create_image(0,0, anchor="nw", image=fondo)
+        self.create_image(500, 20, anchor="n", image=logo)
+        self.create_text(500, 180, text="Seleccione la opción más acertada:", font=font_1, justify=tk.CENTER, width=900)
+        self.create_window(250, 215, anchor="n", window=op_1)
+        self.create_window(750, 215, anchor="n", window=op_2)
+        self.create_window(10, 10, window=volver, anchor="nw")
+        self.fondo_ref=fondo
+        self.logo_ref=logo
+
+class preg_murc_45 (Canvas):
+    def __init__(self, comand):
+        Canvas.__init__(self)
+        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        fondo=PhotoImage(file="C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/Fondo.png")
+        logo=PhotoImage(file="C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/logo.png")
+        op_1=btn_resultado("Pelo dorsal de color pálido, líneas de los dientes maxilares arqueadas para afuera (no paralelas), peso corporal +/-15g y antebrazo de 37-42mm", comand, "Sturnira lilium", "C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/m.png")
+        op_2=btn_resultado("Pelo dorsal oscuro, líneas de los dientes maxilares casi paralelas, peso corporal +/-20g y antebrazo de 41-45mm", comand, "Sturnira luisi", "C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/m.png")
+        volver=btn_cambio("Volver", comand, preg_murc_44)
+        volver.configure(width=10, height=1)
+        self.create_image(0,0, anchor="nw", image=fondo)
+        self.create_image(500, 20, anchor="n", image=logo)
+        self.create_text(500, 180, text="Seleccione la opción más acertada:", font=font_1, justify=tk.CENTER, width=900)
+        self.create_window(250, 215, anchor="n", window=op_1)
+        self.create_window(750, 215, anchor="n", window=op_2)
+        self.create_window(10, 10, window=volver, anchor="nw")
+        self.fondo_ref=fondo
+        self.logo_ref=logo
+
+class preg_murc_46 (Canvas):
+    def __init__(self, comand):
+        Canvas.__init__(self)
+        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        fondo=PhotoImage(file="C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/Fondo.png")
+        logo=PhotoImage(file="C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/logo.png")
+        op_1=btn_cambio("Antebrazo normalmente de +35mm, paladar casi circular", comand, preg_murc_47)
+        op_2=btn_cambio("Antebrazo normalmente de -35mm, paladar anteriormente estrechado", comand, preg_murc_50)
+        volver=btn_cambio("Volver", comand, preg_murc_44)
+        volver.configure(width=10, height=1)
+        self.create_image(0,0, anchor="nw", image=fondo)
+        self.create_image(500, 20, anchor="n", image=logo)
+        self.create_text(500, 180, text="Seleccione la opción más acertada:", font=font_1, justify=tk.CENTER, width=900)
+        self.create_window(250, 215, anchor="n", window=op_1)
+        self.create_window(750, 215, anchor="n", window=op_2)
+        self.create_window(10, 10, window=volver, anchor="nw")
+        self.fondo_ref=fondo
+        self.logo_ref=logo
+
+class preg_murc_47 (Canvas):
+    def __init__(self, comand):
+        Canvas.__init__(self)
+        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        fondo=PhotoImage(file="C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/Fondo.png")
+        logo=PhotoImage(file="C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/logo.png")
+        op_1=btn_resultado("Color del pelo chocolate oscuro, membrana interfemoral (MI) notablemente orlada, angosta y en forma de 'V', herradura de la hoja de la nariz ventralmente doblada para abajo, incisivos interiores superiores no bilobados, líneas faciales presentes, amarillas, angostas, líneas medianas dorsales ausentes, incisivos interiores superiores truncados, no lobados, márgenes de las orejas y tragus blancos o de color crema, peso corporal +/-17g y antebrazo de 37-43mm", comand, "Enchistenes hartii", "C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/m.png")
+        op_2=btn_cambio("Color del pelo gris-chocolate, membrana interfemoral (MI) desnuda o escasamente orlada, ancha y en forma de 'U',  herradura ventralmente libre, incisivos interiores superiores bilobados", comand, preg_murc_48)
+        volver=btn_cambio("Volver", comand, preg_murc_46)
+        volver.configure(width=10, height=1)
+        self.create_image(0,0, anchor="nw", image=fondo)
+        self.create_image(500, 20, anchor="n", image=logo)
+        self.create_text(500, 180, text="Selecciona la opción más acertada:", font=font_1, justify=tk.CENTER, width=900)
+        self.create_window(250, 215, anchor="n", window=op_1)
+        self.create_window(750, 215, anchor="n", window=op_2)
+        self.create_window(10, 10, window=volver, anchor="nw")
+        self.fondo_ref=fondo
+        self.logo_ref=logo
+
+class preg_murc_48 (Canvas):
+    def __init__(self, comand):
+        Canvas.__init__(self)
+        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        fondo=PhotoImage(file="C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/Fondo.png")
+        logo=PhotoImage(file="C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/logo.png")
+        op_1=btn_resultado("Márgenes de las orejas amarillas y amarillas en la base, hoja de la nariz más larga y ancha, M3 ausente, líneas faciales siempre presentes, líneas blancas brillantes y anchas, línea mediana dorsal ausente, incisivos interiores superiores truncados  y bilobados, peso corporal +/-11g, antebrazo de 35-40mm y pelo de 4-6mm", comand, "Artibeus phaeotis", "C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/m.png")
+        op_2=btn_cambio("Márgenes de las orejas no amarillas y de color crema en la base, hoja de la nariz más corta y angosta, M3 presente, líneas faciales siempre presentes, blanchas, angostas y pequeñas, incisivos interiores superiores truncados y bilobados", comand, preg_murc_49)
+        volver=btn_cambio("Volver", comand, preg_murc_47)
+        volver.configure(width=10, height=1)
+        self.create_image(0,0, anchor="nw", image=fondo)
+        self.create_image(500, 20, anchor="n", image=logo)
+        self.create_text(500, 180, text="Selecciona la opción más acertada:", font=font_1, justify=tk.CENTER, width=900)
+        self.create_window(250, 215, anchor="n", window=op_1)
+        self.create_window(750, 215, anchor="n", window=op_2)
+        self.create_window(10, 10, window=volver, anchor="nw")
+        self.fondo_ref=fondo
+        self.logo_ref=logo
+
+class preg_murc_49 (Canvas):
+    def __init__(self, comand):
+        Canvas.__init__(self)
+        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        fondo=PhotoImage(file="C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/Fondo.png")
+        logo=PhotoImage(file="C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/logo.png")
+        op_1=btn_resultado("Más pequeño, partes inferiores del cuerpo de color más claro y amarillo, frecuentemente tiene líneas faciales blancas bien definidas y prominentes, extremidades posteriores (tibia, pie y membrana interfemoral (MI)) casi desnudas, peso corporal +/-11g, antebrazo de 35-42mm y pelo velludo de 6-7mm", comand, "Artibeus watsoni", "C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/m.png")
+        op_2=btn_resultado("Más grande, partes inferiores del cuerpo de color más oscuro, gris-chocolate, no siempre tiene líneas faciales bien definidas, extremidades posteriores (tibia, pie y membrana interfemoral (MI)) normalmente peludas, peso corporal +/-13g y antebrazo de 40-45mm", comand, "Artibeus incomitatus", "C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/m.png")
+        volver=btn_cambio("Volver", comand, preg_murc_48)
+        volver.configure(width=10, height=1)
+        self.create_image(0,0, anchor="nw", image=fondo)
+        self.create_image(500, 20, anchor="n", image=logo)
+        self.create_text(500, 180, text="Seleccione la opción más acertada:", font=font_1, justify=tk.CENTER, width=900)
+        self.create_window(250, 215, anchor="n", window=op_1)
+        self.create_window(750, 215, anchor="n", window=op_2)
+        self.create_window(10, 10, window=volver, anchor="nw")
+        self.fondo_ref=fondo
+        self.logo_ref=logo
+
+class preg_murc_50 (Canvas):
+    def __init__(self, comand):
+        Canvas.__init__(self)
+        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        fondo=PhotoImage(file="C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/Fondo.png")
+        logo=PhotoImage(file="C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/logo.png")
+        op_1=btn_resultado("Líneas faciales presentes, blancas y angostas, muy pequeño, calcar (o calcáneo) recto, base de la oreja y hoja de la nariz solamente moderadamente amarillas, línea dorsal ausente, membrana interfemoral (MI) ancha y en forma de 'U', sin orlas, márgenes de las orejas y tragus de color amarillo o naranja, pelo dorsal tricolorido (banda basal a veces obscura), peso corporal +/-8g y antebrazo de 29-34mm", comand, "Vampyressa pusilla", "C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/m.png")
+        op_2=btn_cambio("Líneas faciales ausentes, calcar (o calcáneo) recto o falciforme, base de las orejas y hoja de la nariz de color amarillo brillante", comand, preg_murc_51)
+        volver=btn_cambio("Volver", comand, preg_murc_46)
+        volver.configure(width=10, height=1)
+        self.create_image(0,0, anchor="nw", image=fondo)
+        self.create_image(500, 20, anchor="n", image=logo)
+        self.create_text(500, 180, text="Selecciona la opción más acertada:", font=font_1, justify=tk.CENTER, width=900)
+        self.create_window(250, 215, anchor="n", window=op_1)
+        self.create_window(750, 215, anchor="n", window=op_2)
+        self.create_window(10, 10, window=volver, anchor="nw")
+        self.fondo_ref=fondo
+        self.logo_ref=logo
+
+class preg_murc_51 (Canvas):
+    def __init__(self, comand):
+        Canvas.__init__(self)
+        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        fondo=PhotoImage(file="C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/Fondo.png")
+        logo=PhotoImage(file="C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/logo.png")
+        op_1=btn_resultado("Dorso anterior blanquizco, dorso posterior de color tostado, calcar (o calcáneo) recto, peso corporal +/-5g y antebrazo de 23-31mm", comand, "Ectophylla alba", "C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/m.png")
+        op_2=btn_resultado("Dorso anterior amarillo, dorso posterior de color tostado, calcar (o calcáneo) falciforme, líneas faciales y línea dorsal siempre ausentes, membrana interfemoral (MI) ancha y en forma de 'U', sin orlas, márgenes de las orejas y tragus de color amarillo o naranja, peso corporal +/-7g y antebrazo de 29-33mm", comand, "Mesophylla macconnelli", "C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/m.png")
+        volver=btn_cambio("Volver", comand, preg_murc_50)
+        volver.configure(width=10, height=1)
+        self.create_image(0,0, anchor="nw", image=fondo)
+        self.create_image(500, 20, anchor="n", image=logo)
+        self.create_text(500, 180, text="Seleccione la opción más acertada:", font=font_1, justify=tk.CENTER, width=900)
+        self.create_window(250, 215, anchor="n", window=op_1)
+        self.create_window(750, 215, anchor="n", window=op_2)
+        self.create_window(10, 10, window=volver, anchor="nw")
+        self.fondo_ref=fondo
+        self.logo_ref=logo
+
+class preg_murc_52 (Canvas):
+    def __init__(self, comand):
+        Canvas.__init__(self)
+        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        fondo=PhotoImage(file="C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/Fondo.png")
+        logo=PhotoImage(file="C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/logo.png")
+        op_1=btn_cambio("Ausente", comand, preg_murc_53)
+        op_2=btn_cambio("Presente", comand, preg_murc_56)
+        volver=btn_cambio("Volver", comand, preg_murc_1)
+        volver.configure(width=10, height=1)
+        self.create_image(0,0, anchor="nw", image=fondo)
+        self.create_image(500, 20, anchor="n", image=logo)
+        self.create_text(500, 180, text="Cola:", font=font_1, justify=tk.CENTER, width=900)
+        self.create_window(250, 215, anchor="n", window=op_1)
+        self.create_window(750, 215, anchor="n", window=op_2)
+        self.create_window(10, 10, window=volver, anchor="nw")
+        self.fondo_ref=fondo
+        self.logo_ref=logo
+
+class preg_murc_53 (Canvas):
+    def __init__(self, comand):
+        Canvas.__init__(self)
+        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        fondo=PhotoImage(file="C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/Fondo.png")
+        logo=PhotoImage(file="C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/logo.png")
+        op_1=btn_resultado("Cara desnuda y grotescamente arrugada, mancha blanca en el hombro, membrana interfemoral (MI) ancha, peluda, en forma de 'U' y fuertemente orlada, líneas siempre ausentes, pelo dorsal tricolorido, cara muy corta básicamente sin rostro, orejas no afiladas, peso corporal +/-20g y antebrazo de 41-45mm", comand, "Centurio senex", "C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/m.png")
+        op_2=btn_cambio("Cara peluda con ornamentos rudimentarios en la nariz, sin manchas blancas en el hombro, membrana interfemoral (MI) angosta o ausente", comand, preg_murc_54)
+        volver=btn_cambio("Volver", comand, preg_murc_52)
+        volver.configure(width=10, height=1)
+        self.create_image(0,0, anchor="nw", image=fondo)
+        self.create_image(500, 20, anchor="n", image=logo)
+        self.create_text(500, 180, text="Selecciona la opción más acertada:", font=font_1, justify=tk.CENTER, width=900)
+        self.create_window(250, 215, anchor="n", window=op_1)
+        self.create_window(750, 215, anchor="n", window=op_2)
+        self.create_window(10, 10, window=volver, anchor="nw")
+        self.fondo_ref=fondo
+        self.logo_ref=logo
+
+class preg_murc_54 (Canvas):
+    def __init__(self, comand):
+        Canvas.__init__(self)
+        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        fondo=PhotoImage(file="C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/Fondo.png")
+        logo=PhotoImage(file="C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/logo.png")
+        op_1=btn_resultado("Puntas de las alas blancas, peso corporal +/-36g y antebrazo de 48-54mm", comand, "Desmodus youngii", "C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/m.png")
+        op_2=btn_cambio("Puntas de las alas no blancas", comand, preg_murc_55)
+        volver=btn_cambio("Volver", comand, preg_murc_53)
+        volver.configure(width=10, height=1)
+        self.create_image(0,0, anchor="nw", image=fondo)
+        self.create_image(500, 20, anchor="n", image=logo)
+        self.create_text(500, 180, text="Selecciona la opción más acertada:", font=font_1, justify=tk.CENTER, width=900)
+        self.create_window(250, 215, anchor="n", window=op_1)
+        self.create_window(750, 215, anchor="n", window=op_2)
+        self.create_window(10, 10, window=volver, anchor="nw")
+        self.fondo_ref=fondo
+        self.logo_ref=logo
+
+class preg_murc_55 (Canvas):
+    def __init__(self, comand):
+        Canvas.__init__(self)
+        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        fondo=PhotoImage(file="C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/Fondo.png")
+        logo=PhotoImage(file="C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/logo.png")
+        op_1=btn_resultado("Miembro metacarpal del pulgar muy elongado, orejas de tamaño mediano y redondeadas, calcar (o calcáneo) aparentemente ausente, extremidades posteriores con pelos muy cortos, partes inferiores del cuerpo blanquizcas, peso corporal +/-34g y antebrazo de 53-65mm", comand, "Desmodus rotundus", "C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/m.png")
+        op_2=btn_resultado("Miembro metacarpal del pugar corto, orejas cortas y cuadradas, calcar (o calcáneo) notable, extremidades posteriores densamente peludas, partes inferiores del cuerpo gris chocolate, peso corporal +/-25g y antebrazo de 49-56mm", comand, "Diphylla ecaudata", "C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/m.png")
+        volver=btn_cambio("Volver", comand, preg_murc_54)
+        volver.configure(width=10, height=1)
+        self.create_image(0,0, anchor="nw", image=fondo)
+        self.create_image(500, 20, anchor="n", image=logo)
+        self.create_text(500, 180, text="Seleccione la opción más acertada:", font=font_1, justify=tk.CENTER, width=900)
+        self.create_window(250, 215, anchor="n", window=op_1)
+        self.create_window(750, 215, anchor="n", window=op_2)
+        self.create_window(10, 10, window=volver, anchor="nw")
+        self.fondo_ref=fondo
+        self.logo_ref=logo
+
+class preg_murc_56 (Canvas):
+    def __init__(self, comand):
+        Canvas.__init__(self)
+        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        fondo=PhotoImage(file="C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/Fondo.png")
+        logo=PhotoImage(file="C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/logo.png")
+        op_1=btn_cambio("Se extiende hasta o más allá del margen de la membrana interfemoral (MI)", comand, preg_murc_57)
+        op_2=btn_cambio("No llega gasta el margen de la membrana interfemoral (MI)", comand, preg_murc_82)
+        volver=btn_cambio("Volver", comand, preg_murc_52)
+        volver.configure(width=10, height=1)
+        self.create_image(0,0, anchor="nw", image=fondo)
+        self.create_image(500, 20, anchor="n", image=logo)
+        self.create_text(500, 180, text="La cola:", font=font_1, justify=tk.CENTER, width=900)
+        self.create_window(250, 215, anchor="n", window=op_1)
+        self.create_window(750, 215, anchor="n", window=op_2)
+        self.create_window(10, 10, window=volver, anchor="nw")
+        self.fondo_ref=fondo
+        self.logo_ref=logo
+
+class preg_murc_57 (Canvas):
+    def __init__(self, comand):
+        Canvas.__init__(self)
+        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        fondo=PhotoImage(file="C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/Fondo.png")
+        logo=PhotoImage(file="C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/logo.png")
+        op_1=btn_cambio("Hasta el margen de la membrana interfemoral (MI) o se extiende solamente una o dos vértebras más allá", comand, preg_murc_58)
+        op_2=btn_cambio("Mucho más allá del margen de la membrana interfemoral (MI)", comand, preg_murc_69)
+        volver=btn_cambio("Volver", comand, preg_murc_56)
+        volver.configure(width=10, height=1)
+        self.create_image(0,0, anchor="nw", image=fondo)
+        self.create_image(500, 20, anchor="n", image=logo)
+        self.create_text(500, 180, text="La cola se extiende:", font=font_1, justify=tk.CENTER, width=900)
+        self.create_window(250, 215, anchor="n", window=op_1)
+        self.create_window(750, 215, anchor="n", window=op_2)
+        self.create_window(10, 10, window=volver, anchor="nw")
+        self.fondo_ref=fondo
+        self.logo_ref=logo
+
+class preg_murc_58 (Canvas):
+    def __init__(self, comand):
+        Canvas.__init__(self)
+        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        fondo=PhotoImage(file="C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/Fondo.png")
+        logo=PhotoImage(file="C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/logo.png")
+        op_1=btn_cambio("Extensivamente peluda", comand, preg_murc_59)
+        op_2=btn_cambio("Casi desnuda", comand, preg_murc_62)
+        volver=btn_cambio("Volver", comand, preg_murc_57)
+        volver.configure(width=10, height=1)
+        self.create_image(0,0, anchor="nw", image=fondo)
+        self.create_image(500, 20, anchor="n", image=logo)
+        self.create_text(500, 180, text="Membrana interfemoral (MI):", font=font_1, justify=tk.CENTER, width=900)
+        self.create_window(250, 215, anchor="n", window=op_1)
+        self.create_window(750, 215, anchor="n", window=op_2)
+        self.create_window(10, 10, window=volver, anchor="nw")
+        self.fondo_ref=fondo
+        self.logo_ref=logo
+
+class preg_murc_59 (Canvas):
+    def __init__(self, comand):
+        Canvas.__init__(self)
+        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        fondo=PhotoImage(file="C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/Fondo.png")
+        logo=PhotoImage(file="C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/logo.png")
+        op_1=btn_resultado("De color amarillo, alas negras, peso corporal +/-11g y antebrazo de 43-47mm", comand, "Lasiurus ega", "C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/m.png")
+        op_2=btn_cambio("De color rojizo", comand, preg_murc_60)
+        volver=btn_cambio("Volver", comand, preg_murc_58)
+        volver.configure(width=10, height=1)
+        self.create_image(0,0, anchor="nw", image=fondo)
+        self.create_image(500, 20, anchor="n", image=logo)
+        self.create_text(500, 180, text="Selecciona la opción más acertada:", font=font_1, justify=tk.CENTER, width=900)
+        self.create_window(250, 215, anchor="n", window=op_1)
+        self.create_window(750, 215, anchor="n", window=op_2)
+        self.create_window(10, 10, window=volver, anchor="nw")
+        self.fondo_ref=fondo
+        self.logo_ref=logo
+
+class preg_murc_60 (Canvas):
+    def __init__(self, comand):
+        Canvas.__init__(self)
+        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        fondo=PhotoImage(file="C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/Fondo.png")
+        logo=PhotoImage(file="C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/logo.png")
+        op_1=btn_resultado("Dorso y partes inferiores del cuerpo rojos, peso corporal +/-20g y antebrazo +/-50mm", comand, "Lasiurus egregius", "C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/m.png")
+        op_2=btn_cambio("Partes inferiores del cuerpo de color amarillo o negruzco", comand, preg_murc_61)
+        volver=btn_cambio("Volver", comand, preg_murc_59)
+        volver.configure(width=10, height=1)
+        self.create_image(0,0, anchor="nw", image=fondo)
+        self.create_image(500, 20, anchor="n", image=logo)
+        self.create_text(500, 180, text="Selecciona la opción más acertada:", font=font_1, justify=tk.CENTER, width=900)
+        self.create_window(250, 215, anchor="n", window=op_1)
+        self.create_window(750, 215, anchor="n", window=op_2)
+        self.create_window(10, 10, window=volver, anchor="nw")
+        self.fondo_ref=fondo
+        self.logo_ref=logo
+
+class preg_murc_61 (Canvas):
+    def __init__(self, comand):
+        Canvas.__init__(self)
+        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        fondo=PhotoImage(file="C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/Fondo.png")
+        logo=PhotoImage(file="C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/logo.png")
+        op_1=btn_resultado("Partes inferiores del cuerpo amarillas, dorso rojizo-naranja, banda mediana de los pelos dorsales es pálida y ancha, peso corporal +/-8g y antebrazo de 38-42mm", comand, "Lasiurus blossevillii", "C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/m.png")
+        op_2=btn_resultado("Partes inferiores del cuerpo negruzcas, dorso marrón, banda mediana de los pelos dorsales es pálida y angostas, peso corporal +/-13g y antebrazo de 43-46mm", comand, "Lasiurus castaneus", "C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/m.png")
+        volver=btn_cambio("Volver", comand, preg_murc_60)
+        volver.configure(width=10, height=1)
+        self.create_image(0,0, anchor="nw", image=fondo)
+        self.create_image(500, 20, anchor="n", image=logo)
+        self.create_text(500, 180, text="Seleccione la opción más acertada:", font=font_1, justify=tk.CENTER, width=900)
+        self.create_window(250, 215, anchor="n", window=op_1)
+        self.create_window(750, 215, anchor="n", window=op_2)
+        self.create_window(10, 10, window=volver, anchor="nw")
+        self.fondo_ref=fondo
+        self.logo_ref=logo
+
+class preg_murc_62 (Canvas):
+    def __init__(self, comand):
+        Canvas.__init__(self)
+        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        fondo=PhotoImage(file="C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/Fondo.png")
+        logo=PhotoImage(file="C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/logo.png")
+        op_1=btn_resultado("Piernas muy largas, membrana del ala muy grande y conectada muy arriba en la tibia, peso corporal +/-6g y antebrazo de 36-39mm", comand, "Natalus stramineus", "C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/m.png")
+        op_2=btn_cambio("Piernas cortas, membrana del ala conectada al lado del pie", comand, preg_murc_63)
+        volver=btn_cambio("Volver", comand, preg_murc_58)
+        volver.configure(width=10, height=1)
+        self.create_image(0,0, anchor="nw", image=fondo)
+        self.create_image(500, 20, anchor="n", image=logo)
+        self.create_text(500, 180, text="Selecciona la opción más acertada:", font=font_1, justify=tk.CENTER, width=900)
+        self.create_window(250, 215, anchor="n", window=op_1)
+        self.create_window(750, 215, anchor="n", window=op_2)
+        self.create_window(10, 10, window=volver, anchor="nw")
+        self.fondo_ref=fondo
+        self.logo_ref=logo
+
+class preg_murc_63 (Canvas):
+    def __init__(self, comand):
+        Canvas.__init__(self)
+        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        fondo=PhotoImage(file="C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/Fondo.png")
+        logo=PhotoImage(file="C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/logo.png")
+        op_1=btn_cambio("Adyacente al canino", comand, preg_murc_64)
+        op_2=btn_cambio("Separado del canino por dientes pequeños y bajos", comand, preg_murc_67)
+        volver=btn_cambio("Volver", comand, preg_murc_62)
+        volver.configure(width=10, height=1)
+        self.create_image(0,0, anchor="nw", image=fondo)
+        self.create_image(500, 20, anchor="n", image=logo)
+        self.create_text(500, 180, text="El primer diente post-canino alto en la parte superior está:", font=font_1, justify=tk.CENTER, width=900)
+        self.create_window(250, 215, anchor="n", window=op_1)
+        self.create_window(750, 215, anchor="n", window=op_2)
+        self.create_window(10, 10, window=volver, anchor="nw")
+        self.fondo_ref=fondo
+        self.logo_ref=logo
+
+class preg_murc_64 (Canvas):
+    def __init__(self, comand):
+        Canvas.__init__(self)
+        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        fondo=PhotoImage(file="C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/Fondo.png")
+        logo=PhotoImage(file="C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/logo.png")
+        op_1=btn_resultado("Bases del pelo dorsal pálido, amarillo, amarillo oscuro, peso corporal +/-5g y antebrazo de 27-31mm", comand, "Rhogeessa tumida", "C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/m.png")
+        op_2=btn_cambio("Bases del pelo dorsal fusco oscuro", comand, preg_murc_65)
+        volver=btn_cambio("Volver", comand, preg_murc_63)
+        volver.configure(width=10, height=1)
+        self.create_image(0,0, anchor="nw", image=fondo)
+        self.create_image(500, 20, anchor="n", image=logo)
+        self.create_text(500, 180, text="Selecciona la opción más acertada:", font=font_1, justify=tk.CENTER, width=900)
+        self.create_window(250, 215, anchor="n", window=op_1)
+        self.create_window(750, 215, anchor="n", window=op_2)
+        self.create_window(10, 10, window=volver, anchor="nw")
+        self.fondo_ref=fondo
+        self.logo_ref=logo
+
+class preg_murc_65 (Canvas):
+    def __init__(self, comand):
+        Canvas.__init__(self)
+        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        fondo=PhotoImage(file="C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/Fondo.png")
+        logo=PhotoImage(file="C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/logo.png")
+        op_1=btn_resultado("Pequeño, pelo corto, peso corporal +/-7g y antebrazo de 37-43mm", comand, "Eptesicus furinalis", "C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/m.png")
+        op_2=btn_cambio("Tamaño mediano a grande, pelo largo, antebrazo +40mm", comand, preg_murc_66)
+        volver=btn_cambio("Volver", comand, preg_murc_64)
+        volver.configure(width=10, height=1)
+        self.create_image(0,0, anchor="nw", image=fondo)
+        self.create_image(500, 20, anchor="n", image=logo)
+        self.create_text(500, 180, text="Selecciona la opción más acertada:", font=font_1, justify=tk.CENTER, width=900)
+        self.create_window(250, 215, anchor="n", window=op_1)
+        self.create_window(750, 215, anchor="n", window=op_2)
+        self.create_window(10, 10, window=volver, anchor="nw")
+        self.fondo_ref=fondo
+        self.logo_ref=logo
+
+class preg_murc_66 (Canvas):
+    def __init__(self, comand):
+        Canvas.__init__(self)
+        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        fondo=PhotoImage(file="C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/Fondo.png")
+        logo=PhotoImage(file="C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/logo.png")
+        op_1=btn_resultado("Tamaño mediano, negruzco, peso corporal +/-10g y antebrazo de 42-47mm", comand, "Eptesicus brasiliensis", "C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/m.png")
+        op_2=btn_resultado("Grande, de color chocolate oscuro, peso corporal +/-13g y antebrazo de 46-54mm", comand, "Eptesicus fuscus", "C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/m.png")
+        volver=btn_cambio("Volver", comand, preg_murc_60)
+        volver.configure(width=10, height=1)
+        self.create_image(0,0, anchor="nw", image=fondo)
+        self.create_image(500, 20, anchor="n", image=logo)
+        self.create_text(500, 180, text="Seleccione la opción más acertada:", font=font_1, justify=tk.CENTER, width=900)
+        self.create_window(250, 215, anchor="n", window=op_1)
+        self.create_window(750, 215, anchor="n", window=op_2)
+        self.create_window(10, 10, window=volver, anchor="nw")
+        self.fondo_ref=fondo
+        self.logo_ref=logo
+
+class preg_murc_67 (Canvas):
+    def __init__(self, comand):
+        Canvas.__init__(self)
+        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        fondo=PhotoImage(file="C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/Fondo.png")
+        logo=PhotoImage(file="C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/logo.png")
+        op_1=btn_resultado("Partes inferiores del cuerpo blanquizcas, dorso negruzco con puntas pálidas, pies más grandes, peso corporal +/-7g y antebrazo de 33-38mm", comand, "Myotis albescens", "C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/m.png")
+        op_2=btn_cambio("Partes inferiores del cuerpo amarillas o chocolates, dorso sin puntas pálidas, pies pequeños", comand, preg_murc_68)
+        volver=btn_cambio("Volver", comand, preg_murc_63)
+        volver.configure(width=10, height=1)
+        self.create_image(0,0, anchor="nw", image=fondo)
+        self.create_image(500, 20, anchor="n", image=logo)
+        self.create_text(500, 180, text="Selecciona la opción más acertada:", font=font_1, justify=tk.CENTER, width=900)
+        self.create_window(250, 215, anchor="n", window=op_1)
+        self.create_window(750, 215, anchor="n", window=op_2)
+        self.create_window(10, 10, window=volver, anchor="nw")
+        self.fondo_ref=fondo
+        self.logo_ref=logo
+
+class preg_murc_68 (Canvas):
+    def __init__(self, comand):
+        Canvas.__init__(self)
+        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        fondo=PhotoImage(file="C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/Fondo.png")
+        logo=PhotoImage(file="C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/logo.png")
+        op_1=btn_resultado("Pelo dorsal lanoso, peso corporal +/-5g y antebrazo de 32-38mm", comand, "Myotis riparius", "C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/m.png")
+        op_2=btn_resultado("Pelo dorsal liso, peso corporal +/-4g y antebrazo de 33-38mm", comand, "Myotis nigricans", "C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/m.png")
+        volver=btn_cambio("Volver", comand, preg_murc_67)
+        volver.configure(width=10, height=1)
+        self.create_image(0,0, anchor="nw", image=fondo)
+        self.create_image(500, 20, anchor="n", image=logo)
+        self.create_text(500, 180, text="Seleccione la opción más acertada:", font=font_1, justify=tk.CENTER, width=900)
+        self.create_window(250, 215, anchor="n", window=op_1)
+        self.create_window(750, 215, anchor="n", window=op_2)
+        self.create_window(10, 10, window=volver, anchor="nw")
+        self.fondo_ref=fondo
+        self.logo_ref=logo
+
+class preg_murc_69 (Canvas):
+    def __init__(self, comand):
+        Canvas.__init__(self)
+        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        fondo=PhotoImage(file="C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/Fondo.png")
+        logo=PhotoImage(file="C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/logo.png")
+        op_1=btn_cambio("Presentes", comand, preg_murc_70)
+        op_2=btn_cambio("Ausentes", comand, preg_murc_71)
+        volver=btn_cambio("Volver", comand, preg_murc_57)
+        volver.configure(width=10, height=1)
+        self.create_image(0,0, anchor="nw", image=fondo)
+        self.create_image(500, 20, anchor="n", image=logo)
+        self.create_text(500, 180, text="Discos de succión en el pulgar y los pies:", font=font_1, justify=tk.CENTER, width=900)
+        self.create_window(250, 215, anchor="n", window=op_1)
+        self.create_window(750, 215, anchor="n", window=op_2)
+        self.create_window(10, 10, window=volver, anchor="nw")
+        self.fondo_ref=fondo
+        self.logo_ref=logo
+
+class preg_murc_70 (Canvas):
+    def __init__(self, comand):
+        Canvas.__init__(self)
+        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        fondo=PhotoImage(file="C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/Fondo.png")
+        logo=PhotoImage(file="C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/logo.png")
+        op_1=btn_resultado("Partes inferiores del cuerpo blancas o amarillas pálidas, rabo se extiende 5-8mm más allá de la membrana interfemoral (MI), membrana interfemoral (MI) casi desnuda, calcar (o calcáneo) normalmente con dos proyecciones membranosas extendiendo hasta el margen posterolateral de la membrana interfemoral (MI), peso corporal +/-4g y antebrazo de 34-38mm", comand, "Thyroptera tricolor", "C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/m.png")
+        op_2=btn_resultado("Partes inferiores del cuerpo chocolates o naranja-chocolates, rabo se extiende 2-4mm más allá de la membrana interfemoral (MI), membrana interfemoral (MI) con pelos largos (4mm) escasamente distribuidos, pelos finos, calcar (o calcáneo) con una proyección membranosa extendiendo hasta el margen posterolateral de la membrana interfemoral (MI), peso corporal +/-3g y antebrazo de 30-35mm", comand, "Thyroptera discifera", "C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/m.png")
+        volver=btn_cambio("Volver", comand, preg_murc_69)
+        volver.configure(width=10, height=1)
+        self.create_image(0,0, anchor="nw", image=fondo)
+        self.create_image(500, 20, anchor="n", image=logo)
+        self.create_text(500, 180, text="Seleccione la opción más acertada:", font=font_1, justify=tk.CENTER, width=900)
+        self.create_window(250, 215, anchor="n", window=op_1)
+        self.create_window(750, 215, anchor="n", window=op_2)
+        self.create_window(10, 10, window=volver, anchor="nw")
+        self.fondo_ref=fondo
+        self.logo_ref=logo
+
+class preg_murc_71 (Canvas):
+    def __init__(self, comand):
+        Canvas.__init__(self)
+        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        fondo=PhotoImage(file="C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/Fondo.png")
+        logo=PhotoImage(file="C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/logo.png")
+        op_1=btn_cambio("Petiolado (casi circular, pellizcado en la base)", comand, preg_murc_72)
+        op_2=btn_cambio("Más ancho en la base", comand, preg_murc_76)
+        volver=btn_cambio("Volver", comand, preg_murc_69)
+        volver.configure(width=10, height=1)
+        self.create_image(0,0, anchor="nw", image=fondo)
+        self.create_image(500, 20, anchor="n", image=logo)
+        self.create_text(500, 180, text="Antitragus:", font=font_1, justify=tk.CENTER, width=900)
+        self.create_window(250, 215, anchor="n", window=op_1)
+        self.create_window(750, 215, anchor="n", window=op_2)
+        self.create_window(10, 10, window=volver, anchor="nw")
+        self.fondo_ref=fondo
+        self.logo_ref=logo
+
+class preg_murc_72 (Canvas):
+    def __init__(self, comand):
+        Canvas.__init__(self)
+        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        fondo=PhotoImage(file="C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/Fondo.png")
+        logo=PhotoImage(file="C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/logo.png")
+        op_1=btn_cambio("Pelos en cadera de 3-6mm y antebrazo +/-50mm", comand, preg_murc_73)
+        op_2=btn_cambio("Pelos en cadera de 1-2mm y antebrazo -45mm", comand, preg_murc_75)
+        volver=btn_cambio("Volver", comand, preg_murc_71)
+        volver.configure(width=10, height=1)
+        self.create_image(0,0, anchor="nw", image=fondo)
+        self.create_image(500, 20, anchor="n", image=logo)
+        self.create_text(500, 180, text="Seleccione la opción más acertada:", font=font_1, justify=tk.CENTER, width=900)
+        self.create_window(250, 215, anchor="n", window=op_1)
+        self.create_window(750, 215, anchor="n", window=op_2)
+        self.create_window(10, 10, window=volver, anchor="nw")
+        self.fondo_ref=fondo
+        self.logo_ref=logo
+
+class preg_murc_73 (Canvas):
+    def __init__(self, comand):
+        Canvas.__init__(self)
+        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        fondo=PhotoImage(file="C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/Fondo.png")
+        logo=PhotoImage(file="C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/logo.png")
+        op_1=btn_resultado("Antebrazo desnudo, incisivos interiores superiores sobresalientes, peso corporal +/-21g y antebrazo de 48-56mm", comand, "Promops centralis", "C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/m.png")
+        op_2=btn_cambio("Antebrazo peludo, incisivos interiores superiores no sobresalen", comand, preg_murc_74)
+        volver=btn_cambio("Volver", comand, preg_murc_72)
+        volver.configure(width=10, height=1)
+        self.create_image(0,0, anchor="nw", image=fondo)
+        self.create_image(500, 20, anchor="n", image=logo)
+        self.create_text(500, 180, text="Selecciona la opción más acertada:", font=font_1, justify=tk.CENTER, width=900)
+        self.create_window(250, 215, anchor="n", window=op_1)
+        self.create_window(750, 215, anchor="n", window=op_2)
+        self.create_window(10, 10, window=volver, anchor="nw")
+        self.fondo_ref=fondo
+        self.logo_ref=logo
+
+class preg_murc_74 (Canvas):
+    def __init__(self, comand):
+        Canvas.__init__(self)
+        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        fondo=PhotoImage(file="C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/Fondo.png")
+        logo=PhotoImage(file="C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/logo.png")
+        op_1=btn_resultado("Pelos dorsales con bases de color blanco o gris contrastante, peso corporal +/-27g y antebrazo de 45-52mm", comand, "Molossus sinaloae", "C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/m.png")
+        op_2=btn_resultado("Pelos dorsales con poco contraste entre las puntas y las bases, peso corporal +/-32g y antebrazo de 46-51mm", comand, "Molossus ater", "C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/m.png")
+        volver=btn_cambio("Volver", comand, preg_murc_73)
+        volver.configure(width=10, height=1)
+        self.create_image(0,0, anchor="nw", image=fondo)
+        self.create_image(500, 20, anchor="n", image=logo)
+        self.create_text(500, 180, text="Seleccione la opción más acertada:", font=font_1, justify=tk.CENTER, width=900)
+        self.create_window(250, 215, anchor="n", window=op_1)
+        self.create_window(750, 215, anchor="n", window=op_2)
+        self.create_window(10, 10, window=volver, anchor="nw")
+        self.fondo_ref=fondo
+        self.logo_ref=logo
+
+class preg_murc_75 (Canvas):
+    def __init__(self, comand):
+        Canvas.__init__(self)
+        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        fondo=PhotoImage(file="C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/Fondo.png")
+        logo=PhotoImage(file="C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/logo.png")
+        op_1=btn_resultado("Pelo +/-3mm en el centro de la espalda, banda basal de los pelos dorsales es pálida, peso corporal +/-12g y antebrazo de 36-40mm", comand, "Molossus molossus", "C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/m.png")
+        op_2=btn_resultado("Pelo +/-2mm en el centro de la espalda, poco o ningún contraste entre las puntas y las bases de los pelos dorsales, peso corporal +/-22g y antebrazo de 38-43mm", comand, "Molossus bondae", "C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/m.png")
+        volver=btn_cambio("Volver", comand, preg_murc_72)
+        volver.configure(width=10, height=1)
+        self.create_image(0,0, anchor="nw", image=fondo)
+        self.create_image(500, 20, anchor="n", image=logo)
+        self.create_text(500, 180, text="Seleccione la opción más acertada:", font=font_1, justify=tk.CENTER, width=900)
+        self.create_window(250, 215, anchor="n", window=op_1)
+        self.create_window(750, 215, anchor="n", window=op_2)
+        self.create_window(10, 10, window=volver, anchor="nw")
+        self.fondo_ref=fondo
+        self.logo_ref=logo
+
+class preg_murc_76 (Canvas):
+    def __init__(self, comand):
+        Canvas.__init__(self)
+        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        fondo=PhotoImage(file="C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/Fondo.png")
+        logo=PhotoImage(file="C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/logo.png")
+        op_1=btn_cambio("Orejas grandes, conectadas en la frente, hocico no hinchado e inflado", comand, preg_murc_77)
+        op_2=btn_cambio("Orejas de tamaño moderado, no conectadas en la frente, hocico hinchado e inflado", comand, preg_murc_81)
+        volver=btn_cambio("Volver", comand, preg_murc_71)
+        volver.configure(width=10, height=1)
+        self.create_image(0,0, anchor="nw", image=fondo)
+        self.create_image(500, 20, anchor="n", image=logo)
+        self.create_text(500, 180, text="Seleccione la opción más acertada:", font=font_1, justify=tk.CENTER, width=900)
+        self.create_window(250, 215, anchor="n", window=op_1)
+        self.create_window(750, 215, anchor="n", window=op_2)
+        self.create_window(10, 10, window=volver, anchor="nw")
+        self.fondo_ref=fondo
+        self.logo_ref=logo
+
+class preg_murc_77 (Canvas):
+    def __init__(self, comand):
+        Canvas.__init__(self)
+        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        fondo=PhotoImage(file="C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/Fondo.png")
+        logo=PhotoImage(file="C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/logo.png")
+        op_1=btn_resultado("Labios superiores grandes, sueltos y muy arrugados, peso corporal +/-10g y antebrazo de 36-46mm", comand, "Tadarida brasiliensis", "C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/m.png")
+        op_2=btn_cambio("Labios superiores normales", comand, preg_murc_78)
+        volver=btn_cambio("Volver", comand, preg_murc_76)
+        volver.configure(width=10, height=1)
+        self.create_image(0,0, anchor="nw", image=fondo)
+        self.create_image(500, 20, anchor="n", image=logo)
+        self.create_text(500, 180, text="Selecciona la opción más acertada:", font=font_1, justify=tk.CENTER, width=900)
+        self.create_window(250, 215, anchor="n", window=op_1)
+        self.create_window(750, 215, anchor="n", window=op_2)
+        self.create_window(10, 10, window=volver, anchor="nw")
+        self.fondo_ref=fondo
+        self.logo_ref=logo
+
+class preg_murc_78 (Canvas):
+    def __init__(self, comand):
+        Canvas.__init__(self)
+        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        fondo=PhotoImage(file="C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/Fondo.png")
+        logo=PhotoImage(file="C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/logo.png")
+        op_1=btn_cambio("+50mm", comand, preg_murc_79)
+        op_2=btn_cambio("-40mm", comand, preg_murc_80)
+        volver=btn_cambio("Volver", comand, preg_murc_77)
+        volver.configure(width=10, height=1)
+        self.create_image(0,0, anchor="nw", image=fondo)
+        self.create_image(500, 20, anchor="n", image=logo)
+        self.create_text(500, 180, text="Antebrazo:", font=font_1, justify=tk.CENTER, width=900)
+        self.create_window(250, 215, anchor="n", window=op_1)
+        self.create_window(750, 215, anchor="n", window=op_2)
+        self.create_window(10, 10, window=volver, anchor="nw")
+        self.fondo_ref=fondo
+        self.logo_ref=logo
+
+class preg_murc_79 (Canvas):
+    def __init__(self, comand):
+        Canvas.__init__(self)
+        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        fondo=PhotoImage(file="C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/Fondo.png")
+        logo=PhotoImage(file="C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/logo.png")
+        op_1=btn_resultado("Tragus relativamente pequeño, agudo, pliegue anterior basal de la oreja -15mm, color en el dorso negruzco, peso corporal +/-33g y antebrazo de 66-74mm", comand, "Eumops auripendulus", "C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/m.png")
+        op_2=btn_resultado("Tragus relativamente grande, truncado, pliegue anterior basal de la oreja +15mm, color en el dorso gris chocolate, peso corporal +/-38g y antebrazo de 55-63mm", comand, "Eumops glaucinus", "C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/m.png")
+        volver=btn_cambio("Volver", comand, preg_murc_78)
+        volver.configure(width=10, height=1)
+        self.create_image(0,0, anchor="nw", image=fondo)
+        self.create_image(500, 20, anchor="n", image=logo)
+        self.create_text(500, 180, text="Seleccione la opción más acertada:", font=font_1, justify=tk.CENTER, width=900)
+        self.create_window(250, 215, anchor="n", window=op_1)
+        self.create_window(750, 215, anchor="n", window=op_2)
+        self.create_window(10, 10, window=volver, anchor="nw")
+        self.fondo_ref=fondo
+        self.logo_ref=logo
+
+class preg_murc_80 (Canvas):
+    def __init__(self, comand):
+        Canvas.__init__(self)
+        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        fondo=PhotoImage(file="C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/Fondo.png")
+        logo=PhotoImage(file="C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/logo.png")
+        op_1=btn_resultado("Pelo dorsal corto (2mm) y terciopelado, peso corporal +/-18g y antebrazo de 36-42mm", comand, "Eumops hansae", "C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/m.png")
+        op_2=btn_resultado("Pelo dorsal largo (6mm) y suelto, peso corporal +/-10g y antebrazo de 38-49mm", comand, "Eumops bonariensis", "C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/m.png")
+        volver=btn_cambio("Volver", comand, preg_murc_78)
+        volver.configure(width=10, height=1)
+        self.create_image(0,0, anchor="nw", image=fondo)
+        self.create_image(500, 20, anchor="n", image=logo)
+        self.create_text(500, 180, text="Seleccione la opción más acertada:", font=font_1, justify=tk.CENTER, width=900)
+        self.create_window(250, 215, anchor="n", window=op_1)
+        self.create_window(750, 215, anchor="n", window=op_2)
+        self.create_window(10, 10, window=volver, anchor="nw")
+        self.fondo_ref=fondo
+        self.logo_ref=logo
+
+class preg_murc_81 (Canvas):
+    def __init__(self, comand):
+        Canvas.__init__(self)
+        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        fondo=PhotoImage(file="C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/Fondo.png")
+        logo=PhotoImage(file="C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/logo.png")
+        op_1=btn_resultado("Pequeño, pecho blanquizco, peso corporal +/-13g y antebrazo de 31-36mm", comand, "Molossops paranus", "C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/m.png")
+        op_2=btn_resultado("Grande, color del pecho no diferenciado, negruzco o chocolate, peso corporal +/-20g y antebrazo de 34-38mm", comand, "Molossops greenhalli", "C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/m.png")
+        volver=btn_cambio("Volver", comand, preg_murc_76)
+        volver.configure(width=10, height=1)
+        self.create_image(0,0, anchor="nw", image=fondo)
+        self.create_image(500, 20, anchor="n", image=logo)
+        self.create_text(500, 180, text="Seleccione la opción más acertada:", font=font_1, justify=tk.CENTER, width=900)
+        self.create_window(250, 215, anchor="n", window=op_1)
+        self.create_window(750, 215, anchor="n", window=op_2)
+        self.create_window(10, 10, window=volver, anchor="nw")
+        self.fondo_ref=fondo
+        self.logo_ref=logo
+
+class preg_murc_82 (Canvas):
+    def __init__(self, comand):
+        Canvas.__init__(self)
+        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        fondo=PhotoImage(file="C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/Fondo.png")
+        logo=PhotoImage(file="C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/logo.png")
+        op_1=btn_resultado("De color blanco o blanquizco, membranas pálidas, peso corporal +/-16g y antebrazo de 64-66mm", comand, "Diclidurus albus", "C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/m.png")
+        op_2=btn_cambio("De color negruzco, chocolate o naranja, membranas negruzcas", comand, preg_murc_83)
+        volver=btn_cambio("Volver", comand, preg_murc_56)
+        volver.configure(width=10, height=1)
+        self.create_image(0,0, anchor="nw", image=fondo)
+        self.create_image(500, 20, anchor="n", image=logo)
+        self.create_text(500, 180, text="Selecciona la opción más acertada:", font=font_1, justify=tk.CENTER, width=900)
         self.create_window(250, 215, anchor="n", window=op_1)
         self.create_window(750, 215, anchor="n", window=op_2)
         self.create_window(10, 10, window=volver, anchor="nw")

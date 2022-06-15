@@ -1653,6 +1653,253 @@ class preg_murc_82 (Canvas):
         self.fondo_ref=fondo
         self.logo_ref=logo
 
+class preg_murc_83 (Canvas):
+    def __init__(self, comand):
+        Canvas.__init__(self)
+        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        fondo=PhotoImage(file="C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/Fondo.png")
+        logo=PhotoImage(file="C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/logo.png")
+        op_1=btn_cambio("Dos líneas blanquizcas", comand, preg_murc_84)
+        op_2=btn_cambio("Una o ninguna línea", comand, preg_murc_86)
+        volver=btn_cambio("Volver", comand, preg_murc_82)
+        volver.configure(width=10, height=1)
+        self.create_image(0,0, anchor="nw", image=fondo)
+        self.create_image(500, 20, anchor="n", image=logo)
+        self.create_text(500, 180, text="Líneas longitudinales en el dorso:", font=font_1, justify=tk.CENTER, width=900)
+        self.create_window(250, 215, anchor="n", window=op_1)
+        self.create_window(750, 215, anchor="n", window=op_2)
+        self.create_window(10, 10, window=volver, anchor="nw")
+        self.fondo_ref=fondo
+        self.logo_ref=logo
+
+class preg_murc_84 (Canvas):
+    def __init__(self, comand):
+        Canvas.__init__(self)
+        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        fondo=PhotoImage(file="C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/Fondo.png")
+        logo=PhotoImage(file="C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/logo.png")
+        op_1=btn_resultado("Grande, de color negruzco, con saco glandular, peso corporal +/-6g y antebrazo de 40-49mm", comand, "Saccopteryx bilineata", "C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/m.png")
+        op_2=btn_cambio("Pequeño, de color gris o chocolate y antebrazo -45mm", comand, preg_murc_85)
+        volver=btn_cambio("Volver", comand, preg_murc_83)
+        volver.configure(width=10, height=1)
+        self.create_image(0,0, anchor="nw", image=fondo)
+        self.create_image(500, 20, anchor="n", image=logo)
+        self.create_text(500, 180, text="Selecciona la opción más acertada:", font=font_1, justify=tk.CENTER, width=900)
+        self.create_window(250, 215, anchor="n", window=op_1)
+        self.create_window(750, 215, anchor="n", window=op_2)
+        self.create_window(10, 10, window=volver, anchor="nw")
+        self.fondo_ref=fondo
+        self.logo_ref=logo
+
+class preg_murc_85 (Canvas):
+    def __init__(self, comand):
+        Canvas.__init__(self)
+        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        fondo=PhotoImage(file="C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/Fondo.png")
+        logo=PhotoImage(file="C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/logo.png")
+        op_1=btn_resultado("Antebrazo desnudo, saco glandular en membrana antebrachial, peso corporal +/-4g y antebrazo de 36-43mm", comand, "Saccopteryx leptura", "C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/m.png")
+        op_2=btn_resultado("Antebrazo con mechones de pelo aislados, sin saco glandular en el ala, peso corporal +/-3g y antebrazo de 34-41mm", comand, "Rhynchonycteris naso", "C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/m.png")
+        volver=btn_cambio("Volver", comand, preg_murc_84)
+        volver.configure(width=10, height=1)
+        self.create_image(0,0, anchor="nw", image=fondo)
+        self.create_image(500, 20, anchor="n", image=logo)
+        self.create_text(500, 180, text="Seleccione la opción más acertada:", font=font_1, justify=tk.CENTER, width=900)
+        self.create_window(250, 215, anchor="n", window=op_1)
+        self.create_window(750, 215, anchor="n", window=op_2)
+        self.create_window(10, 10, window=volver, anchor="nw")
+        self.fondo_ref=fondo
+        self.logo_ref=logo
+
+class preg_murc_86 (Canvas):
+    def __init__(self, comand):
+        Canvas.__init__(self)
+        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        fondo=PhotoImage(file="C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/Fondo.png")
+        logo=PhotoImage(file="C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/logo.png")
+        op_1=btn_cambio("Con una línea mediana dorsal de color blanquizco o amarillo, labio leporino (hendido)", comand, preg_murc_87)
+        op_2=btn_cambio("Dorso sin líneas, labio superior normal", comand, preg_murc_88)
+        volver=btn_cambio("Volver", comand, preg_murc_83)
+        volver.configure(width=10, height=1)
+        self.create_image(0,0, anchor="nw", image=fondo)
+        self.create_image(500, 20, anchor="n", image=logo)
+        self.create_text(500, 180, text="Seleccione la opción más acertada:", font=font_1, justify=tk.CENTER, width=900)
+        self.create_window(250, 215, anchor="n", window=op_1)
+        self.create_window(750, 215, anchor="n", window=op_2)
+        self.create_window(10, 10, window=volver, anchor="nw")
+        self.fondo_ref=fondo
+        self.logo_ref=logo
+
+class preg_murc_87 (Canvas):
+    def __init__(self, comand):
+        Canvas.__init__(self)
+        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        fondo=PhotoImage(file="C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/Fondo.png")
+        logo=PhotoImage(file="C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/logo.png")
+        op_1=btn_resultado("Pequeño, pies posteriores de -21mm, garras no excesivamente grandes, peso corporal +/-30g y antebrazo de 55-59mm", comand, "Noctilio albiventris", "C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/m.png")
+        op_2=btn_resultado("Grande, pies posteriores excepcionalmente grandes (+25mm), garras excesivamente grandes, peso corporal +/-55g y antebrazo de 81-89mm", comand, "Noctilio leporinus", "C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/m.png")
+        volver=btn_cambio("Volver", comand, preg_murc_86)
+        volver.configure(width=10, height=1)
+        self.create_image(0,0, anchor="nw", image=fondo)
+        self.create_image(500, 20, anchor="n", image=logo)
+        self.create_text(500, 180, text="Seleccione la opción más acertada:", font=font_1, justify=tk.CENTER, width=900)
+        self.create_window(250, 215, anchor="n", window=op_1)
+        self.create_window(750, 215, anchor="n", window=op_2)
+        self.create_window(10, 10, window=volver, anchor="nw")
+        self.fondo_ref=fondo
+        self.logo_ref=logo
+
+class preg_murc_88 (Canvas):
+    def __init__(self, comand):
+        Canvas.__init__(self)
+        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        fondo=PhotoImage(file="C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/Fondo.png")
+        logo=PhotoImage(file="C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/logo.png")
+        op_1=btn_cambio("Saco en forma de bolsillo en membrana antebrachial en los machos", comand, preg_murc_89)
+        op_2=btn_cambio("Sin saco glandular en las alas", comand, preg_murc_91)
+        volver=btn_cambio("Volver", comand, preg_murc_86)
+        volver.configure(width=10, height=1)
+        self.create_image(0,0, anchor="nw", image=fondo)
+        self.create_image(500, 20, anchor="n", image=logo)
+        self.create_text(500, 180, text="Seleccione la opción más acertada:", font=font_1, justify=tk.CENTER, width=900)
+        self.create_window(250, 215, anchor="n", window=op_1)
+        self.create_window(750, 215, anchor="n", window=op_2)
+        self.create_window(10, 10, window=volver, anchor="nw")
+        self.fondo_ref=fondo
+        self.logo_ref=logo
+
+class preg_murc_89 (Canvas):
+    def __init__(self, comand):
+        Canvas.__init__(self)
+        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        fondo=PhotoImage(file="C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/Fondo.png")
+        logo=PhotoImage(file="C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/logo.png")
+        op_1=btn_resultado("Ala conectada cerca de la base de los dedos del pie, saco cerca de antebrazo, peso corporal +/-9g y antebrazo de 45-48mm", comand, "Cormura brevirostris", "C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/m.png")
+        op_2=btn_cambio("Ala conectada al tobillo, saco en el margen mediano o anterior de la membrana", comand, preg_murc_90)
+        volver=btn_cambio("Volver", comand, preg_murc_88)
+        volver.configure(width=10, height=1)
+        self.create_image(0,0, anchor="nw", image=fondo)
+        self.create_image(500, 20, anchor="n", image=logo)
+        self.create_text(500, 180, text="Selecciona la opción más acertada:", font=font_1, justify=tk.CENTER, width=900)
+        self.create_window(250, 215, anchor="n", window=op_1)
+        self.create_window(750, 215, anchor="n", window=op_2)
+        self.create_window(10, 10, window=volver, anchor="nw")
+        self.fondo_ref=fondo
+        self.logo_ref=logo
+
+class preg_murc_90 (Canvas):
+    def __init__(self, comand):
+        Canvas.__init__(self)
+        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        fondo=PhotoImage(file="C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/Fondo.png")
+        logo=PhotoImage(file="C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/logo.png")
+        op_1=btn_resultado("Grande, peso corporal +/-7g y antebrazo de 44-54mm", comand, "Peropteryx kappleri", "C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/m.png")
+        op_2=btn_resultado("Pequeño, peso corporal +/-5g y antebrazo de 37-44mm", comand, "Peropteryx microtis", "C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/m.png")
+        volver=btn_cambio("Volver", comand, preg_murc_89)
+        volver.configure(width=10, height=1)
+        self.create_image(0,0, anchor="nw", image=fondo)
+        self.create_image(500, 20, anchor="n", image=logo)
+        self.create_text(500, 180, text="Seleccione la opción más acertada:", font=font_1, justify=tk.CENTER, width=900)
+        self.create_window(250, 215, anchor="n", window=op_1)
+        self.create_window(750, 215, anchor="n", window=op_2)
+        self.create_window(10, 10, window=volver, anchor="nw")
+        self.fondo_ref=fondo
+        self.logo_ref=logo
+
+class preg_murc_91 (Canvas):
+    def __init__(self, comand):
+        Canvas.__init__(self)
+        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        fondo=PhotoImage(file="C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/Fondo.png")
+        logo=PhotoImage(file="C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/logo.png")
+        op_1=btn_resultado("Orejas cortas, redondeadas, formando un túnel, pelo gris, pulgares rojos, peso corporal +/-3g y antebrazo de 34-36mm", comand, "Furipterus horrens", "C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/m.png")
+        op_2=btn_cambio("Orejas de tamaño moderado, no forman un túnel, pelo chocolate, naranja o gris-chocolate, antebrazo +44mm", comand, preg_murc_92)
+        volver=btn_cambio("Volver", comand, preg_murc_88)
+        volver.configure(width=10, height=1)
+        self.create_image(0,0, anchor="nw", image=fondo)
+        self.create_image(500, 20, anchor="n", image=logo)
+        self.create_text(500, 180, text="Selecciona la opción más acertada:", font=font_1, justify=tk.CENTER, width=900)
+        self.create_window(250, 215, anchor="n", window=op_1)
+        self.create_window(750, 215, anchor="n", window=op_2)
+        self.create_window(10, 10, window=volver, anchor="nw")
+        self.fondo_ref=fondo
+        self.logo_ref=logo
+
+class preg_murc_92 (Canvas):
+    def __init__(self, comand):
+        Canvas.__init__(self)
+        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        fondo=PhotoImage(file="C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/Fondo.png")
+        logo=PhotoImage(file="C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/logo.png")
+        op_1=btn_resultado("Membranas de las alas conectadas cerca de los dedos del pie, pelo largo (9mm en la cadera) y tosco, peso corporal +/-5g y antebrazo de 42-45mm", comand, "Centronycteris maximiliani", "C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/m.png")
+        op_2=btn_cambio("Membranas de las alas conectadas a los tobillos o en la tibia, pelo corto (5mm en la cadera) y no tosco", comand, preg_murc_93)
+        volver=btn_cambio("Volver", comand, preg_murc_91)
+        volver.configure(width=10, height=1)
+        self.create_image(0,0, anchor="nw", image=fondo)
+        self.create_image(500, 20, anchor="n", image=logo)
+        self.create_text(500, 180, text="Selecciona la opción más acertada:", font=font_1, justify=tk.CENTER, width=900)
+        self.create_window(250, 215, anchor="n", window=op_1)
+        self.create_window(750, 215, anchor="n", window=op_2)
+        self.create_window(10, 10, window=volver, anchor="nw")
+        self.fondo_ref=fondo
+        self.logo_ref=logo
+
+class preg_murc_93 (Canvas):
+    def __init__(self, comand):
+        Canvas.__init__(self)
+        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        fondo=PhotoImage(file="C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/Fondo.png")
+        logo=PhotoImage(file="C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/logo.png")
+        op_1=btn_cambio("La espalda (en la línea mediana dorsal), dando la apariencia de una espalda desnuda", comand, preg_murc_94)
+        op_2=btn_cambio("Los lados del cuerpo, solamente un poco más arriba de lo normal", comand, preg_murc_95)
+        volver=btn_cambio("Volver", comand, preg_murc_92)
+        volver.configure(width=10, height=1)
+        self.create_image(0,0, anchor="nw", image=fondo)
+        self.create_image(500, 20, anchor="n", image=logo)
+        self.create_text(500, 180, text="Alas se conectan en:", font=font_1, justify=tk.CENTER, width=900)
+        self.create_window(250, 215, anchor="n", window=op_1)
+        self.create_window(750, 215, anchor="n", window=op_2)
+        self.create_window(10, 10, window=volver, anchor="nw")
+        self.fondo_ref=fondo
+        self.logo_ref=logo
+
+class preg_murc_94 (Canvas):
+    def __init__(self, comand):
+        Canvas.__init__(self)
+        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        fondo=PhotoImage(file="C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/Fondo.png")
+        logo=PhotoImage(file="C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/logo.png")
+        op_1=btn_resultado("Grande, platopatagio cubierto con muchos pelos cortos, peso corporal +/-15g y antebrazo de 49-56mm", comand, "Pteronotus gymnonotus", "C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/m.png")
+        op_2=btn_resultado("Pequeño, platopatagio escasa e irregularmente cubierto con pelos largos, peso corporal +/-7g y antebrazo de 40-50mm", comand, "Pteronotus davyi", "C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/m.png")
+        volver=btn_cambio("Volver", comand, preg_murc_93)
+        volver.configure(width=10, height=1)
+        self.create_image(0,0, anchor="nw", image=fondo)
+        self.create_image(500, 20, anchor="n", image=logo)
+        self.create_text(500, 180, text="Seleccione la opción más acertada:", font=font_1, justify=tk.CENTER, width=900)
+        self.create_window(250, 215, anchor="n", window=op_1)
+        self.create_window(750, 215, anchor="n", window=op_2)
+        self.create_window(10, 10, window=volver, anchor="nw")
+        self.fondo_ref=fondo
+        self.logo_ref=logo
+
+class preg_murc_95 (Canvas):
+    def __init__(self, comand):
+        Canvas.__init__(self)
+        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        fondo=PhotoImage(file="C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/Fondo.png")
+        logo=PhotoImage(file="C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/logo.png")
+        op_1=btn_resultado("Grande, peso corporal +/-23g y antebrazo de 49-65mm", comand, "Pteronotus parnellii", "C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/m.png")
+        op_2=btn_resultado("Pequeño, peso corporal +/-8g y antebrazo de 40-47mm", comand, "Pteronotus personatus", "C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/m.png")
+        volver=btn_cambio("Volver", comand, preg_murc_93)
+        volver.configure(width=10, height=1)
+        self.create_image(0,0, anchor="nw", image=fondo)
+        self.create_image(500, 20, anchor="n", image=logo)
+        self.create_text(500, 180, text="Seleccione la opción más acertada:", font=font_1, justify=tk.CENTER, width=900)
+        self.create_window(250, 215, anchor="n", window=op_1)
+        self.create_window(750, 215, anchor="n", window=op_2)
+        self.create_window(10, 10, window=volver, anchor="nw")
+        self.fondo_ref=fondo
+        self.logo_ref=logo
+
 #inicio del programa
 if __name__ == "__main__":
     app = CF()

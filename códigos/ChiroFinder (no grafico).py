@@ -1609,7 +1609,7 @@ def preg_murc_93():
         preg_murc_93()
 
 def preg_murc_94():
-    print("Alas se conectan en:")
+    print("Seleccione la opción más acertada:")
     print("1. Grande, platopatagio cubierto con muchos pelos cortos, peso corporal +/-15g y antebrazo de 49-56mm.")
     print("2. Pequeño, platopatagio escasa e irregularmente cubierto con pelos largos, peso corporal +/-7g y antebrazo de 40-50mm.")
     print("3. Volver.")
@@ -1627,7 +1627,7 @@ def preg_murc_94():
         preg_murc_94()
 
 def preg_murc_95():
-    print("Alas se conectan en:")
+    print("Seleccione la opción más acertada:")
     print("1. Grande, peso corporal +/-23g y antebrazo de 49-65mm.")
     print("2. Pequeño, peso corporal +/-8g y antebrazo de 40-47mm.")
     print("3. Volver.")

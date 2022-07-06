@@ -2,34 +2,29 @@ import tkinter as tk
 from tkinter import *
 import tkinter.font as Tkfont
 
-carac=[]
+caracteristicas=[]
 clases=[]
 especie_final=[]
 imagen_final=[]
+#paginas_web={"Macrophyllum macrophyllum": , "Lonchorhina aurita": }
 
 class btn_cambio (tk.Button):
-    def __init__(self, texto, caracteristica, clase, pestaña):
+    def __init__(self, texto, caracteristicasteristica, clase, pestaña):
         tk.Button.__init__(self)
         font=Tkfont.Font(family="Cascadia Code", size=15)
-        self.configure(text=texto, width=39, height=15, font=font, bg="White", wraplength=480, command=lambda:[carac.append(caracteristica), clases.append(clase), self.master.switch(pestaña)])
+        self.configure(text=texto, width=39, height=15, font=font, bg="#FCF9C6", activebackground="#FAF4B7", foreground="#654062", wraplength=480, command=lambda:[caracteristicas.append(caracteristicasteristica), clases.append(clase), self.master.switch(pestaña)])
 
 class btn_resultado (tk.Button):
     def __init__(self, texto, clase, especie, imagen):
         tk.Button.__init__(self)
         font=Tkfont.Font(family="Cascadia Code", size=15)
-        self.configure(text=texto, width=39, height=15, font=font, bg="White", wraplength=480, command=lambda:[carac.append(texto), clases.append(clase), especie_final.append(especie), imagen_final.append(imagen), self.master.switch(confirmacion)])
+        self.configure(text=texto, width=39, height=15, font=font, bg="#FCF9C6", activebackground="#FAF4B7", foreground="#654062", wraplength=480, command=lambda:[caracteristicas.append(texto), clases.append(clase), especie_final.append(especie), imagen_final.append(imagen), self.master.switch(confirmacion)])
 
 class normal_button (tk.Button):
     def __init__(self, texto, pestaña):
         tk.Button.__init__(self)
         font=Tkfont.Font(family="Cascadia Code", size=15)
-        self.configure(text=texto, width=39, height=15, font=font, bg="White", wraplength=480, command=lambda:self.master.switch(pestaña))
-
-class confirm_button (tk.Button):
-    def __init__(self, texto, pestaña):
-        tk.Button.__init__(self)
-        font=Tkfont.Font(family="Cascadia Code", size=18)
-        self.configure(text=texto, font=font, bg="White", wraplength=900, command=lambda:self.master.switch(pestaña))
+        self.configure(text=texto, width=39, height=15, font=font, bg="#FCF9C6", activebackground="#FAF4B7", foreground="#654062", wraplength=480, command=lambda:self.master.switch(pestaña))
 
 class CF(tk.Tk):
     def __init__(self): 
@@ -52,7 +47,7 @@ class CF(tk.Tk):
 class inicio (Canvas):
     def __init__(self, comand):
         Canvas.__init__(self)
-        del carac[:]
+        del caracteristicas[:]
         del clases[:]
         especie_final.clear()
         imagen_final.clear()
@@ -71,7 +66,7 @@ class inicio (Canvas):
 class créditos (Canvas):
     def __init__(self, comand):
         Canvas.__init__(self)
-        del carac[:]
+        del caracteristicas[:]
         del clases[:]
         especie_final.clear()
         imagen_final.clear()
@@ -101,8 +96,7 @@ class créditos (Canvas):
 class preg_murc_1 (Canvas):
     def __init__(self, comand):
         Canvas.__init__(self)
-        Canvas.__init__(self)
-        del carac[:]
+        del caracteristicas[:]
         del clases[:]
         especie_final.clear()
         imagen_final.clear()
@@ -126,12 +120,11 @@ class preg_murc_1 (Canvas):
 class preg_murc_2 (Canvas):
     def __init__(self, comand):
         Canvas.__init__(self)
-        del carac[1:]
+        del caracteristicas[1:]
         del clases[1:]
         especie_final.clear()
         imagen_final.clear()
         
-        Canvas.__init__(self)
         font_1=Tkfont.Font(family="Cascadia Code", size=18)
         fondo=PhotoImage(file="C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/Fondo.png")
         logo=PhotoImage(file="C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/logo.png")
@@ -151,7 +144,7 @@ class preg_murc_2 (Canvas):
 class preg_murc_3 (Canvas):
     def __init__(self, comand):
         Canvas.__init__(self)
-        del carac[2:]
+        del caracteristicas[2:]
         del clases[2:]
         especie_final.clear()
         imagen_final.clear()
@@ -175,7 +168,7 @@ class preg_murc_3 (Canvas):
 class preg_murc_4 (Canvas):
     def __init__(self, comand):
         Canvas.__init__(self)
-        del carac[3:]
+        del caracteristicas[3:]
         del clases[3:]
         especie_final.clear()
         imagen_final.clear()
@@ -199,7 +192,7 @@ class preg_murc_4 (Canvas):
 class preg_murc_5 (Canvas):
     def __init__(self, comand):
         Canvas.__init__(self)
-        del carac[3:]
+        del caracteristicas[3:]
         del clases[3:]
         especie_final.clear()
         imagen_final.clear()
@@ -223,7 +216,7 @@ class preg_murc_5 (Canvas):
 class preg_murc_6 (Canvas):
     def __init__(self, comand):
         Canvas.__init__(self)
-        del carac[4:]
+        del caracteristicas[4:]
         del clases[4:]
         especie_final.clear()
         imagen_final.clear()
@@ -247,7 +240,7 @@ class preg_murc_6 (Canvas):
 class preg_murc_7 (Canvas):
     def __init__(self, comand):
         Canvas.__init__(self)
-        del carac[5:]
+        del caracteristicas[5:]
         del clases[5:]
         especie_final.clear()
         imagen_final.clear()
@@ -271,7 +264,7 @@ class preg_murc_7 (Canvas):
 class preg_murc_8 (Canvas):
     def __init__(self, comand):
         Canvas.__init__(self)
-        del carac[6:]
+        del caracteristicas[6:]
         del clases[6:]
         especie_final.clear()
         imagen_final.clear()
@@ -295,7 +288,7 @@ class preg_murc_8 (Canvas):
 class preg_murc_9 (Canvas):
     def __init__(self, comand):
         Canvas.__init__(self)
-        del carac[7:]
+        del caracteristicas[7:]
         del clases[7:]
         especie_final.clear()
         imagen_final.clear()
@@ -319,7 +312,7 @@ class preg_murc_9 (Canvas):
 class preg_murc_10 (Canvas):
     def __init__(self, comand):
         Canvas.__init__(self)
-        del carac[8:]
+        del caracteristicas[8:]
         del clases[8:]
         especie_final.clear()
         imagen_final.clear()
@@ -349,7 +342,7 @@ class preg_murc_10 (Canvas):
 class preg_murc_11 (Canvas):
     def __init__(self, comand):
         Canvas.__init__(self)
-        del carac[6:]
+        del caracteristicas[6:]
         del clases[6:]
         especie_final.clear()
         imagen_final.clear()
@@ -373,7 +366,7 @@ class preg_murc_11 (Canvas):
 class preg_murc_12 (Canvas):
     def __init__(self, comand):
         Canvas.__init__(self)
-        del carac[7:]
+        del caracteristicas[7:]
         del clases[7:]
         especie_final.clear()
         imagen_final.clear()
@@ -397,7 +390,7 @@ class preg_murc_12 (Canvas):
 class preg_murc_13 (Canvas):
     def __init__(self, comand):
         Canvas.__init__(self)
-        del carac[8:]
+        del caracteristicas[8:]
         del clases[8:]
         especie_final.clear()
         imagen_final.clear()
@@ -421,7 +414,7 @@ class preg_murc_13 (Canvas):
 class preg_murc_14 (Canvas):
     def __init__(self, comand):
         Canvas.__init__(self)
-        del carac[9:]
+        del caracteristicas[9:]
         del clases[9:]
         especie_final.clear()
         imagen_final.clear()
@@ -445,7 +438,7 @@ class preg_murc_14 (Canvas):
 class preg_murc_15 (Canvas):
     def __init__(self, comand):
         Canvas.__init__(self)
-        del carac[4:]
+        del caracteristicas[4:]
         del clases[4:]
         especie_final.clear()
         imagen_final.clear()
@@ -469,7 +462,7 @@ class preg_murc_15 (Canvas):
 class preg_murc_16 (Canvas):
     def __init__(self, comand):
         Canvas.__init__(self)
-        del carac[5:]
+        del caracteristicas[5:]
         del clases[5:]
         especie_final.clear()
         imagen_final.clear()
@@ -493,7 +486,7 @@ class preg_murc_16 (Canvas):
 class preg_murc_17 (Canvas):
     def __init__(self, comand):
         Canvas.__init__(self)
-        del carac[6:]
+        del caracteristicas[6:]
         del clases[6:]
         especie_final.clear()
         imagen_final.clear()
@@ -517,7 +510,7 @@ class preg_murc_17 (Canvas):
 class preg_murc_18 (Canvas):
     def __init__(self, comand):
         Canvas.__init__(self)
-        del carac[7:]
+        del caracteristicas[7:]
         del clases[7:]
         especie_final.clear()
         imagen_final.clear()
@@ -541,7 +534,7 @@ class preg_murc_18 (Canvas):
 class preg_murc_19 (Canvas):
     def __init__(self, comand):
         Canvas.__init__(self)
-        del carac[5:]
+        del caracteristicas[5:]
         del clases[5:]
         especie_final.clear()
         imagen_final.clear()
@@ -565,7 +558,7 @@ class preg_murc_19 (Canvas):
 class preg_murc_20 (Canvas):
     def __init__(self, comand):
         Canvas.__init__(self)
-        del carac[6:]
+        del caracteristicas[6:]
         del clases[6:]
         especie_final.clear()
         imagen_final.clear()
@@ -589,7 +582,7 @@ class preg_murc_20 (Canvas):
 class preg_murc_21 (Canvas):
     def __init__(self, comand):
         Canvas.__init__(self)
-        del carac[7:]
+        del caracteristicas[7:]
         del clases[7:]
         especie_final.clear()
         imagen_final.clear()
@@ -613,7 +606,7 @@ class preg_murc_21 (Canvas):
 class preg_murc_22 (Canvas):
     def __init__(self, comand):
         Canvas.__init__(self)
-        del carac[8:]
+        del caracteristicas[8:]
         del clases[8:]
         especie_final.clear()
         imagen_final.clear()
@@ -637,7 +630,7 @@ class preg_murc_22 (Canvas):
 class preg_murc_23 (Canvas):
     def __init__(self, comand):
         Canvas.__init__(self)
-        del carac[8:]
+        del caracteristicas[8:]
         del clases[8:]
         especie_final.clear()
         imagen_final.clear()
@@ -661,7 +654,7 @@ class preg_murc_23 (Canvas):
 class preg_murc_24 (Canvas):
     def __init__(self, comand):
         Canvas.__init__(self)
-        del carac[7:]
+        del caracteristicas[7:]
         del clases[7:]
         especie_final.clear()
         imagen_final.clear()
@@ -685,7 +678,7 @@ class preg_murc_24 (Canvas):
 class preg_murc_25 (Canvas):
     def __init__(self, comand):
         Canvas.__init__(self)
-        del carac[8:]
+        del caracteristicas[8:]
         del clases[8:]
         especie_final.clear()
         imagen_final.clear()
@@ -709,7 +702,7 @@ class preg_murc_25 (Canvas):
 class preg_murc_26 (Canvas):
     def __init__(self, comand):
         Canvas.__init__(self)
-        del carac[6:]
+        del caracteristicas[6:]
         del clases[6:]
         especie_final.clear()
         imagen_final.clear()
@@ -733,7 +726,7 @@ class preg_murc_26 (Canvas):
 class preg_murc_27 (Canvas):
     def __init__(self, comand):
         Canvas.__init__(self)
-        del carac[7:]
+        del caracteristicas[7:]
         del clases[7:]
         especie_final.clear()
         imagen_final.clear()
@@ -757,7 +750,7 @@ class preg_murc_27 (Canvas):
 class preg_murc_28 (Canvas):
     def __init__(self, comand):
         Canvas.__init__(self)
-        del carac[8:]
+        del caracteristicas[8:]
         del clases[8:]
         especie_final.clear()
         imagen_final.clear()
@@ -781,7 +774,7 @@ class preg_murc_28 (Canvas):
 class preg_murc_29 (Canvas):
     def __init__(self, comand):
         Canvas.__init__(self)
-        del carac[9:]
+        del caracteristicas[9:]
         del clases[9:]
         especie_final.clear()
         imagen_final.clear()
@@ -805,7 +798,7 @@ class preg_murc_29 (Canvas):
 class preg_murc_30 (Canvas):
     def __init__(self, comand):
         Canvas.__init__(self)
-        del carac[10:]
+        del caracteristicas[10:]
         del clases[10:]
         especie_final.clear()
         imagen_final.clear()
@@ -829,7 +822,7 @@ class preg_murc_30 (Canvas):
 class preg_murc_31 (Canvas):
     def __init__(self, comand):
         Canvas.__init__(self)
-        del carac[10:]
+        del caracteristicas[10:]
         del clases[10:]
         especie_final.clear()
         imagen_final.clear()
@@ -853,7 +846,7 @@ class preg_murc_31 (Canvas):
 class preg_murc_32 (Canvas):
     def __init__(self, comand):
         Canvas.__init__(self)
-        del carac[7:]
+        del caracteristicas[7:]
         del clases[7:]
         especie_final.clear()
         imagen_final.clear()
@@ -877,7 +870,7 @@ class preg_murc_32 (Canvas):
 class preg_murc_33 (Canvas):
     def __init__(self, comand):
         Canvas.__init__(self)
-        del carac[2:]
+        del caracteristicas[2:]
         del clases[2:]
         especie_final.clear()
         imagen_final.clear()
@@ -901,7 +894,7 @@ class preg_murc_33 (Canvas):
 class preg_murc_34 (Canvas):
     def __init__(self, comand):
         Canvas.__init__(self)
-        del carac[3:]
+        del caracteristicas[3:]
         del clases[3:]
         especie_final.clear()
         imagen_final.clear()
@@ -925,7 +918,7 @@ class preg_murc_34 (Canvas):
 class preg_murc_35 (Canvas):
     def __init__(self, comand):
         Canvas.__init__(self)
-        del carac[4:]
+        del caracteristicas[4:]
         del clases[4:]
         especie_final.clear()
         imagen_final.clear()
@@ -949,7 +942,7 @@ class preg_murc_35 (Canvas):
 class preg_murc_36 (Canvas):
     def __init__(self, comand):
         Canvas.__init__(self)
-        del carac[5:]
+        del caracteristicas[5:]
         del clases[5:]
         especie_final.clear()
         imagen_final.clear()
@@ -957,7 +950,7 @@ class preg_murc_36 (Canvas):
         font_1=Tkfont.Font(family="Cascadia Code", size=18)
         fondo=PhotoImage(file="C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/Fondo.png")
         logo=PhotoImage(file="C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/logo.png")
-        op_1=btn_resultado("Puntas de las alas blancas (no siempre), antebrazo amarillo, el murciélago más grande con líneas blancas, peso corporal +/-36g y antebrazo de 47-56mm", preg_murc_36, "Vampyrodes caraccioli", "C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/m.png")
+        op_1=btn_resultado("Puntas de las alas blancas (no siempre), antebrazo amarillo, el murciélago más grande con líneas blancas, peso corporal +/-36g y antebrazo de 47-56mm", preg_murc_36, "Vampyrodes caracteristicascioli", "C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/m.png")
         op_2=btn_resultado("Puntas de las alas no blancas, línea dorsal blanca brillante, membrana interfemoral (MI) angosta, en forma de 'V' y fuertemente orlada, pelos dorsales tricoloridos (la banda basal a veces indistinto) márgenes de las orejas y tragus amarillos o naranjas, de pequeño tamaño, peso corporal +/-17g y antebrazo de 37-41mm", preg_murc_36, "Platyrrhinus helleri", "C:/Users/jeman/Desktop/Escritorio/Programacion/VS code/PYTHON/SENACYT/códigos/Imagenes usadas/m.png")
         volver=normal_button("Volver", preg_murc_35)
         volver.configure(width=10, height=1)
@@ -973,7 +966,7 @@ class preg_murc_36 (Canvas):
 class preg_murc_37 (Canvas):
     def __init__(self, comand):
         Canvas.__init__(self)
-        del carac[5:]
+        del caracteristicas[5:]
         del clases[5:]
         especie_final.clear()
         imagen_final.clear()
@@ -997,7 +990,7 @@ class preg_murc_37 (Canvas):
 class preg_murc_38 (Canvas):
     def __init__(self, comand):
         Canvas.__init__(self)
-        del carac[6:]
+        del caracteristicas[6:]
         del clases[6:]
         especie_final.clear()
         imagen_final.clear()
@@ -1021,7 +1014,7 @@ class preg_murc_38 (Canvas):
 class preg_murc_39 (Canvas):
     def __init__(self, comand):
         Canvas.__init__(self)
-        del carac[7:]
+        del caracteristicas[7:]
         del clases[7:]
         especie_final.clear()
         imagen_final.clear()
@@ -1045,7 +1038,7 @@ class preg_murc_39 (Canvas):
 class preg_murc_40 (Canvas):
     def __init__(self, comand):
         Canvas.__init__(self)
-        del carac[7:]
+        del caracteristicas[7:]
         del clases[7:]
         especie_final.clear()
         imagen_final.clear()
@@ -1069,7 +1062,7 @@ class preg_murc_40 (Canvas):
 class preg_murc_41 (Canvas):
     def __init__(self, comand):
         Canvas.__init__(self)
-        del carac[4:]
+        del caracteristicas[4:]
         del clases[4:]
         especie_final.clear()
         imagen_final.clear()
@@ -1093,7 +1086,7 @@ class preg_murc_41 (Canvas):
 class preg_murc_42 (Canvas):
     def __init__(self, comand):
         Canvas.__init__(self)
-        del carac[5:]
+        del caracteristicas[5:]
         del clases[5:]
         especie_final.clear()
         imagen_final.clear()
@@ -1117,7 +1110,7 @@ class preg_murc_42 (Canvas):
 class preg_murc_43 (Canvas):
     def __init__(self, comand):
         Canvas.__init__(self)
-        del carac[6:]
+        del caracteristicas[6:]
         del clases[6:]
         especie_final.clear()
         imagen_final.clear()
@@ -1141,7 +1134,7 @@ class preg_murc_43 (Canvas):
 class preg_murc_44 (Canvas):
     def __init__(self, comand):
         Canvas.__init__(self)
-        del carac[5:]
+        del caracteristicas[5:]
         del clases[5:]
         especie_final.clear()
         imagen_final.clear()
@@ -1165,7 +1158,7 @@ class preg_murc_44 (Canvas):
 class preg_murc_45 (Canvas):
     def __init__(self, comand):
         Canvas.__init__(self)
-        del carac[6:]
+        del caracteristicas[6:]
         del clases[6:]
         especie_final.clear()
         imagen_final.clear()
@@ -1189,7 +1182,7 @@ class preg_murc_45 (Canvas):
 class preg_murc_46 (Canvas):
     def __init__(self, comand):
         Canvas.__init__(self)
-        del carac[6:]
+        del caracteristicas[6:]
         del clases[6:]
         especie_final.clear()
         imagen_final.clear()
@@ -1213,7 +1206,7 @@ class preg_murc_46 (Canvas):
 class preg_murc_47 (Canvas):
     def __init__(self, comand):
         Canvas.__init__(self)
-        del carac[7:]
+        del caracteristicas[7:]
         del clases[7:]
         especie_final.clear()
         imagen_final.clear()
@@ -1237,7 +1230,7 @@ class preg_murc_47 (Canvas):
 class preg_murc_48 (Canvas):
     def __init__(self, comand):
         Canvas.__init__(self)
-        del carac[8:]
+        del caracteristicas[8:]
         del clases[8:]
         especie_final.clear()
         imagen_final.clear()
@@ -1261,7 +1254,7 @@ class preg_murc_48 (Canvas):
 class preg_murc_49 (Canvas):
     def __init__(self, comand):
         Canvas.__init__(self)
-        del carac[9:]
+        del caracteristicas[9:]
         del clases[9:]
         especie_final.clear()
         imagen_final.clear()
@@ -1285,7 +1278,7 @@ class preg_murc_49 (Canvas):
 class preg_murc_50 (Canvas):
     def __init__(self, comand):
         Canvas.__init__(self)
-        del carac[7:]
+        del caracteristicas[7:]
         del clases[7:]
         especie_final.clear()
         imagen_final.clear()
@@ -1309,7 +1302,7 @@ class preg_murc_50 (Canvas):
 class preg_murc_51 (Canvas):
     def __init__(self, comand):
         Canvas.__init__(self)
-        del carac[8:]
+        del caracteristicas[8:]
         del clases[8:]
         especie_final.clear()
         imagen_final.clear()
@@ -1334,7 +1327,7 @@ class preg_murc_52 (Canvas):
     def __init__(self, comand):
         Canvas.__init__(self)
         Canvas.__init__(self)
-        del carac[1:]
+        del caracteristicas[1:]
         del clases[1:]
         especie_final.clear()
         imagen_final.clear()
@@ -1358,7 +1351,7 @@ class preg_murc_52 (Canvas):
 class preg_murc_53 (Canvas):
     def __init__(self, comand):
         Canvas.__init__(self)
-        del carac[2:]
+        del caracteristicas[2:]
         del clases[2:]
         especie_final.clear()
         imagen_final.clear()
@@ -1382,7 +1375,7 @@ class preg_murc_53 (Canvas):
 class preg_murc_54 (Canvas):
     def __init__(self, comand):
         Canvas.__init__(self)
-        del carac[3:]
+        del caracteristicas[3:]
         del clases[3:]
         especie_final.clear()
         imagen_final.clear()
@@ -1406,7 +1399,7 @@ class preg_murc_54 (Canvas):
 class preg_murc_55 (Canvas):
     def __init__(self, comand):
         Canvas.__init__(self)
-        del carac[4:]
+        del caracteristicas[4:]
         del clases[4:]
         especie_final.clear()
         imagen_final.clear()
@@ -1430,7 +1423,7 @@ class preg_murc_55 (Canvas):
 class preg_murc_56 (Canvas):
     def __init__(self, comand):
         Canvas.__init__(self)
-        del carac[2:]
+        del caracteristicas[2:]
         del clases[2:]
         especie_final.clear()
         imagen_final.clear()
@@ -1454,7 +1447,7 @@ class preg_murc_56 (Canvas):
 class preg_murc_57 (Canvas):
     def __init__(self, comand):
         Canvas.__init__(self)
-        del carac[3:]
+        del caracteristicas[3:]
         del clases[3:]
         especie_final.clear()
         imagen_final.clear()
@@ -1478,7 +1471,7 @@ class preg_murc_57 (Canvas):
 class preg_murc_58 (Canvas):
     def __init__(self, comand):
         Canvas.__init__(self)
-        del carac[4:]
+        del caracteristicas[4:]
         del clases[4:]
         especie_final.clear()
         imagen_final.clear()
@@ -1502,7 +1495,7 @@ class preg_murc_58 (Canvas):
 class preg_murc_59 (Canvas):
     def __init__(self, comand):
         Canvas.__init__(self)
-        del carac[5:]
+        del caracteristicas[5:]
         del clases[5:]
         especie_final.clear()
         imagen_final.clear()
@@ -1526,7 +1519,7 @@ class preg_murc_59 (Canvas):
 class preg_murc_60 (Canvas):
     def __init__(self, comand):
         Canvas.__init__(self)
-        del carac[6:]
+        del caracteristicas[6:]
         del clases[6:]
         especie_final.clear()
         imagen_final.clear()
@@ -1550,7 +1543,7 @@ class preg_murc_60 (Canvas):
 class preg_murc_61 (Canvas):
     def __init__(self, comand):
         Canvas.__init__(self)
-        del carac[7:]
+        del caracteristicas[7:]
         del clases[7:]
         especie_final.clear()
         imagen_final.clear()
@@ -1574,7 +1567,7 @@ class preg_murc_61 (Canvas):
 class preg_murc_62 (Canvas):
     def __init__(self, comand):
         Canvas.__init__(self)
-        del carac[5:]
+        del caracteristicas[5:]
         del clases[5:]
         especie_final.clear()
         imagen_final.clear()
@@ -1598,7 +1591,7 @@ class preg_murc_62 (Canvas):
 class preg_murc_63 (Canvas):
     def __init__(self, comand):
         Canvas.__init__(self)
-        del carac[6:]
+        del caracteristicas[6:]
         del clases[6:]
         especie_final.clear()
         imagen_final.clear()
@@ -1622,7 +1615,7 @@ class preg_murc_63 (Canvas):
 class preg_murc_64 (Canvas):
     def __init__(self, comand):
         Canvas.__init__(self)
-        del carac[7:]
+        del caracteristicas[7:]
         del clases[7:]
         especie_final.clear()
         imagen_final.clear()
@@ -1646,7 +1639,7 @@ class preg_murc_64 (Canvas):
 class preg_murc_65 (Canvas):
     def __init__(self, comand):
         Canvas.__init__(self)
-        del carac[8:]
+        del caracteristicas[8:]
         del clases[8:]
         especie_final.clear()
         imagen_final.clear()
@@ -1670,7 +1663,7 @@ class preg_murc_65 (Canvas):
 class preg_murc_66 (Canvas):
     def __init__(self, comand):
         Canvas.__init__(self)
-        del carac[9:]
+        del caracteristicas[9:]
         del clases[9:]
         especie_final.clear()
         imagen_final.clear()
@@ -1694,7 +1687,7 @@ class preg_murc_66 (Canvas):
 class preg_murc_67 (Canvas):
     def __init__(self, comand):
         Canvas.__init__(self)
-        del carac[7:]
+        del caracteristicas[7:]
         del clases[7:]
         especie_final.clear()
         imagen_final.clear()
@@ -1718,7 +1711,7 @@ class preg_murc_67 (Canvas):
 class preg_murc_68 (Canvas):
     def __init__(self, comand):
         Canvas.__init__(self)
-        del carac[8:]
+        del caracteristicas[8:]
         del clases[8:]
         especie_final.clear()
         imagen_final.clear()
@@ -1742,7 +1735,7 @@ class preg_murc_68 (Canvas):
 class preg_murc_69 (Canvas):
     def __init__(self, comand):
         Canvas.__init__(self)
-        del carac[4:]
+        del caracteristicas[4:]
         del clases[4:]
         especie_final.clear()
         imagen_final.clear()
@@ -1766,7 +1759,7 @@ class preg_murc_69 (Canvas):
 class preg_murc_70 (Canvas):
     def __init__(self, comand):
         Canvas.__init__(self)
-        del carac[5:]
+        del caracteristicas[5:]
         del clases[5:]
         especie_final.clear()
         imagen_final.clear()
@@ -1790,7 +1783,7 @@ class preg_murc_70 (Canvas):
 class preg_murc_71 (Canvas):
     def __init__(self, comand):
         Canvas.__init__(self)
-        del carac[5:]
+        del caracteristicas[5:]
         del clases[5:]
         especie_final.clear()
         imagen_final.clear()
@@ -1814,7 +1807,7 @@ class preg_murc_71 (Canvas):
 class preg_murc_72 (Canvas):
     def __init__(self, comand):
         Canvas.__init__(self)
-        del carac[6:]
+        del caracteristicas[6:]
         del clases[6:]
         especie_final.clear()
         imagen_final.clear()
@@ -1838,7 +1831,7 @@ class preg_murc_72 (Canvas):
 class preg_murc_73 (Canvas):
     def __init__(self, comand):
         Canvas.__init__(self)
-        del carac[7:]
+        del caracteristicas[7:]
         del clases[7:]
         especie_final.clear()
         imagen_final.clear()
@@ -1862,7 +1855,7 @@ class preg_murc_73 (Canvas):
 class preg_murc_74 (Canvas):
     def __init__(self, comand):
         Canvas.__init__(self)
-        del carac[8:]
+        del caracteristicas[8:]
         del clases[8:]
         especie_final.clear()
         imagen_final.clear()
@@ -1886,7 +1879,7 @@ class preg_murc_74 (Canvas):
 class preg_murc_75 (Canvas):
     def __init__(self, comand):
         Canvas.__init__(self)
-        del carac[7:]
+        del caracteristicas[7:]
         del clases[7:]
         especie_final.clear()
         imagen_final.clear()
@@ -1910,7 +1903,7 @@ class preg_murc_75 (Canvas):
 class preg_murc_76 (Canvas):
     def __init__(self, comand):
         Canvas.__init__(self)
-        del carac[6:]
+        del caracteristicas[6:]
         del clases[6:]
         especie_final.clear()
         imagen_final.clear()
@@ -1934,7 +1927,7 @@ class preg_murc_76 (Canvas):
 class preg_murc_77 (Canvas):
     def __init__(self, comand):
         Canvas.__init__(self)
-        del carac[7:]
+        del caracteristicas[7:]
         del clases[7:]
         especie_final.clear()
         imagen_final.clear()
@@ -1958,7 +1951,7 @@ class preg_murc_77 (Canvas):
 class preg_murc_78 (Canvas):
     def __init__(self, comand):
         Canvas.__init__(self)
-        del carac[8:]
+        del caracteristicas[8:]
         del clases[8:]
         especie_final.clear()
         imagen_final.clear()
@@ -1982,7 +1975,7 @@ class preg_murc_78 (Canvas):
 class preg_murc_79 (Canvas):
     def __init__(self, comand):
         Canvas.__init__(self)
-        del carac[9:]
+        del caracteristicas[9:]
         del clases[9:]
         especie_final.clear()
         imagen_final.clear()
@@ -2006,7 +1999,7 @@ class preg_murc_79 (Canvas):
 class preg_murc_80 (Canvas):
     def __init__(self, comand):
         Canvas.__init__(self)
-        del carac[9:]
+        del caracteristicas[9:]
         del clases[9:]
         especie_final.clear()
         imagen_final.clear()
@@ -2030,7 +2023,7 @@ class preg_murc_80 (Canvas):
 class preg_murc_81 (Canvas):
     def __init__(self, comand):
         Canvas.__init__(self)
-        del carac[7:]
+        del caracteristicas[7:]
         del clases[7:]
         especie_final.clear()
         imagen_final.clear()
@@ -2054,7 +2047,7 @@ class preg_murc_81 (Canvas):
 class preg_murc_82 (Canvas):
     def __init__(self, comand):
         Canvas.__init__(self)
-        del carac[3:]
+        del caracteristicas[3:]
         del clases[3:]
         especie_final.clear()
         imagen_final.clear()
@@ -2078,7 +2071,7 @@ class preg_murc_82 (Canvas):
 class preg_murc_83 (Canvas):
     def __init__(self, comand):
         Canvas.__init__(self)
-        del carac[4:]
+        del caracteristicas[4:]
         del clases[4:]
         especie_final.clear()
         imagen_final.clear()
@@ -2102,7 +2095,7 @@ class preg_murc_83 (Canvas):
 class preg_murc_84 (Canvas):
     def __init__(self, comand):
         Canvas.__init__(self)
-        del carac[5:]
+        del caracteristicas[5:]
         del clases[5:]
         especie_final.clear()
         imagen_final.clear()
@@ -2126,7 +2119,7 @@ class preg_murc_84 (Canvas):
 class preg_murc_85 (Canvas):
     def __init__(self, comand):
         Canvas.__init__(self)
-        del carac[6:]
+        del caracteristicas[6:]
         del clases[6:]
         especie_final.clear()
         imagen_final.clear()
@@ -2150,7 +2143,7 @@ class preg_murc_85 (Canvas):
 class preg_murc_86 (Canvas):
     def __init__(self, comand):
         Canvas.__init__(self)
-        del carac[5:]
+        del caracteristicas[5:]
         del clases[5:]
         especie_final.clear()
         imagen_final.clear()
@@ -2174,7 +2167,7 @@ class preg_murc_86 (Canvas):
 class preg_murc_87 (Canvas):
     def __init__(self, comand):
         Canvas.__init__(self)
-        del carac[6:]
+        del caracteristicas[6:]
         del clases[6:]
         especie_final.clear()
         imagen_final.clear()
@@ -2198,7 +2191,7 @@ class preg_murc_87 (Canvas):
 class preg_murc_88 (Canvas):
     def __init__(self, comand):
         Canvas.__init__(self)
-        del carac[6:]
+        del caracteristicas[6:]
         del clases[6:]
         especie_final.clear()
         imagen_final.clear()
@@ -2222,7 +2215,7 @@ class preg_murc_88 (Canvas):
 class preg_murc_89 (Canvas):
     def __init__(self, comand):
         Canvas.__init__(self)
-        del carac[7:]
+        del caracteristicas[7:]
         del clases[7:]
         especie_final.clear()
         imagen_final.clear()
@@ -2246,7 +2239,7 @@ class preg_murc_89 (Canvas):
 class preg_murc_90 (Canvas):
     def __init__(self, comand):
         Canvas.__init__(self)
-        del carac[8:]
+        del caracteristicas[8:]
         del clases[8:]
         especie_final.clear()
         imagen_final.clear()
@@ -2270,7 +2263,7 @@ class preg_murc_90 (Canvas):
 class preg_murc_91 (Canvas):
     def __init__(self, comand):
         Canvas.__init__(self)
-        del carac[7:]
+        del caracteristicas[7:]
         del clases[7:]
         especie_final.clear()
         imagen_final.clear()
@@ -2294,7 +2287,7 @@ class preg_murc_91 (Canvas):
 class preg_murc_92 (Canvas):
     def __init__(self, comand):
         Canvas.__init__(self)
-        del carac[8:]
+        del caracteristicas[8:]
         del clases[8:]
         especie_final.clear()
         imagen_final.clear()
@@ -2318,7 +2311,7 @@ class preg_murc_92 (Canvas):
 class preg_murc_93 (Canvas):
     def __init__(self, comand):
         Canvas.__init__(self)
-        del carac[9:]
+        del caracteristicas[9:]
         del clases[9:]
         especie_final.clear()
         imagen_final.clear()
@@ -2342,7 +2335,7 @@ class preg_murc_93 (Canvas):
 class preg_murc_94 (Canvas):
     def __init__(self, comand):
         Canvas.__init__(self)
-        del carac[10:]
+        del caracteristicas[10:]
         del clases[10:]
         especie_final.clear()
         imagen_final.clear()
@@ -2366,7 +2359,7 @@ class preg_murc_94 (Canvas):
 class preg_murc_95 (Canvas):
     def __init__(self, comand):
         Canvas.__init__(self)
-        del carac[10:]
+        del caracteristicas[10:]
         del clases[10:]
         especie_final.clear()
         imagen_final.clear()
@@ -2393,74 +2386,63 @@ class confirmacion(tk.Frame):
         font_1=Tkfont.Font(family="Cascadia Code", size=18)
         Label(self, text="Si alguno de estos datos no es correcto seleccionelo:", font=font_1).pack(side=tk.TOP)
         
-        btn_count=len(carac)
-        created_buttons=0
-        if created_buttons < btn_count:
-                boton1=created_buttons
-                confirm_button_1=confirm_button(carac[boton1], clases[boton1])
-                confirm_button_1.pack(side=tk.TOP, padx=10, pady=5, expand=True, fill=tk.BOTH)
-                created_buttons+=1
+        conteo_de_botones=len(caracteristicas)
+        botones_creados=0
+        if botones_creados < conteo_de_botones:
+                boton1=botones_creados
+                Button(self, text=caracteristicas[boton1], font=font_1, bg="White", wraplength=900, command=lambda:self.master.switch(clases[boton1])).pack(side=tk.TOP, pady=5, expand=True, fill=tk.BOTH)
+                botones_creados+=1
                 
-                if created_buttons < btn_count:
-                        boton2=created_buttons
-                        confirm_button_2=confirm_button(carac[boton2], clases[boton2])
-                        confirm_button_2.pack(side=tk.TOP, padx=10, pady=5, expand=True, fill=tk.BOTH)
-                        created_buttons+=1
+                if botones_creados < conteo_de_botones:
+                        boton2=botones_creados
+                        Button(self, text=caracteristicas[boton2], font=font_1, bg="White", wraplength=900, command=lambda:self.master.switch(clases[boton2])).pack(side=tk.TOP, pady=5, expand=True, fill=tk.BOTH)
+                        botones_creados+=1
                         
-                        if created_buttons < btn_count:
-                                boton3=created_buttons
-                                confirm_button_3=confirm_button(carac[boton3], clases[boton3])
-                                confirm_button_3.pack(side=tk.TOP, padx=10, pady=5, expand=True, fill=tk.BOTH)
-                                created_buttons+=1
+                        if botones_creados < conteo_de_botones:
+                                boton3=botones_creados
+                                Button(self, text=caracteristicas[boton3], font=font_1, bg="White", wraplength=900, command=lambda:self.master.switch(clases[boton3])).pack(side=tk.TOP, pady=5, expand=True, fill=tk.BOTH)
+                                botones_creados+=1
 
-                                if created_buttons < btn_count:
-                                    boton4=created_buttons
-                                    confirm_button_4=confirm_button(carac[boton4], clases[boton4])
-                                    confirm_button_4.pack(side=tk.TOP, padx=10, pady=5, expand=True, fill=tk.BOTH)
-                                    created_buttons+=1
+                                if botones_creados < conteo_de_botones:
+                                    boton4=botones_creados
+                                    Button(self, text=caracteristicas[boton4], font=font_1, bg="White", wraplength=900, command=lambda:self.master.switch(clases[boton4])).pack(side=tk.TOP, pady=5, expand=True, fill=tk.BOTH)
+                                    botones_creados+=1
 
-                                    if created_buttons < btn_count:
-                                        boton5=created_buttons
-                                        confirm_button_5=confirm_button(carac[boton5], clases[boton5])
-                                        confirm_button_5.pack(side=tk.TOP, padx=10, pady=5, expand=True, fill=tk.BOTH)
-                                        created_buttons+=1
+                                    if botones_creados < conteo_de_botones:
+                                        boton5=botones_creados
+                                        Button(self, text=caracteristicas[boton5], font=font_1, bg="White", wraplength=900, command=lambda:self.master.switch(clases[boton5])).pack(side=tk.TOP, pady=5, expand=True, fill=tk.BOTH)
+                                        botones_creados+=1
 
-                                        if created_buttons < btn_count:
-                                            boton6=created_buttons
-                                            confirm_button_6=confirm_button(carac[boton6], clases[boton6])
-                                            confirm_button_6.pack(side=tk.TOP, padx=10, pady=5, expand=True, fill=tk.BOTH)
-                                            created_buttons+=1
+                                        if botones_creados < conteo_de_botones:
+                                            boton6=botones_creados
+                                            Button(self, text=caracteristicas[boton6], font=font_1, bg="White", wraplength=900, command=lambda:self.master.switch(clases[boton6])).pack(side=tk.TOP, pady=5, expand=True, fill=tk.BOTH)
+                                            botones_creados+=1
 
-                                            if created_buttons < btn_count:
-                                                boton7=created_buttons
-                                                confirm_button_7=confirm_button(carac[boton7], clases[boton7])
-                                                confirm_button_7.pack(side=tk.TOP, padx=10, pady=5, expand=True, fill=tk.BOTH)
-                                                created_buttons+=1
+                                            if botones_creados < conteo_de_botones:
+                                                boton7=botones_creados
+                                                Button(self, text=caracteristicas[boton7], font=font_1, bg="White", wraplength=900, command=lambda:self.master.switch(clases[boton7])).pack(side=tk.TOP, pady=5, expand=True, fill=tk.BOTH)
+                                                botones_creados+=1
 
-                                                if created_buttons < btn_count:
-                                                    boton8=created_buttons
-                                                    confirm_button_8=confirm_button(carac[boton8], clases[boton8])
-                                                    confirm_button_8.pack(side=tk.TOP, padx=10, pady=5, expand=True, fill=tk.BOTH)
-                                                    created_buttons+=1
+                                                if botones_creados < conteo_de_botones:
+                                                    boton8=botones_creados
+                                                    Button(self, text=caracteristicas[boton8], font=font_1, bg="White", wraplength=900, command=lambda:self.master.switch(clases[boton8])).pack(side=tk.TOP, pady=5, expand=True, fill=tk.BOTH)
+                                                    botones_creados+=1
 
-                                                    if created_buttons < btn_count:
-                                                        boton9=created_buttons
-                                                        confirm_button_9=confirm_button(carac[boton9], clases[boton9])
-                                                        confirm_button_9.pack(side=tk.TOP, padx=10, pady=5, expand=True, fill=tk.BOTH)
-                                                        created_buttons+=1
+                                                    if botones_creados < conteo_de_botones:
+                                                        boton9=botones_creados
+                                                        Button(self, text=caracteristicas[boton9], font=font_1, bg="White", wraplength=900, command=lambda:self.master.switch(clases[boton9])).pack(side=tk.TOP, pady=5, expand=True, fill=tk.BOTH)
+                                                        botones_creados+=1
 
-                                                        if created_buttons < btn_count:
-                                                            boton10=created_buttons
-                                                            confirm_button_10=confirm_button(carac[boton10], clases[boton10])
-                                                            confirm_button_10.pack(side=tk.TOP, padx=10, pady=5, expand=True, fill=tk.BOTH)
-                                                            created_buttons+=1
+                                                        if botones_creados < conteo_de_botones:
+                                                            boton10=botones_creados
+                                                            Button(self, text=caracteristicas[boton10], font=font_1, bg="White", wraplength=900, command=lambda:self.master.switch(clases[boton10])).pack(side=tk.TOP, pady=5, expand=True, fill=tk.BOTH)
+                                                            botones_creados+=1
 
-                                                            if created_buttons < btn_count:
-                                                                boton11=created_buttons
-                                                                confirm_button_11=confirm_button(carac[boton11], clases[boton11])
-                                                                confirm_button_11.pack(side=tk.TOP, padx=10, pady=5, expand=True, fill=tk.BOTH)
-                                                                created_buttons+=1
-        
+                                                            if botones_creados < conteo_de_botones:
+                                                                boton11=botones_creados
+                                                                Button(self, text=caracteristicas[boton11], font=font_1, bg="White", wraplength=900, command=lambda:self.master.switch(clases[boton11])).pack(side=tk.TOP, pady=5, expand=True, fill=tk.BOTH)
+                                                                botones_creados+=1
+
         def respuesta():
                 resp=Toplevel()
                 resp.geometry("480x480")
@@ -2471,10 +2453,10 @@ class confirmacion(tk.Frame):
                 murc_img=tk.PhotoImage(file=img_ruta)
                 tk.Label(resp, text=("Su murciélago es "+especie_final[0]), font=font, wraplength=450, background="#F6F39F").pack(side=tk.TOP, pady=20)
                 tk.Label(resp, image=murc_img).pack(side=tk.TOP, pady=20)
-                tk.Button(resp, height=15, text="Cerrar", font=font_2, command=lambda:resp.destroy()).pack(side=tk.TOP, pady=20)
+                tk.Button(resp, height=15, text="Cerrar", font=font_2, command=lambda:[resp.destroy(), self.master.switch(inicio)]).pack(side=tk.TOP, pady=20)
                 self.ref=murc_img
         
-        Button(self, text="Continuar", font=Tkfont.Font(family="Cascadia Code", size=15), command=lambda:[respuesta(), self.master.switch(inicio)]).pack(side=tk.BOTTOM, expand=True, fill=tk.BOTH)
+        Button(self, text="Continuar", font=Tkfont.Font(family="Cascadia Code", size=15), command=lambda:[respuesta()]).pack(side=tk.BOTTOM, expand=True, fill=tk.BOTH)
 
 if __name__ == "__main__":
     app = CF()

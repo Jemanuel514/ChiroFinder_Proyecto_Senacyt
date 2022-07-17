@@ -1,5 +1,6 @@
 import tkinter as tk
 from tkinter import *
+from tkinter import ttk
 import tkinter.font as Tkfont
 import webbrowser
 
@@ -2385,63 +2386,72 @@ class confirmacion(tk.Frame):
     def __init__(self, comand):
         tk.Frame.__init__(self)
         font_1=Tkfont.Font(family="Cascadia Code", size=18)
-        Label(self, text="Si alguno de estos datos no es correcto seleccionelo:", font=font_1).pack(side=tk.TOP)
+        self.configure(background="#F6F39F")
+        canvas=Canvas(self)
+        canvas.pack(side=tk.LEFT, expand=True, fill=tk.BOTH)
+        barra=ttk.Scrollbar(self, orient=VERTICAL, command=canvas.yview)
+        barra.pack(side=tk.RIGHT, fill=Y)
+        canvas.configure(background="#F6F39F", yscrollcommand=barra.set)
+        canvas.bind("<Configure>", lambda e:canvas.configure(scrollregion=canvas.bbox("all")))
+        frame_sec=tk.Frame(canvas, background="#F6F39F")
+        canvas.create_window(0, 0, width=980, anchor="nw", window=frame_sec)
         
+        Label(frame_sec, text="Si alguno de estos datos no es correcto seleccionelo:", font=font_1, background="#F6F39F").pack(side=tk.TOP)
         conteo_de_botones=len(caracteristicas)
         botones_creados=0
         if botones_creados < conteo_de_botones:
                 boton1=botones_creados
-                Button(self, text=caracteristicas[boton1], font=font_1, bg="White", wraplength=900, command=lambda:self.master.cambio(clases[boton1])).pack(side=tk.TOP, pady=5, expand=True, fill=tk.BOTH)
+                Button(frame_sec, text=caracteristicas[boton1], font=font_1, bg="White", wraplength=900, command=lambda:self.master.cambio(clases[boton1])).pack(side=tk.TOP, pady=5, padx=10, expand=True, fill=tk.BOTH)
                 botones_creados+=1
                 
                 if botones_creados < conteo_de_botones:
                         boton2=botones_creados
-                        Button(self, text=caracteristicas[boton2], font=font_1, bg="White", wraplength=900, command=lambda:self.master.cambio(clases[boton2])).pack(side=tk.TOP, pady=5, expand=True, fill=tk.BOTH)
+                        Button(frame_sec, text=caracteristicas[boton2], font=font_1, bg="White", wraplength=900, command=lambda:self.master.cambio(clases[boton2])).pack(side=tk.TOP, pady=5, padx=10, expand=True, fill=tk.BOTH)
                         botones_creados+=1
                         
                         if botones_creados < conteo_de_botones:
                                 boton3=botones_creados
-                                Button(self, text=caracteristicas[boton3], font=font_1, bg="White", wraplength=900, command=lambda:self.master.cambio(clases[boton3])).pack(side=tk.TOP, pady=5, expand=True, fill=tk.BOTH)
+                                Button(frame_sec, text=caracteristicas[boton3], font=font_1, bg="White", wraplength=900, command=lambda:self.master.cambio(clases[boton3])).pack(side=tk.TOP, pady=5, padx=10, expand=True, fill=tk.BOTH)
                                 botones_creados+=1
 
                                 if botones_creados < conteo_de_botones:
                                     boton4=botones_creados
-                                    Button(self, text=caracteristicas[boton4], font=font_1, bg="White", wraplength=900, command=lambda:self.master.cambio(clases[boton4])).pack(side=tk.TOP, pady=5, expand=True, fill=tk.BOTH)
+                                    Button(frame_sec, text=caracteristicas[boton4], font=font_1, bg="White", wraplength=900, command=lambda:self.master.cambio(clases[boton4])).pack(side=tk.TOP, pady=5, padx=10, expand=True, fill=tk.BOTH)
                                     botones_creados+=1
 
                                     if botones_creados < conteo_de_botones:
                                         boton5=botones_creados
-                                        Button(self, text=caracteristicas[boton5], font=font_1, bg="White", wraplength=900, command=lambda:self.master.cambio(clases[boton5])).pack(side=tk.TOP, pady=5, expand=True, fill=tk.BOTH)
+                                        Button(frame_sec, text=caracteristicas[boton5], font=font_1, bg="White", wraplength=900, command=lambda:self.master.cambio(clases[boton5])).pack(side=tk.TOP, pady=5, padx=10, expand=True, fill=tk.BOTH)
                                         botones_creados+=1
 
                                         if botones_creados < conteo_de_botones:
                                             boton6=botones_creados
-                                            Button(self, text=caracteristicas[boton6], font=font_1, bg="White", wraplength=900, command=lambda:self.master.cambio(clases[boton6])).pack(side=tk.TOP, pady=5, expand=True, fill=tk.BOTH)
+                                            Button(frame_sec, text=caracteristicas[boton6], font=font_1, bg="White", wraplength=900, command=lambda:self.master.cambio(clases[boton6])).pack(side=tk.TOP, pady=5, padx=10, expand=True, fill=tk.BOTH)
                                             botones_creados+=1
 
                                             if botones_creados < conteo_de_botones:
                                                 boton7=botones_creados
-                                                Button(self, text=caracteristicas[boton7], font=font_1, bg="White", wraplength=900, command=lambda:self.master.cambio(clases[boton7])).pack(side=tk.TOP, pady=5, expand=True, fill=tk.BOTH)
+                                                Button(frame_sec, text=caracteristicas[boton7], font=font_1, bg="White", wraplength=900, command=lambda:self.master.cambio(clases[boton7])).pack(side=tk.TOP, pady=5, padx=10, expand=True, fill=tk.BOTH)
                                                 botones_creados+=1
 
                                                 if botones_creados < conteo_de_botones:
                                                     boton8=botones_creados
-                                                    Button(self, text=caracteristicas[boton8], font=font_1, bg="White", wraplength=900, command=lambda:self.master.cambio(clases[boton8])).pack(side=tk.TOP, pady=5, expand=True, fill=tk.BOTH)
+                                                    Button(frame_sec, text=caracteristicas[boton8], font=font_1, bg="White", wraplength=900, command=lambda:self.master.cambio(clases[boton8])).pack(side=tk.TOP, pady=5, padx=10, expand=True, fill=tk.BOTH)
                                                     botones_creados+=1
 
                                                     if botones_creados < conteo_de_botones:
                                                         boton9=botones_creados
-                                                        Button(self, text=caracteristicas[boton9], font=font_1, bg="White", wraplength=900, command=lambda:self.master.cambio(clases[boton9])).pack(side=tk.TOP, pady=5, expand=True, fill=tk.BOTH)
+                                                        Button(frame_sec, text=caracteristicas[boton9], font=font_1, bg="White", wraplength=900, command=lambda:self.master.cambio(clases[boton9])).pack(side=tk.TOP, pady=5, padx=10, expand=True, fill=tk.BOTH)
                                                         botones_creados+=1
 
                                                         if botones_creados < conteo_de_botones:
                                                             boton10=botones_creados
-                                                            Button(self, text=caracteristicas[boton10], font=font_1, bg="White", wraplength=900, command=lambda:self.master.cambio(clases[boton10])).pack(side=tk.TOP, pady=5, expand=True, fill=tk.BOTH)
+                                                            Button(frame_sec, text=caracteristicas[boton10], font=font_1, bg="White", wraplength=900, command=lambda:self.master.cambio(clases[boton10])).pack(side=tk.TOP, pady=5, padx=10, expand=True, fill=tk.BOTH)
                                                             botones_creados+=1
 
                                                             if botones_creados < conteo_de_botones:
                                                                 boton11=botones_creados
-                                                                Button(self, text=caracteristicas[boton11], font=font_1, bg="White", wraplength=900, command=lambda:self.master.cambio(clases[boton11])).pack(side=tk.TOP, pady=5, expand=True, fill=tk.BOTH)
+                                                                Button(frame_sec, text=caracteristicas[boton11], font=font_1, bg="White", wraplength=900, command=lambda:self.master.cambio(clases[boton11])).pack(side=tk.TOP, pady=5, padx=10, expand=True, fill=tk.BOTH)
                                                                 botones_creados+=1
 
         def respuesta():
@@ -2458,7 +2468,7 @@ class confirmacion(tk.Frame):
                 tk.Button(resp, height=15, text="Más información", font=font_2, command=lambda:[webbrowser.open(urls[especie_final[0]])]).pack(side=tk.LEFT, anchor="s", pady=20, padx=10)
                 self.ref=murc_img
         
-        Button(self, text="Continuar", font=Tkfont.Font(family="Cascadia Code", size=15), command=lambda:[respuesta()]).pack(side=tk.BOTTOM, expand=True, fill=tk.BOTH)
+        Button(frame_sec, text="Continuar", font=Tkfont.Font(family="Cascadia Code", size=15), bg="White", command=lambda:[respuesta()]).pack(side=tk.BOTTOM, pady=5, padx=200, expand=True, fill=tk.BOTH)
 
 if __name__ == "__main__":
     app = CF()

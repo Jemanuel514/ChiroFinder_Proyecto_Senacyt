@@ -13,20 +13,20 @@ urls={"Macrophyllum macrophyllum":"https://bioweb.bio/faunaweb/mammaliaweb/Ficha
 class btn_cambio (tk.Button):
     def __init__(self, texto, caracteristicasteristica, clase, pestaña):
         tk.Button.__init__(self)
-        font=Tkfont.Font(family="Cascadia Code", size=15)
-        self.configure(text=texto, width=39, height=15, font=font, bg="#FCF9C6", activebackground="#FAF4B7", foreground="#654062", wraplength=480, command=lambda:[caracteristicas.append(caracteristicasteristica), clases.append(clase), self.master.cambio(pestaña)])
+        font=Tkfont.Font(family="Candara", size=18)
+        self.configure(text=texto, width=36, height=14, font=font, bg="#FCF9C6", activebackground="#FAF4B7", foreground="#654062", wraplength=460, command=lambda:[caracteristicas.append(caracteristicasteristica), clases.append(clase), self.master.cambio(pestaña)])
 
 class btn_resultado (tk.Button):
     def __init__(self, texto, clase, especie, imagen):
         tk.Button.__init__(self)
-        font=Tkfont.Font(family="Cascadia Code", size=15)
-        self.configure(text=texto, width=39, height=15, font=font, bg="#FCF9C6", activebackground="#FAF4B7", foreground="#654062", wraplength=480, command=lambda:[caracteristicas.append(texto), clases.append(clase), especie_final.append(especie), imagen_final.append(imagen), self.master.cambio(confirmacion)])
+        font=Tkfont.Font(family="Candara", size=18)
+        self.configure(text=texto, width=36, height=14, font=font, bg="#FCF9C6", activebackground="#FAF4B7", foreground="#654062", wraplength=460, command=lambda:[caracteristicas.append(texto), clases.append(clase), especie_final.append(especie), imagen_final.append(imagen), self.master.cambio(confirmacion)])
 
 class btn_normal (tk.Button):
     def __init__(self, texto, pestaña):
         tk.Button.__init__(self)
-        font=Tkfont.Font(family="Cascadia Code", size=15)
-        self.configure(text=texto, width=39, height=15, font=font, bg="#FCF9C6", activebackground="#FAF4B7", foreground="#654062", wraplength=480, command=lambda:self.master.cambio(pestaña))
+        font=Tkfont.Font(family="Candara", size=18)
+        self.configure(text=texto, width=36, height=14, font=font, bg="#FCF9C6", activebackground="#FAF4B7", foreground="#654062", wraplength=460, command=lambda:self.master.cambio(pestaña))
 
 class CF(tk.Tk):
     def __init__(self): 
@@ -80,8 +80,8 @@ class créditos (Canvas):
         cidete=PhotoImage(file="Imagenes usadas/CIDETE-logo.png")
         volver=btn_normal("Volver", inicio)
         volver.configure(width=10, height=1)
-        font_1=Tkfont.Font(family="Cascadia Code", size=18)
-        font_2=Tkfont.Font(family="Cascadia Code", size=12)
+        font_1=Tkfont.Font(family="Candara", size=20)
+        font_2=Tkfont.Font(family="Candara", size=14)
         self.create_image(0, 0, anchor="nw", image=fondo)
         self.create_image(500, 20, anchor="n", image=logo)
         self.create_image(875, 150, anchor="n", image=senacyt)
@@ -95,11 +95,11 @@ class créditos (Canvas):
         self.create_text(20, 230, anchor="w", text="Katia Chérigo-Adulto Coordinador", width=700, font=font_2)
         self.create_text(20, 270, anchor="w", text="Iris Gómez-Coordinadora del Programa de Conservación de Murciélagos del CRU Coclé", width=700, font=font_2)
         self.create_text(20, 320, anchor="w", text="Fernando Guardia - Especialista del Programa de Conservación de Murciélagos del CRU Coclé", width=700, font=font_2)
-        self.create_text(20, 370, anchor="w", text="Pablo Gutiérrez - Especialista del Programa de Conservación de Murciélagos del CRU Coclé", width=700, font=font_2)
-        self.create_text(20, 410, anchor="w", text="CIDETE del CRU Coclé", width=700, font=font_2)
-        self.create_text(20, 440, anchor="w", text="José Isaza - Colaborador", width=700, font=font_2)
-        self.create_text(20, 480, anchor="w", text="Programa basado en: Clave a los Murciélagos de Tierras Bajas de Panamá - Charles G. Handley, Jr. Modificado por: Rafael Samudio", width=700, font=font_2)
-        self.create_text(20, 520, anchor="w", text="Nelson Guevara - Presidente de BIOMUNDI/Especialista en murciélagos", width=700, font=font_2)
+        self.create_text(20, 380, anchor="w", text="Pablo Gutiérrez - Especialista del Programa de Conservación de Murciélagos del CRU Coclé", width=700, font=font_2)
+        self.create_text(20, 430, anchor="w", text="CIDETE del CRU Coclé", width=700, font=font_2)
+        self.create_text(20, 465, anchor="w", text="José Isaza - Colaborador", width=700, font=font_2)
+        self.create_text(20, 510, anchor="w", text="Programa basado en: Clave a los Murciélagos de Tierras Bajas de Panamá - Charles G. Handley, Jr. Modificado por: Rafael Samudio", width=700, font=font_2)
+        self.create_text(20, 560, anchor="w", text="Nelson Guevara - Presidente de BIOMUNDI/Especialista en murciélagos", width=700, font=font_2)
         self.fondo_ref=fondo
         self.logo_ref=logo
         self.senacyt_ref=senacyt
@@ -115,7 +115,7 @@ class preg_murc_1 (Canvas):
         especie_final.clear()
         imagen_final.clear()
         
-        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        font_1=Tkfont.Font(family="Candara", size=20)
         fondo=PhotoImage(file="Imagenes usadas/Fondo.png")
         logo=PhotoImage(file="Imagenes usadas/logo.png")
         op_1=btn_cambio("Presente", "Tiene apéndice foliar libre", preg_murc_1, preg_murc_2)
@@ -139,7 +139,7 @@ class preg_murc_2 (Canvas):
         especie_final.clear()
         imagen_final.clear()
         
-        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        font_1=Tkfont.Font(family="Candara", size=20)
         fondo=PhotoImage(file="Imagenes usadas/Fondo.png")
         logo=PhotoImage(file="Imagenes usadas/logo.png")
         op_1=btn_cambio("Presente", "Tiene cola", preg_murc_2, preg_murc_3)
@@ -163,7 +163,7 @@ class preg_murc_3 (Canvas):
         especie_final.clear()
         imagen_final.clear()
         
-        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        font_1=Tkfont.Font(family="Candara", size=20)
         fondo=PhotoImage(file="Imagenes usadas/Fondo.png")
         logo=PhotoImage(file="Imagenes usadas/logo.png")
         op_1=btn_cambio("Sí", "La cola se extiende hasta el margen de la membrana interfemoral", preg_murc_3, preg_murc_4)
@@ -187,7 +187,7 @@ class preg_murc_4 (Canvas):
         especie_final.clear()
         imagen_final.clear()
         
-        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        font_1=Tkfont.Font(family="Candara", size=20)
         fondo=PhotoImage(file="Imagenes usadas/Fondo.png")
         logo=PhotoImage(file="Imagenes usadas/logo.png")
         op_1=btn_resultado("Posee líneas de dentículos dermales en el margen ventral posterior de la MI, orejas alrededor del tamaño de la cabeza, peso corporal +/- 8g, antebrazo 34-37mm", preg_murc_4, "Macrophyllum macrophyllum", "Imagenes usadas/m.png")
@@ -211,7 +211,7 @@ class preg_murc_5 (Canvas):
         especie_final.clear()
         imagen_final.clear()
         
-        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        font_1=Tkfont.Font(family="Candara", size=20)
         fondo=PhotoImage(file="Imagenes usadas/Fondo.png")
         logo=PhotoImage(file="Imagenes usadas/logo.png")
         op_1=btn_cambio("Obviamente más alargado que el pie", "Calcar más alargado que el pie", preg_murc_5, preg_murc_6)
@@ -235,7 +235,7 @@ class preg_murc_6 (Canvas):
         especie_final.clear()
         imagen_final.clear()
         
-        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        font_1=Tkfont.Font(family="Candara", size=20)
         fondo=PhotoImage(file="Imagenes usadas/Fondo.png")
         logo=PhotoImage(file="Imagenes usadas/logo.png")
         op_1=btn_resultado("Con una línea medio-dorsal blanca, hoja en la nariz con pelos y mellada, peso corporal +/-15g, antebrazo de 46-55mm", preg_murc_6, "Mimon crenulatum", "Imagenes usadas/Murciélagos/Mimon crenulatum.png")
@@ -259,7 +259,7 @@ class preg_murc_7 (Canvas):
         especie_final.clear()
         imagen_final.clear()
 
-        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        font_1=Tkfont.Font(family="Candara", size=20)
         fondo=PhotoImage(file="Imagenes usadas/Fondo.png")
         logo=PhotoImage(file="Imagenes usadas/logo.png")
         op_1=btn_cambio("Menos de 48mm", "Antebrazo de menos de 48mm", preg_murc_7, preg_murc_8)
@@ -283,7 +283,7 @@ class preg_murc_8 (Canvas):
         especie_final.clear()
         imagen_final.clear()
         
-        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        font_1=Tkfont.Font(family="Candara", size=20)
         fondo=PhotoImage(file="Imagenes usadas/Fondo.png")
         logo=PhotoImage(file="Imagenes usadas/logo.png")
         op_1=btn_resultado("Antebrazo +40mm, dedos del pie y antebrazo notablemente peludo, una cresta de pelos largos en la corona de los machos adultos, con 4 incisivos inferiores, Micronycteris tiene un ornamento simple en la barbilla (cojincillos suaves alargados), faja entre las orejas (una membrana delgada que conecta en parte o enteramente las bases de las orejas a través de la frente), peso corporal de 16g y antebrazo de 42-46mm", preg_murc_8, "Micronycteris hirsuta", "Imagenes usadas/m.png")
@@ -307,7 +307,7 @@ class preg_murc_9 (Canvas):
         especie_final.clear()
         imagen_final.clear()
         
-        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        font_1=Tkfont.Font(family="Candara", size=20)
         fondo=PhotoImage(file="Imagenes usadas/Fondo.png")
         logo=PhotoImage(file="Imagenes usadas/logo.png")
         op_1=btn_resultado("Parte inferior del cuerpo blanquizco, 4 incisivos inferiores, peso corporal +/-7g y antebrazo de 34-38mm", preg_murc_9, "Micronycteris schmidtorum", "Imagenes usadas/m.png")
@@ -331,16 +331,16 @@ class preg_murc_10 (Canvas):
         especie_final.clear()
         imagen_final.clear()
         
-        font_1=Tkfont.Font(family="Cascadia Code", size=18)
-        font_2=Tkfont.Font(family="Cascadia Code", size=14)
+        font_1=Tkfont.Font(family="Candara", size=20)
+        font_2=Tkfont.Font(family="Candara", size=17)
         fondo=PhotoImage(file="Imagenes usadas/Fondo.png")
         logo=PhotoImage(file="Imagenes usadas/logo.png")
         op_1=btn_resultado("Lóbulo anterior de la oreja densamente peludo hasta casi la punta, pelo dorsal largo (8mm) e hirsuto (velludo), 4 incisivos inferiores, longitud de las orejas de 21-22mm, pelo corto en el lóbulo basal anterior (+/-3mm), pelo más largo en la espalda superior (10-11mm), dorso rojizo-chocolate, peso corporal +/-7g y antebrazo de 32-37mm", preg_murc_10, "Micronycteris megalotis", "Imagenes usadas/m.png")
-        op_1.configure(width=28, height=16, wraplength=300, font=font_2)
+        op_1.configure(width=25, height=14, wraplength=290, font=font_2)
         op_2=btn_resultado("Longitud de las orejas de 18-19mm, pelo más largo en el lóbulo basal anterior(7mm), pelo más corto en la espalda superior (8mm), dorso gris-chocolate oscuro, peso +/-7g y antebrazo de 32-37mm", preg_murc_10, "Micronycteris microtis", "Imagenes usadas/m.png")
-        op_2.configure(width=28, height=16, wraplength=300, font=font_2)
+        op_2.configure(width=25, height=14, wraplength=290, font=font_2)
         op_3=btn_resultado("Lóbulo anterior de las orejas escasamente peludo en la base, pelo dorsal corto (4mm), 2 incisivos inferiores, vientre chocolate, apenas diferente al torso, faja entre las orejas ausente, cara escasamente peluda, el ornamento de la barbilla es una 'V' en forma de dos frijoles, peso corporal +/-9g y antebrazo de 33-40mm", preg_murc_10, "Lophostoma brasilienis", "Imagenes usadas/m.png")
-        op_3.configure(width=28, height=16, wraplength=300, font=font_2)
+        op_3.configure(width=25, height=14, wraplength=290, font=font_2)
         volver=btn_normal("Volver", preg_murc_9)
         volver.configure(width=10, height=1)
         self.create_image(0,0, anchor="nw", image=fondo)
@@ -361,7 +361,7 @@ class preg_murc_11 (Canvas):
         especie_final.clear()
         imagen_final.clear()
         
-        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        font_1=Tkfont.Font(family="Candara", size=20)
         fondo=PhotoImage(file="Imagenes usadas/Fondo.png")
         logo=PhotoImage(file="Imagenes usadas/logo.png")
         op_1=btn_resultado("Orejas cortas, no se extienden más allá de la nariz cuando se las coloca hacia adelante, peso corporal +/-126g y antebrazo de 80-93mm", preg_murc_11, "Phyllostomus hastatus", "Imagenes usadas/Murciélagos/Phyllostomus hastatus.png")
@@ -385,7 +385,7 @@ class preg_murc_12 (Canvas):
         especie_final.clear()
         imagen_final.clear()
         
-        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        font_1=Tkfont.Font(family="Candara", size=20)
         fondo=PhotoImage(file="Imagenes usadas/Fondo.png")
         logo=PhotoImage(file="Imagenes usadas/logo.png")
         op_1=btn_resultado("Orejas puntiagudas, peso corporal +/-20g y antebrazos de 53-61mm", preg_murc_12, "Mimon bennetti", "Imagenes usadas/m.png")
@@ -409,7 +409,7 @@ class preg_murc_13 (Canvas):
         especie_final.clear()
         imagen_final.clear()
         
-        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        font_1=Tkfont.Font(family="Candara", size=20)
         fondo=PhotoImage(file="Imagenes usadas/Fondo.png")
         logo=PhotoImage(file="Imagenes usadas/logo.png")
         op_1=btn_resultado("Antebrazo +70mm, pelo largo y lanoso, herradura de la hoja de la nariz fuertemente bordeada ventralmente, peso corporal +/-84g y antebrazo de 77-83mm", preg_murc_13, "Chrotopterus auritus", "Imagenes usadas/Murciélagos/Chrotopterus auritus.png")
@@ -433,7 +433,7 @@ class preg_murc_14 (Canvas):
         especie_final.clear()
         imagen_final.clear()
         
-        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        font_1=Tkfont.Font(family="Candara", size=20)
         fondo=PhotoImage(file="Imagenes usadas/Fondo.png")
         logo=PhotoImage(file="Imagenes usadas/logo.png")
         op_1=btn_resultado("Antebrazo peludo, línea blanca en corona, gargante gris, peso corporal +/-36g y antebrazo de 56-61mm", preg_murc_14, "Tonatia saurophila", "Imagenes usadas/Murciélagos/Tonatia saurophila.png")
@@ -457,7 +457,7 @@ class preg_murc_15 (Canvas):
         especie_final.clear()
         imagen_final.clear()
 
-        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        font_1=Tkfont.Font(family="Candara", size=20)
         fondo=PhotoImage(file="Imagenes usadas/Fondo.png")
         logo=PhotoImage(file="Imagenes usadas/logo.png")
         op_1=btn_cambio("+50mm", "Antebrazo de más de 50mm", preg_murc_15, preg_murc_16)
@@ -481,7 +481,7 @@ class preg_murc_16 (Canvas):
         especie_final.clear()
         imagen_final.clear()
 
-        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        font_1=Tkfont.Font(family="Candara", size=20)
         fondo=PhotoImage(file="Imagenes usadas/Fondo.png")
         logo=PhotoImage(file="Imagenes usadas/logo.png")
         op_1=btn_resultado("Orejas puntiagudas, peso corporal +/-24g y antebrazo de 54-58mm", preg_murc_16, "Glyphonycteris daviesi", "Imagenes usadas/m.png")
@@ -505,7 +505,7 @@ class preg_murc_17 (Canvas):
         especie_final.clear()
         imagen_final.clear()
         
-        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        font_1=Tkfont.Font(family="Candara", size=20)
         fondo=PhotoImage(file="Imagenes usadas/Fondo.png")
         logo=PhotoImage(file="Imagenes usadas/logo.png")
         op_1=btn_resultado("Antebrazo peludo, labios granujientos, peso corporal +/-35g y antebrazo de 57-65mm", preg_murc_17, "Trachops cirrhosus", "Imagenes usadas/m.png")
@@ -529,7 +529,7 @@ class preg_murc_18 (Canvas):
         especie_final.clear()
         imagen_final.clear()
         
-        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        font_1=Tkfont.Font(family="Candara", size=20)
         fondo=PhotoImage(file="Imagenes usadas/Fondo.png")
         logo=PhotoImage(file="Imagenes usadas/logo.png")
         op_1=btn_resultado("Puntas de las alas blancas, tragus atenuado, pelo corto, sedoso, hoja de la nariz tiene una forma de un triángulo de 90° en la base, peso corporal +/-61g, antebrazo de 60-68mm", preg_murc_18, "Phylloderma stenops", "Imagenes usadas/m.png")
@@ -553,7 +553,7 @@ class preg_murc_19 (Canvas):
         especie_final.clear()
         imagen_final.clear()
         
-        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        font_1=Tkfont.Font(family="Candara", size=20)
         fondo=PhotoImage(file="Imagenes usadas/Fondo.png")
         logo=PhotoImage(file="Imagenes usadas/logo.png")
         op_1=btn_cambio("Tricoloridos", "Pelos dorsales tricolorido", preg_murc_19, preg_murc_20)
@@ -577,7 +577,7 @@ class preg_murc_20 (Canvas):
         especie_final.clear()
         imagen_final.clear()
         
-        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        font_1=Tkfont.Font(family="Candara", size=20)
         fondo=PhotoImage(file="Imagenes usadas/Fondo.png")
         logo=PhotoImage(file="Imagenes usadas/logo.png")
         op_1=btn_cambio("Simple", "Ornamento de barbilla simple", preg_murc_20, preg_murc_21)
@@ -601,7 +601,7 @@ class preg_murc_21 (Canvas):
         especie_final.clear()
         imagen_final.clear()
         
-        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        font_1=Tkfont.Font(family="Candara", size=20)
         fondo=PhotoImage(file="Imagenes usadas/Fondo.png")
         logo=PhotoImage(file="Imagenes usadas/logo.png")
         op_1=btn_cambio("Hoja de la nariz muy pequeña y triangular, lengua extensible, vibrisas conspicuas, orejas cortas y redondeadas, incisivos inferiores ausentes, peso corporal +/-8g y antebrazo de 31-35mm", "Hoja de la nariz muy pequeña y triangular, lengua extensible, vibrisas conspicuas, orejas cortas y redondeadas, incisivos inferiores ausentes, peso corporal +/-8g y antebrazo de 31-35mm", preg_murc_21, preg_murc_22)
@@ -625,7 +625,7 @@ class preg_murc_22 (Canvas):
         especie_final.clear()
         imagen_final.clear()
         
-        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        font_1=Tkfont.Font(family="Candara", size=20)
         fondo=PhotoImage(file="Imagenes usadas/Fondo.png")
         logo=PhotoImage(file="Imagenes usadas/logo.png")
         op_1=btn_resultado("Hocico menos elongado, alas conectadas a los pies cerca de la base de los dedos", preg_murc_22, "Lichonycteris obscura", "Imagenes usadas/m.png")
@@ -649,7 +649,7 @@ class preg_murc_23 (Canvas):
         especie_final.clear()
         imagen_final.clear()
         
-        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        font_1=Tkfont.Font(family="Candara", size=20)
         fondo=PhotoImage(file="Imagenes usadas/Fondo.png")
         logo=PhotoImage(file="Imagenes usadas/logo.png")
         op_1=btn_resultado("Oreja angosta (mucho más larga que ancha), línea blanca indistinta en la espalda (normalmente), negro alrededor de los ojos, peso corporal +/-11g, antebrazo de 37-40mm, dos verrugas paralelas en la barbilla", preg_murc_23, "Trinycteris nicefori", "Imagenes usadas/m.png")
@@ -673,7 +673,7 @@ class preg_murc_24 (Canvas):
         especie_final.clear()
         imagen_final.clear()
         
-        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        font_1=Tkfont.Font(family="Candara", size=20)
         fondo=PhotoImage(file="Imagenes usadas/Fondo.png")
         logo=PhotoImage(file="Imagenes usadas/logo.png")
         op_1=btn_resultado("Tercer diente post-canino (M1) más bajo que los dientes adyacentes, antebrazo -38mm, pelos dorsales normalmente chocolates, indistintamente tricoloridos, la menos especies de los 3 del género Carollia, peso corporal +/-13g (11-15) y antebrazo de 34-38mm", preg_murc_24, "Carollia castanea", "Imagenes usadas/Murciélagos/Carollia castanea.png")
@@ -697,7 +697,7 @@ class preg_murc_25 (Canvas):
         especie_final.clear()
         imagen_final.clear()
         
-        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        font_1=Tkfont.Font(family="Candara", size=20)
         fondo=PhotoImage(file="Imagenes usadas/Fondo.png")
         logo=PhotoImage(file="Imagenes usadas/logo.png")
         op_1=btn_resultado("Tibia y antebrazo peludo, extremidad posterior(rodilla a tobillo) +/-17mm, rodilla a puntas de garras 26-29mm, pelo más suave, largo y notablemente tricolorido en el dorso, línea de dientes superiores inclinada hacia afuera hasta PM4, peso corporal +/-15g y antebrazo de 27-42mm", preg_murc_25, "Carollia brevicauda", "Imagenes usadas/m.png")
@@ -721,7 +721,7 @@ class preg_murc_26 (Canvas):
         especie_final.clear()
         imagen_final.clear()
         
-        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        font_1=Tkfont.Font(family="Candara", size=20)
         fondo=PhotoImage(file="Imagenes usadas/Fondo.png")
         logo=PhotoImage(file="Imagenes usadas/logo.png")
         op_1=btn_cambio("Hocico largo, lengua extensible, orejas cortas y redondeadas", "Hocico largo, lengua extensible, orejas cortas y redondeadas", preg_murc_26, preg_murc_27)
@@ -745,7 +745,7 @@ class preg_murc_27 (Canvas):
         especie_final.clear()
         imagen_final.clear()
         
-        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        font_1=Tkfont.Font(family="Candara", size=20)
         fondo=PhotoImage(file="Imagenes usadas/Fondo.png")
         logo=PhotoImage(file="Imagenes usadas/logo.png")
         op_1=btn_resultado("Antebrazo +40mm, peso corporal +/-15g y antebrazo de 40-45mm", preg_murc_27, "Lonchophylla robusta", "Imagenes usadas/Murciélagos/Lonchophylla robusta.png")
@@ -769,7 +769,7 @@ class preg_murc_28 (Canvas):
         especie_final.clear()
         imagen_final.clear()
         
-        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        font_1=Tkfont.Font(family="Candara", size=20)
         fondo=PhotoImage(file="Imagenes usadas/Fondo.png")
         logo=PhotoImage(file="Imagenes usadas/logo.png")
         op_1=btn_resultado("Pelos dorsales monocoloridos, dorso rojizo-chocolate, pelos cortos, rostro corto, peso corporal +/-8g y antebrazo de 32-38m", preg_murc_28, "Lionycteris spurrelli", "Imagenes usadas/m.png")
@@ -793,7 +793,7 @@ class preg_murc_29 (Canvas):
         especie_final.clear()
         imagen_final.clear()
         
-        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        font_1=Tkfont.Font(family="Candara", size=20)
         fondo=PhotoImage(file="Imagenes usadas/Fondo.png")
         logo=PhotoImage(file="Imagenes usadas/logo.png")
         op_1=btn_cambio("Mucho más largos que los exteriores y sobresalientes", "Incisivos interiores superiores mucho más largos que los exteriores y sobresalientes", preg_murc_29, preg_murc_30)
@@ -817,7 +817,7 @@ class preg_murc_30 (Canvas):
         especie_final.clear()
         imagen_final.clear()
         
-        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        font_1=Tkfont.Font(family="Candara", size=20)
         fondo=PhotoImage(file="Imagenes usadas/Fondo.png")
         logo=PhotoImage(file="Imagenes usadas/logo.png")
         op_1=btn_resultado("Calcar (o calcáneo) llega hasta el final de la segunda falange cuando se le coloca a lado del pie, pulgar peludo, dorso anaranjado-chocolate, parte inferior del cuerpo amarilla o blanquizca, peso corporal +/-8g y antebrazo de 32-35mm", preg_murc_30, "Lonchophylla mordax", "Imagenes usadas/m.png")
@@ -841,7 +841,7 @@ class preg_murc_31 (Canvas):
         especie_final.clear()
         imagen_final.clear()
         
-        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        font_1=Tkfont.Font(family="Candara", size=20)
         fondo=PhotoImage(file="Imagenes usadas/Fondo.png")
         logo=PhotoImage(file="Imagenes usadas/logo.png")
         op_1=btn_resultado("Incisivos superiores (vista oclusa) forman una creciente regular, incisivos interiores solamente poco más largos que los exteriores, incisivos inferiores separados por un espacio, peso corporal +/-7g y antebrazo 32-35mm", preg_murc_31, "Glossophaga comissarisi", "Imagenes usadas/m.png")
@@ -865,7 +865,7 @@ class preg_murc_32 (Canvas):
         especie_final.clear()
         imagen_final.clear()
         
-        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        font_1=Tkfont.Font(family="Candara", size=20)
         fondo=PhotoImage(file="Imagenes usadas/Fondo.png")
         logo=PhotoImage(file="Imagenes usadas/logo.png")
         op_1=btn_resultado("Partes inferiores del cuerpo amarillas o naranjas, orejas puntiagudas, peso corporal +/-14g y antebrazo de 40-42mm", preg_murc_32, "Lampronycteris brachyotis", "Imagenes usadas/m.png")
@@ -889,7 +889,7 @@ class preg_murc_33 (Canvas):
         especie_final.clear()
         imagen_final.clear()
         
-        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        font_1=Tkfont.Font(family="Candara", size=20)
         fondo=PhotoImage(file="Imagenes usadas/Fondo.png")
         logo=PhotoImage(file="Imagenes usadas/logo.png")
         op_1=btn_resultado("Antebrazo casi de 100mm, especie más grande, peso corporal +/-151g y antebrazo de 98-110mm", preg_murc_33, "Vampyrum spectrum", "Imagenes usadas/m.png")
@@ -913,7 +913,7 @@ class preg_murc_34 (Canvas):
         especie_final.clear()
         imagen_final.clear()
         
-        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        font_1=Tkfont.Font(family="Candara", size=20)
         fondo=PhotoImage(file="Imagenes usadas/Fondo.png")
         logo=PhotoImage(file="Imagenes usadas/logo.png")
         op_1=btn_cambio("Con por lo menos un rastro de una línea mediana blanca", "Dorso con por lo menos un rastro de una línea mediana blanca", preg_murc_34, preg_murc_35)
@@ -937,7 +937,7 @@ class preg_murc_35 (Canvas):
         especie_final.clear()
         imagen_final.clear()
         
-        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        font_1=Tkfont.Font(family="Candara", size=20)
         fondo=PhotoImage(file="Imagenes usadas/Fondo.png")
         logo=PhotoImage(file="Imagenes usadas/logo.png")
         op_1=btn_cambio("Hasta la corona", "La línea dorsal se extiende hasta la corona", preg_murc_35, preg_murc_36)
@@ -961,7 +961,7 @@ class preg_murc_36 (Canvas):
         especie_final.clear()
         imagen_final.clear()
         
-        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        font_1=Tkfont.Font(family="Candara", size=20)
         fondo=PhotoImage(file="Imagenes usadas/Fondo.png")
         logo=PhotoImage(file="Imagenes usadas/logo.png")
         op_1=btn_resultado("Puntas de las alas blancas (no siempre), antebrazo amarillo, el murciélago más grande con líneas blancas, peso corporal +/-36g y antebrazo de 47-56mm", preg_murc_36, "Vampyrodes caraccioli", "Imagenes usadas/Murciélagos/Vampyrodes caraccioli.png")
@@ -985,7 +985,7 @@ class preg_murc_37 (Canvas):
         especie_final.clear()
         imagen_final.clear()
         
-        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        font_1=Tkfont.Font(family="Candara", size=20)
         fondo=PhotoImage(file="Imagenes usadas/Fondo.png")
         logo=PhotoImage(file="Imagenes usadas/logo.png")
         op_1=btn_resultado("Hoja de la nariz lateralmente aplanada, cortada, y truncada en la punta, antebrazo y membrana interfemoral (MI) densamente peludos, ojos grandes, líneas faciales raras veces presentes, línea dorsal indistinta, llega hasta los hombros, membrana interfemoral (MI) ancha y en forma de 'U', no orlada, pelos dorsales tricoloridos, márgenes de las orejas y tragus amarillos o naranjas, peso corporal +/-22g y antebrazo de 42-47mm", preg_murc_37, "Chiroderma villosum", "Imagenes usadas/Murciélagos/Chiroderma villosum.png")
@@ -1009,7 +1009,7 @@ class preg_murc_38 (Canvas):
         especie_final.clear()
         imagen_final.clear()
         
-        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        font_1=Tkfont.Font(family="Candara", size=20)
         fondo=PhotoImage(file="Imagenes usadas/Fondo.png")
         logo=PhotoImage(file="Imagenes usadas/logo.png")
         op_1=btn_cambio("Pelos dorsales notablemente tri- o tetracoloridos, línea mediana solamente en parte inferior de la espalda, incisivos interiores superiores agudos o desafilados, no truncados", "Pelos dorsales notablemente tri- o tetracoloridos, línea mediana solamente en parte inferior de la espalda, incisivos interiores superiores agudos o desafilados, no truncados", preg_murc_39, preg_murc_39)
@@ -1033,7 +1033,7 @@ class preg_murc_39 (Canvas):
         especie_final.clear()
         imagen_final.clear()
         
-        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        font_1=Tkfont.Font(family="Candara", size=20)
         fondo=PhotoImage(file="Imagenes usadas/Fondo.png")
         logo=PhotoImage(file="Imagenes usadas/logo.png")
         op_1=btn_resultado("Puntas de los pelos dorsales escarchadas blancas, base gris, pero no muy distinta del amarillo oscuro en el medio, tercer y cuarto diente post-canino inferior (M1 y M2) tienen forma de una vasija, posteriormente sin cúspide, caninos largos y delgados, línea dorsal llega hasta los hombros, normalmente indistinta, márgenes de las orejas y tragus amarillos o naranjas, membrana interfemoral (MI) ancha y en forma de 'U', sin orlas, pelos dorsales tricoloridos (banda basal a veces indistinta), peso corporal +/-14g y antebrazo de 35-39mm", preg_murc_39, "Vampyriscus nymphaea", "Imagenes usadas/m.png")
@@ -1057,7 +1057,7 @@ class preg_murc_40 (Canvas):
         especie_final.clear()
         imagen_final.clear()
         
-        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        font_1=Tkfont.Font(family="Candara", size=20)
         fondo=PhotoImage(file="Imagenes usadas/Fondo.png")
         logo=PhotoImage(file="Imagenes usadas/logo.png")
         op_1=btn_resultado("Membrana interfemoral (MI), tibia y dedos del pie peludos, líneas faciales y línea mediana dorsal a veces obscuras, brillantes, línea dorsal llega hasta los hombros o a la nuca, ojos pequeños, membrana interfemoral (MI) ancha y en forma de 'U', sin orlas, incisivos interiores superiores truncados, bilobados, márgenes de las orejas y tragus blancos o de color crema, peso corporal +/-17g y antebrazo de 41-45mm", preg_murc_40, "Uroderma magnirostrum", "Imagenes usadas/Murciélagos/Uroderma magnirostrum.png")
@@ -1081,7 +1081,7 @@ class preg_murc_41 (Canvas):
         especie_final.clear()
         imagen_final.clear()
         
-        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        font_1=Tkfont.Font(family="Candara", size=20)
         fondo=PhotoImage(file="Imagenes usadas/Fondo.png")
         logo=PhotoImage(file="Imagenes usadas/logo.png")
         op_1=btn_cambio("+50mm", "Antebrazo de más de 50mm", preg_murc_41, preg_murc_42)
@@ -1105,7 +1105,7 @@ class preg_murc_42 (Canvas):
         especie_final.clear()
         imagen_final.clear()
         
-        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        font_1=Tkfont.Font(family="Candara", size=20)
         fondo=PhotoImage(file="Imagenes usadas/Fondo.png")
         logo=PhotoImage(file="Imagenes usadas/logo.png")
         op_1=btn_resultado("Extremidades posteriores prácticamente desnudas, líneas faciales indistintas, peso corporal +/-48g y antebrazo de 55-67mm", preg_murc_42, "Artibeus jamaicensis", "Imagenes usadas/Murciélagos/Artibeus jamaicensis.png")
@@ -1129,7 +1129,7 @@ class preg_murc_43 (Canvas):
         especie_final.clear()
         imagen_final.clear()
         
-        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        font_1=Tkfont.Font(family="Candara", size=20)
         fondo=PhotoImage(file="Imagenes usadas/Fondo.png")
         logo=PhotoImage(file="Imagenes usadas/logo.png")
         op_1=btn_resultado("Dos pares de líneas faciales brillantes, peso corporal +/-67g y antebrazo de 69-78mm", preg_murc_43, "Artibeus lituratus", "Imagenes usadas/Murciélagos/Artibeus lituratus.png")
@@ -1153,7 +1153,7 @@ class preg_murc_44 (Canvas):
         especie_final.clear()
         imagen_final.clear()
         
-        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        font_1=Tkfont.Font(family="Candara", size=20)
         fondo=PhotoImage(file="Imagenes usadas/Fondo.png")
         logo=PhotoImage(file="Imagenes usadas/logo.png")
         op_1=btn_cambio("Membrana interfemoral (MI) ausente, hombros de color naranja o amarillo, piernas peludas, incisivos inferiores trilobados", "Membrana interfemoral (MI) ausente, hombros de color naranja o amarillo, piernas peludas, incisivos inferiores trilobados", preg_murc_44, preg_murc_45)
@@ -1177,7 +1177,7 @@ class preg_murc_45 (Canvas):
         especie_final.clear()
         imagen_final.clear()
         
-        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        font_1=Tkfont.Font(family="Candara", size=20)
         fondo=PhotoImage(file="Imagenes usadas/Fondo.png")
         logo=PhotoImage(file="Imagenes usadas/logo.png")
         op_1=btn_resultado("Pelo dorsal de color pálido, líneas de los dientes maxilares arqueadas para afuera (no paralelas), peso corporal +/-15g y antebrazo de 37-42mm", preg_murc_45, "Sturnira lilium", "Imagenes usadas/m.png")
@@ -1201,7 +1201,7 @@ class preg_murc_46 (Canvas):
         especie_final.clear()
         imagen_final.clear()
         
-        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        font_1=Tkfont.Font(family="Candara", size=20)
         fondo=PhotoImage(file="Imagenes usadas/Fondo.png")
         logo=PhotoImage(file="Imagenes usadas/logo.png")
         op_1=btn_cambio("Antebrazo normalmente de +35mm, paladar casi circular", "Antebrazo normalmente de +35mm, paladar casi circular", preg_murc_46, preg_murc_47)
@@ -1225,7 +1225,7 @@ class preg_murc_47 (Canvas):
         especie_final.clear()
         imagen_final.clear()
         
-        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        font_1=Tkfont.Font(family="Candara", size=20)
         fondo=PhotoImage(file="Imagenes usadas/Fondo.png")
         logo=PhotoImage(file="Imagenes usadas/logo.png")
         op_1=btn_resultado("Color del pelo chocolate oscuro, membrana interfemoral (MI) notablemente orlada, angosta y en forma de 'V', herradura de la hoja de la nariz ventralmente doblada para abajo, incisivos interiores superiores no bilobados, líneas faciales presentes, amarillas, angostas, líneas medianas dorsales ausentes, incisivos interiores superiores truncados, no lobados, márgenes de las orejas y tragus blancos o de color crema, peso corporal +/-17g y antebrazo de 37-43mm", preg_murc_47, "Enchistenes hartii", "Imagenes usadas/m.png")
@@ -1249,7 +1249,7 @@ class preg_murc_48 (Canvas):
         especie_final.clear()
         imagen_final.clear()
         
-        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        font_1=Tkfont.Font(family="Candara", size=20)
         fondo=PhotoImage(file="Imagenes usadas/Fondo.png")
         logo=PhotoImage(file="Imagenes usadas/logo.png")
         op_1=btn_resultado("Márgenes de las orejas amarillas y amarillas en la base, hoja de la nariz más larga y ancha, M3 ausente, líneas faciales siempre presentes, líneas blancas brillantes y anchas, línea mediana dorsal ausente, incisivos interiores superiores truncados  y bilobados, peso corporal +/-11g, antebrazo de 35-40mm y pelo de 4-6mm", preg_murc_48, "Artibeus phaeotis", "Imagenes usadas/Murciélagos/Artibeus phaeotis.png")
@@ -1273,7 +1273,7 @@ class preg_murc_49 (Canvas):
         especie_final.clear()
         imagen_final.clear()
         
-        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        font_1=Tkfont.Font(family="Candara", size=20)
         fondo=PhotoImage(file="Imagenes usadas/Fondo.png")
         logo=PhotoImage(file="Imagenes usadas/logo.png")
         op_1=btn_resultado("Más pequeño, partes inferiores del cuerpo de color más claro y amarillo, frecuentemente tiene líneas faciales blancas bien definidas y prominentes, extremidades posteriores (tibia, pie y membrana interfemoral (MI)) casi desnudas, peso corporal +/-11g, antebrazo de 35-42mm y pelo velludo de 6-7mm", preg_murc_49, "Artibeus watsoni", "Imagenes usadas/m.png")
@@ -1297,7 +1297,7 @@ class preg_murc_50 (Canvas):
         especie_final.clear()
         imagen_final.clear()
         
-        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        font_1=Tkfont.Font(family="Candara", size=20)
         fondo=PhotoImage(file="Imagenes usadas/Fondo.png")
         logo=PhotoImage(file="Imagenes usadas/logo.png")
         op_1=btn_resultado("Líneas faciales presentes, blancas y angostas, muy pequeño, calcar (o calcáneo) recto, base de la oreja y hoja de la nariz solamente moderadamente amarillas, línea dorsal ausente, membrana interfemoral (MI) ancha y en forma de 'U', sin orlas, márgenes de las orejas y tragus de color amarillo o naranja, pelo dorsal tricolorido (banda basal a veces obscura), peso corporal +/-8g y antebrazo de 29-34mm", preg_murc_50, "Vampyressa pusilla", "Imagenes usadas/m.png")
@@ -1321,7 +1321,7 @@ class preg_murc_51 (Canvas):
         especie_final.clear()
         imagen_final.clear()
         
-        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        font_1=Tkfont.Font(family="Candara", size=20)
         fondo=PhotoImage(file="Imagenes usadas/Fondo.png")
         logo=PhotoImage(file="Imagenes usadas/logo.png")
         op_1=btn_resultado("Dorso anterior blanquizco, dorso posterior de color tostado, calcar (o calcáneo) recto, peso corporal +/-5g y antebrazo de 23-31mm", preg_murc_51, "Ectophylla alba", "Imagenes usadas/m.png")
@@ -1346,7 +1346,7 @@ class preg_murc_52 (Canvas):
         especie_final.clear()
         imagen_final.clear()
         
-        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        font_1=Tkfont.Font(family="Candara", size=20)
         fondo=PhotoImage(file="Imagenes usadas/Fondo.png")
         logo=PhotoImage(file="Imagenes usadas/logo.png")
         op_1=btn_cambio("Ausente", "Tiene cola", preg_murc_52, preg_murc_53)
@@ -1370,7 +1370,7 @@ class preg_murc_53 (Canvas):
         especie_final.clear()
         imagen_final.clear()
         
-        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        font_1=Tkfont.Font(family="Candara", size=20)
         fondo=PhotoImage(file="Imagenes usadas/Fondo.png")
         logo=PhotoImage(file="Imagenes usadas/logo.png")
         op_1=btn_resultado("Cara desnuda y grotescamente arrugada, mancha blanca en el hombro, membrana interfemoral (MI) ancha, peluda, en forma de 'U' y fuertemente orlada, líneas siempre ausentes, pelo dorsal tricolorido, cara muy corta básicamente sin rostro, orejas no afiladas, peso corporal +/-20g y antebrazo de 41-45mm", preg_murc_53, "Centurio senex", "Imagenes usadas/Murciélagos/Centurio senex.png")
@@ -1394,7 +1394,7 @@ class preg_murc_54 (Canvas):
         especie_final.clear()
         imagen_final.clear()
         
-        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        font_1=Tkfont.Font(family="Candara", size=20)
         fondo=PhotoImage(file="Imagenes usadas/Fondo.png")
         logo=PhotoImage(file="Imagenes usadas/logo.png")
         op_1=btn_resultado("Puntas de las alas blancas, peso corporal +/-36g y antebrazo de 48-54mm", preg_murc_54, "Diaemus youngi", "Imagenes usadas/m.png")
@@ -1418,7 +1418,7 @@ class preg_murc_55 (Canvas):
         especie_final.clear()
         imagen_final.clear()
         
-        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        font_1=Tkfont.Font(family="Candara", size=20)
         fondo=PhotoImage(file="Imagenes usadas/Fondo.png")
         logo=PhotoImage(file="Imagenes usadas/logo.png")
         op_1=btn_resultado("Miembro metacarpal del pulgar muy elongado, orejas de tamaño mediano y redondeadas, calcar (o calcáneo) aparentemente ausente, extremidades posteriores con pelos muy cortos, partes inferiores del cuerpo blanquizcas, peso corporal +/-34g y antebrazo de 53-65mm", preg_murc_55, "Desmodus rotundus", "Imagenes usadas/Murciélagos/Desmodus rotundus.png")
@@ -1442,7 +1442,7 @@ class preg_murc_56 (Canvas):
         especie_final.clear()
         imagen_final.clear()
         
-        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        font_1=Tkfont.Font(family="Candara", size=20)
         fondo=PhotoImage(file="Imagenes usadas/Fondo.png")
         logo=PhotoImage(file="Imagenes usadas/logo.png")
         op_1=btn_cambio("Se extiende hasta o más allá del margen de la membrana interfemoral (MI)", "La cola se extiende hasta o más allá del margen de la membrana interfemoral (MI)", preg_murc_56, preg_murc_57)
@@ -1466,7 +1466,7 @@ class preg_murc_57 (Canvas):
         especie_final.clear()
         imagen_final.clear()
         
-        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        font_1=Tkfont.Font(family="Candara", size=20)
         fondo=PhotoImage(file="Imagenes usadas/Fondo.png")
         logo=PhotoImage(file="Imagenes usadas/logo.png")
         op_1=btn_cambio("Hasta el margen de la membrana interfemoral (MI) o se extiende solamente una o dos vértebras más allá", "La cola se extiende hasta el margen de la membrana interfemoral (MI) o se extiende solamente una o dos vértebras más allá", preg_murc_57, preg_murc_58)
@@ -1490,7 +1490,7 @@ class preg_murc_58 (Canvas):
         especie_final.clear()
         imagen_final.clear()
         
-        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        font_1=Tkfont.Font(family="Candara", size=20)
         fondo=PhotoImage(file="Imagenes usadas/Fondo.png")
         logo=PhotoImage(file="Imagenes usadas/logo.png")
         op_1=btn_cambio("Extensivamente peluda", "Membrana interfemoral extensivamente peluda", preg_murc_58, preg_murc_59)
@@ -1514,7 +1514,7 @@ class preg_murc_59 (Canvas):
         especie_final.clear()
         imagen_final.clear()
         
-        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        font_1=Tkfont.Font(family="Candara", size=20)
         fondo=PhotoImage(file="Imagenes usadas/Fondo.png")
         logo=PhotoImage(file="Imagenes usadas/logo.png")
         op_1=btn_resultado("De color amarillo, alas negras, peso corporal +/-11g y antebrazo de 43-47mm", preg_murc_59, "Dasypterus ega", "Imagenes usadas/m.png")
@@ -1538,7 +1538,7 @@ class preg_murc_60 (Canvas):
         especie_final.clear()
         imagen_final.clear()
 
-        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        font_1=Tkfont.Font(family="Candara", size=20)
         fondo=PhotoImage(file="Imagenes usadas/Fondo.png")
         logo=PhotoImage(file="Imagenes usadas/logo.png")
         op_1=btn_resultado("Dorso y partes inferiores del cuerpo rojos, peso corporal +/-20g y antebrazo +/-50mm", preg_murc_60, "Lasiurus egregius", "Imagenes usadas/m.png")
@@ -1562,7 +1562,7 @@ class preg_murc_61 (Canvas):
         especie_final.clear()
         imagen_final.clear()
         
-        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        font_1=Tkfont.Font(family="Candara", size=20)
         fondo=PhotoImage(file="Imagenes usadas/Fondo.png")
         logo=PhotoImage(file="Imagenes usadas/logo.png")
         op_1=btn_resultado("Partes inferiores del cuerpo amarillas, dorso rojizo-naranja, banda mediana de los pelos dorsales es pálida y ancha, peso corporal +/-8g y antebrazo de 38-42mm", preg_murc_61, "Lasiurus blossevillii", "Imagenes usadas/m.png")
@@ -1586,7 +1586,7 @@ class preg_murc_62 (Canvas):
         especie_final.clear()
         imagen_final.clear()
         
-        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        font_1=Tkfont.Font(family="Candara", size=20)
         fondo=PhotoImage(file="Imagenes usadas/Fondo.png")
         logo=PhotoImage(file="Imagenes usadas/logo.png")
         op_1=btn_resultado("Piernas muy largas, membrana del ala muy grande y conectada muy arriba en la tibia, peso corporal +/-6g y antebrazo de 36-39mm", preg_murc_62, "Natalus stramineus", "Imagenes usadas/m.png")
@@ -1610,7 +1610,7 @@ class preg_murc_63 (Canvas):
         especie_final.clear()
         imagen_final.clear()
         
-        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        font_1=Tkfont.Font(family="Candara", size=20)
         fondo=PhotoImage(file="Imagenes usadas/Fondo.png")
         logo=PhotoImage(file="Imagenes usadas/logo.png")
         op_1=btn_cambio("Adyacente al canino", "El primer diente post-canino alto en la parte superior está adyacente al canino", preg_murc_63, preg_murc_64)
@@ -1634,7 +1634,7 @@ class preg_murc_64 (Canvas):
         especie_final.clear()
         imagen_final.clear()
         
-        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        font_1=Tkfont.Font(family="Candara", size=20)
         fondo=PhotoImage(file="Imagenes usadas/Fondo.png")
         logo=PhotoImage(file="Imagenes usadas/logo.png")
         op_1=btn_resultado("Bases del pelo dorsal pálido, amarillo, amarillo oscuro, peso corporal +/-5g y antebrazo de 27-31mm", preg_murc_64, "Rhogeessa tumida", "Imagenes usadas/m.png")
@@ -1658,7 +1658,7 @@ class preg_murc_65 (Canvas):
         especie_final.clear()
         imagen_final.clear()
         
-        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        font_1=Tkfont.Font(family="Candara", size=20)
         fondo=PhotoImage(file="Imagenes usadas/Fondo.png")
         logo=PhotoImage(file="Imagenes usadas/logo.png")
         op_1=btn_resultado("Pequeño, pelo corto, peso corporal +/-7g y antebrazo de 37-43mm", preg_murc_65, "Eptesicus furinalis", "Imagenes usadas/m.png")
@@ -1682,7 +1682,7 @@ class preg_murc_66 (Canvas):
         especie_final.clear()
         imagen_final.clear()
         
-        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        font_1=Tkfont.Font(family="Candara", size=20)
         fondo=PhotoImage(file="Imagenes usadas/Fondo.png")
         logo=PhotoImage(file="Imagenes usadas/logo.png")
         op_1=btn_resultado("Tamaño mediano, negruzco, peso corporal +/-10g y antebrazo de 42-47mm", preg_murc_66, "Eptesicus brasiliensis", "Imagenes usadas/m.png")
@@ -1706,7 +1706,7 @@ class preg_murc_67 (Canvas):
         especie_final.clear()
         imagen_final.clear()
         
-        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        font_1=Tkfont.Font(family="Candara", size=20)
         fondo=PhotoImage(file="Imagenes usadas/Fondo.png")
         logo=PhotoImage(file="Imagenes usadas/logo.png")
         op_1=btn_resultado("Partes inferiores del cuerpo blanquizcas, dorso negruzco con puntas pálidas, pies más grandes, peso corporal +/-7g y antebrazo de 33-38mm", preg_murc_67, "Myotis albescens", "Imagenes usadas/m.png")
@@ -1730,7 +1730,7 @@ class preg_murc_68 (Canvas):
         especie_final.clear()
         imagen_final.clear()
         
-        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        font_1=Tkfont.Font(family="Candara", size=20)
         fondo=PhotoImage(file="Imagenes usadas/Fondo.png")
         logo=PhotoImage(file="Imagenes usadas/logo.png")
         op_1=btn_resultado("Pelo dorsal lanoso, peso corporal +/-5g y antebrazo de 32-38mm", preg_murc_68, "Myotis riparius", "Imagenes usadas/Murciélagos/Myotis riparius.png")
@@ -1754,7 +1754,7 @@ class preg_murc_69 (Canvas):
         especie_final.clear()
         imagen_final.clear()
         
-        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        font_1=Tkfont.Font(family="Candara", size=20)
         fondo=PhotoImage(file="Imagenes usadas/Fondo.png")
         logo=PhotoImage(file="Imagenes usadas/logo.png")
         op_1=btn_cambio("Presentes", "Tiene discos de succión en el pulgar y los pies", preg_murc_69, preg_murc_70)
@@ -1778,7 +1778,7 @@ class preg_murc_70 (Canvas):
         especie_final.clear()
         imagen_final.clear()
         
-        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        font_1=Tkfont.Font(family="Candara", size=20)
         fondo=PhotoImage(file="Imagenes usadas/Fondo.png")
         logo=PhotoImage(file="Imagenes usadas/logo.png")
         op_1=btn_resultado("Partes inferiores del cuerpo blancas o amarillas pálidas, rabo se extiende 5-8mm más allá de la membrana interfemoral (MI), membrana interfemoral (MI) casi desnuda, calcar (o calcáneo) normalmente con dos proyecciones membranosas extendiendo hasta el margen posterolateral de la membrana interfemoral (MI), peso corporal +/-4g y antebrazo de 34-38mm", preg_murc_70, "Thyroptera tricolor", "Imagenes usadas/m.png")
@@ -1802,7 +1802,7 @@ class preg_murc_71 (Canvas):
         especie_final.clear()
         imagen_final.clear()
         
-        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        font_1=Tkfont.Font(family="Candara", size=20)
         fondo=PhotoImage(file="Imagenes usadas/Fondo.png")
         logo=PhotoImage(file="Imagenes usadas/logo.png")
         op_1=btn_cambio("Petiolado (casi circular, pellizcado en la base)", "Antitragus petiolado (casi circular, pellizcado en la base)", preg_murc_71, preg_murc_72)
@@ -1826,7 +1826,7 @@ class preg_murc_72 (Canvas):
         especie_final.clear()
         imagen_final.clear()
         
-        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        font_1=Tkfont.Font(family="Candara", size=20)
         fondo=PhotoImage(file="Imagenes usadas/Fondo.png")
         logo=PhotoImage(file="Imagenes usadas/logo.png")
         op_1=btn_cambio("Pelos en cadera de 3-6mm y antebrazo +/-50mm", "Pelos en cadera de 3-6mm y antebrazo +/-50mm", preg_murc_72, preg_murc_73)
@@ -1850,7 +1850,7 @@ class preg_murc_73 (Canvas):
         especie_final.clear()
         imagen_final.clear()
         
-        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        font_1=Tkfont.Font(family="Candara", size=20)
         fondo=PhotoImage(file="Imagenes usadas/Fondo.png")
         logo=PhotoImage(file="Imagenes usadas/logo.png")
         op_1=btn_resultado("Antebrazo desnudo, incisivos interiores superiores sobresalientes, peso corporal +/-21g y antebrazo de 48-56mm", preg_murc_73, "Promops centralis", "Imagenes usadas/m.png")
@@ -1874,7 +1874,7 @@ class preg_murc_74 (Canvas):
         especie_final.clear()
         imagen_final.clear()
         
-        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        font_1=Tkfont.Font(family="Candara", size=20)
         fondo=PhotoImage(file="Imagenes usadas/Fondo.png")
         logo=PhotoImage(file="Imagenes usadas/logo.png")
         op_1=btn_resultado("Pelos dorsales con bases de color blanco o gris contrastante, peso corporal +/-27g y antebrazo de 45-52mm", preg_murc_74, "Molossus sinaloae", "Imagenes usadas/m.png")
@@ -1898,7 +1898,7 @@ class preg_murc_75 (Canvas):
         especie_final.clear()
         imagen_final.clear()
         
-        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        font_1=Tkfont.Font(family="Candara", size=20)
         fondo=PhotoImage(file="Imagenes usadas/Fondo.png")
         logo=PhotoImage(file="Imagenes usadas/logo.png")
         op_1=btn_resultado("Pelo +/-3mm en el centro de la espalda, banda basal de los pelos dorsales es pálida, peso corporal +/-12g y antebrazo de 36-40mm", preg_murc_75, "Molossus molossus", "Imagenes usadas/m.png")
@@ -1922,7 +1922,7 @@ class preg_murc_76 (Canvas):
         especie_final.clear()
         imagen_final.clear()
         
-        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        font_1=Tkfont.Font(family="Candara", size=20)
         fondo=PhotoImage(file="Imagenes usadas/Fondo.png")
         logo=PhotoImage(file="Imagenes usadas/logo.png")
         op_1=btn_cambio("Orejas grandes, conectadas en la frente, hocico no hinchado e inflado", "Orejas grandes, conectadas en la frente, hocico no hinchado e inflado", preg_murc_76, preg_murc_77)
@@ -1946,7 +1946,7 @@ class preg_murc_77 (Canvas):
         especie_final.clear()
         imagen_final.clear()
         
-        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        font_1=Tkfont.Font(family="Candara", size=20)
         fondo=PhotoImage(file="Imagenes usadas/Fondo.png")
         logo=PhotoImage(file="Imagenes usadas/logo.png")
         op_1=btn_resultado("Labios superiores grandes, sueltos y muy arrugados, peso corporal +/-10g y antebrazo de 36-46mm", preg_murc_77, "Tadarida brasiliensis", "Imagenes usadas/m.png")
@@ -1970,7 +1970,7 @@ class preg_murc_78 (Canvas):
         especie_final.clear()
         imagen_final.clear()
         
-        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        font_1=Tkfont.Font(family="Candara", size=20)
         fondo=PhotoImage(file="Imagenes usadas/Fondo.png")
         logo=PhotoImage(file="Imagenes usadas/logo.png")
         op_1=btn_cambio("+50mm", "Antebrazo de más de 50mm", preg_murc_78, preg_murc_79)
@@ -1994,7 +1994,7 @@ class preg_murc_79 (Canvas):
         especie_final.clear()
         imagen_final.clear()
         
-        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        font_1=Tkfont.Font(family="Candara", size=20)
         fondo=PhotoImage(file="Imagenes usadas/Fondo.png")
         logo=PhotoImage(file="Imagenes usadas/logo.png")
         op_1=btn_resultado("Tragus relativamente pequeño, agudo, pliegue anterior basal de la oreja -15mm, color en el dorso negruzco, peso corporal +/-33g y antebrazo de 66-74mm", preg_murc_79, "Eumops auripendulus", "Imagenes usadas/m.png")
@@ -2018,7 +2018,7 @@ class preg_murc_80 (Canvas):
         especie_final.clear()
         imagen_final.clear()
         
-        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        font_1=Tkfont.Font(family="Candara", size=20)
         fondo=PhotoImage(file="Imagenes usadas/Fondo.png")
         logo=PhotoImage(file="Imagenes usadas/logo.png")
         op_1=btn_resultado("Pelo dorsal corto (2mm) y terciopelado, peso corporal +/-18g y antebrazo de 36-42mm", preg_murc_80, "Eumops hansae", "Imagenes usadas/m.png")
@@ -2042,7 +2042,7 @@ class preg_murc_81 (Canvas):
         especie_final.clear()
         imagen_final.clear()
         
-        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        font_1=Tkfont.Font(family="Candara", size=20)
         fondo=PhotoImage(file="Imagenes usadas/Fondo.png")
         logo=PhotoImage(file="Imagenes usadas/logo.png")
         op_1=btn_resultado("Pequeño, pecho blanquizco, peso corporal +/-13g y antebrazo de 31-36mm", preg_murc_81, "Cynomops planirostris", "Imagenes usadas/m.png")
@@ -2066,7 +2066,7 @@ class preg_murc_82 (Canvas):
         especie_final.clear()
         imagen_final.clear()
         
-        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        font_1=Tkfont.Font(family="Candara", size=20)
         fondo=PhotoImage(file="Imagenes usadas/Fondo.png")
         logo=PhotoImage(file="Imagenes usadas/logo.png")
         op_1=btn_resultado("De color blanco o blanquizco, membranas pálidas, peso corporal +/-16g y antebrazo de 64-66mm", preg_murc_82, "Diclidurus albus", "Imagenes usadas/m.png")
@@ -2090,7 +2090,7 @@ class preg_murc_83 (Canvas):
         especie_final.clear()
         imagen_final.clear()
         
-        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        font_1=Tkfont.Font(family="Candara", size=20)
         fondo=PhotoImage(file="Imagenes usadas/Fondo.png")
         logo=PhotoImage(file="Imagenes usadas/logo.png")
         op_1=btn_cambio("Dos líneas blanquizcas", "Dos líneas longitudinales en el dorso", preg_murc_83, preg_murc_84)
@@ -2114,7 +2114,7 @@ class preg_murc_84 (Canvas):
         especie_final.clear()
         imagen_final.clear()
         
-        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        font_1=Tkfont.Font(family="Candara", size=20)
         fondo=PhotoImage(file="Imagenes usadas/Fondo.png")
         logo=PhotoImage(file="Imagenes usadas/logo.png")
         op_1=btn_resultado("Grande, de color negruzco, con saco glandular, peso corporal +/-6g y antebrazo de 40-49mm", preg_murc_84, "Saccopteryx bilineata", "Imagenes usadas/Murciélagos/Saccopteryx bilineata.png")
@@ -2138,7 +2138,7 @@ class preg_murc_85 (Canvas):
         especie_final.clear()
         imagen_final.clear()
         
-        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        font_1=Tkfont.Font(family="Candara", size=20)
         fondo=PhotoImage(file="Imagenes usadas/Fondo.png")
         logo=PhotoImage(file="Imagenes usadas/logo.png")
         op_1=btn_resultado("Antebrazo desnudo, saco glandular en membrana antebrachial, peso corporal +/-4g y antebrazo de 36-43mm", preg_murc_85, "Saccopteryx leptura", "Imagenes usadas/m.png")
@@ -2162,7 +2162,7 @@ class preg_murc_86 (Canvas):
         especie_final.clear()
         imagen_final.clear()
         
-        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        font_1=Tkfont.Font(family="Candara", size=20)
         fondo=PhotoImage(file="Imagenes usadas/Fondo.png")
         logo=PhotoImage(file="Imagenes usadas/logo.png")
         op_1=btn_cambio("Con una línea mediana dorsal de color blanquizco o amarillo, labio leporino (hendido)", "Con una línea mediana dorsal de color blanquizco o amarillo, labio leporino (hendido)", preg_murc_86, preg_murc_87)
@@ -2186,7 +2186,7 @@ class preg_murc_87 (Canvas):
         especie_final.clear()
         imagen_final.clear()
         
-        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        font_1=Tkfont.Font(family="Candara", size=20)
         fondo=PhotoImage(file="Imagenes usadas/Fondo.png")
         logo=PhotoImage(file="Imagenes usadas/logo.png")
         op_1=btn_resultado("Pequeño, pies posteriores de -21mm, garras no excesivamente grandes, peso corporal +/-30g y antebrazo de 55-59mm", preg_murc_87, "Noctilio albiventris", "Imagenes usadas/m.png")
@@ -2210,7 +2210,7 @@ class preg_murc_88 (Canvas):
         especie_final.clear()
         imagen_final.clear()
         
-        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        font_1=Tkfont.Font(family="Candara", size=20)
         fondo=PhotoImage(file="Imagenes usadas/Fondo.png")
         logo=PhotoImage(file="Imagenes usadas/logo.png")
         op_1=btn_cambio("Saco en forma de bolsillo en membrana antebrachial en los machos", "Saco en forma de bolsillo en membrana antebrachial en los machos", preg_murc_88, preg_murc_89)
@@ -2234,7 +2234,7 @@ class preg_murc_89 (Canvas):
         especie_final.clear()
         imagen_final.clear()
         
-        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        font_1=Tkfont.Font(family="Candara", size=20)
         fondo=PhotoImage(file="Imagenes usadas/Fondo.png")
         logo=PhotoImage(file="Imagenes usadas/logo.png")
         op_1=btn_resultado("Ala conectada cerca de la base de los dedos del pie, saco cerca de antebrazo, peso corporal +/-9g y antebrazo de 45-48mm", preg_murc_89, "Cormura brevirostris", "Imagenes usadas/Murciélagos/Cormura brevirostris.png")
@@ -2258,7 +2258,7 @@ class preg_murc_90 (Canvas):
         especie_final.clear()
         imagen_final.clear()
         
-        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        font_1=Tkfont.Font(family="Candara", size=20)
         fondo=PhotoImage(file="Imagenes usadas/Fondo.png")
         logo=PhotoImage(file="Imagenes usadas/logo.png")
         op_1=btn_resultado("Grande, peso corporal +/-7g y antebrazo de 44-54mm", preg_murc_90, "Peropteryx kappleri", "Imagenes usadas/m.png")
@@ -2282,7 +2282,7 @@ class preg_murc_91 (Canvas):
         especie_final.clear()
         imagen_final.clear()
         
-        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        font_1=Tkfont.Font(family="Candara", size=20)
         fondo=PhotoImage(file="Imagenes usadas/Fondo.png")
         logo=PhotoImage(file="Imagenes usadas/logo.png")
         op_1=btn_resultado("Orejas cortas, redondeadas, formando un túnel, pelo gris, pulgares rojos, peso corporal +/-3g y antebrazo de 34-36mm", preg_murc_91, "Furipterus horrens", "Imagenes usadas/m.png")
@@ -2306,7 +2306,7 @@ class preg_murc_92 (Canvas):
         especie_final.clear()
         imagen_final.clear()
         
-        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        font_1=Tkfont.Font(family="Candara", size=20)
         fondo=PhotoImage(file="Imagenes usadas/Fondo.png")
         logo=PhotoImage(file="Imagenes usadas/logo.png")
         op_1=btn_resultado("Membranas de las alas conectadas cerca de los dedos del pie, pelo largo (9mm en la cadera) y tosco, peso corporal +/-5g y antebrazo de 42-45mm", preg_murc_92, "Centronycteris maximiliani", "Imagenes usadas/m.png")
@@ -2330,7 +2330,7 @@ class preg_murc_93 (Canvas):
         especie_final.clear()
         imagen_final.clear()
         
-        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        font_1=Tkfont.Font(family="Candara", size=20)
         fondo=PhotoImage(file="Imagenes usadas/Fondo.png")
         logo=PhotoImage(file="Imagenes usadas/logo.png")
         op_1=btn_cambio("La espalda (en la línea mediana dorsal), dando la apariencia de una espalda desnuda", "Alas se conectan en la espalda (en la línea mediana dorsal), dando la apariencia de una espalda desnuda", preg_murc_93, preg_murc_94)
@@ -2354,7 +2354,7 @@ class preg_murc_94 (Canvas):
         especie_final.clear()
         imagen_final.clear()
         
-        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        font_1=Tkfont.Font(family="Candara", size=20)
         fondo=PhotoImage(file="Imagenes usadas/Fondo.png")
         logo=PhotoImage(file="Imagenes usadas/logo.png")
         op_1=btn_resultado("Grande, platopatagio cubierto con muchos pelos cortos, peso corporal +/-15g y antebrazo de 49-56mm", preg_murc_94, "Pteronotus gymnonotus", "Imagenes usadas/m.png")
@@ -2378,7 +2378,7 @@ class preg_murc_95 (Canvas):
         especie_final.clear()
         imagen_final.clear()
         
-        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        font_1=Tkfont.Font(family="Candara", size=20)
         fondo=PhotoImage(file="Imagenes usadas/Fondo.png")
         logo=PhotoImage(file="Imagenes usadas/logo.png")
         op_1=btn_resultado("Grande, peso corporal +/-23g y antebrazo de 49-65mm", preg_murc_95, "Pteronotus parnellii", "Imagenes usadas/m.png")
@@ -2397,7 +2397,7 @@ class preg_murc_95 (Canvas):
 class confirmacion(tk.Frame):
     def __init__(self, comand):
         tk.Frame.__init__(self)
-        font_1=Tkfont.Font(family="Cascadia Code", size=18)
+        font_1=Tkfont.Font(family="Candara", size=20)
         self.configure(background="#F6F39F")
         canvas=Canvas(self)
         canvas.pack(side=tk.LEFT, expand=True, fill=tk.BOTH)
@@ -2471,8 +2471,8 @@ class confirmacion(tk.Frame):
                 resp.geometry("480x480")
                 resp.resizable(0,0)
                 resp.configure(background="#F6F39F")
-                font=Tkfont.Font(family="Cascadia Code", size=18, slant="italic")
-                font_2=Tkfont.Font(family="Cascadia Code", size=15)
+                font=Tkfont.Font(family="Candara", size=18, slant="italic")
+                font_2=Tkfont.Font(family="Candara", size=15)
                 img_ruta=imagen_final[0]
                 murc_img=tk.PhotoImage(file=img_ruta)
                 tk.Label(resp, text=("Su murciélago es "+especie_final[0]), font=font, wraplength=450, background="#F6F39F").pack(side=tk.TOP, pady=20)
@@ -2484,7 +2484,7 @@ class confirmacion(tk.Frame):
                     tk.Button(resp, height=15, text="Cerrar", font=font_2, command=lambda:[resp.destroy(), self.master.cambio(inicio)]).pack(side=tk.BOTTOM, pady=20, padx=10)
                 self.ref=murc_img
         
-        Button(frame_sec, text="Continuar", font=Tkfont.Font(family="Cascadia Code", size=15), bg="White", command=lambda:[respuesta()]).pack(side=tk.BOTTOM, pady=5, padx=200, expand=True, fill=tk.BOTH)
+        Button(frame_sec, text="Continuar", font=Tkfont.Font(family="Candara", size=15), bg="White", command=lambda:[respuesta()]).pack(side=tk.BOTTOM, pady=5, padx=200, expand=True, fill=tk.BOTH)
 
 if __name__ == "__main__":
     app = CF()
